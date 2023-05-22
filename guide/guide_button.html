@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Button 가이드</title>
+  <script src="js/guide_layout.js"></script>
+  <script>
+    include.meta()
+  </script>
+  <script>
+    include.head()
+  </script>
+</head>
+
+<body>
+  <div class="g-wrapper" id="g-convention-wrap">
+    <script>
+      include.header()
+    </script>
+    <div class="g-container">
+      <script>
+        include.aside.init()
+      </script>
+
+      <!-- Content -->
+      <article class="g-content">
+        <div class="g-content-header">
+          <h1 class="g-h1">Button / icons / Form 요소들</h1>
+          <!-- <p class="g-explain-h1">버튼</p> -->
+        </div>
+        <div class="g-content-body">
+          <!-- section1 -->
+          <section id="g-section1" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">버튼</h2>
+            </div>
+            <div class="g-section-body">
+
+              <!-- <button type="button" class="button-go"><span>검색</span></button> -->
+              <!-- <ul class="g-desc">
+                <li></li>
+              </ul> -->
+
+              <h3 class="g-h3">링크 버튼</h3>
+              <ul class="g-desc">
+                <li>&lt;a&gt;, &lt;button&gt; 역할에 맞는 태그를 사용한다.</li>
+              </ul>
+              <h4 class="g-h4">button 태그</h4>
+
+              <button type="button" class="btn">예매 바로가기 <i class="ico ico-arrow"></i></button>
+              <button type="button" class="btn">예매 바로가기</button>
+
+              <button type="button" class="btn-rect">임시저장</button>
+              <button type="button" class="btn-rect bg-dark">등록하기</button>
+
+              <button type="button" class="btn size-sm c-primary">도움이 되요</button>
+              <button type="button" class="btn size-sm c-gray">도움이 안되요</button>
+
+              <button type="button" class="btn-rect size-sm bg-dy">999+</button>
+              <button type="button" class="btn-rect size-sm bg-primary">공연 정보 보기 <i class="ico ico-arrow"></i></button>
+
+              <br>
+              <br>
+
+              <button type="button" class="btn-form">임시저장</button>
+              <button type="button" class="btn-form">등록하기</button>
+
+              <button type="button" class="btn-form size-md">임시저장</button>
+              <button type="button" class="btn-form size-md">등록하기</button>
+
+
+              <h4 class="g-h4">a 태그</h4>
+
+              <a href="#" class="btn">예매 바로가기 <i class="ico ico-arrow"></i></a>
+              <a href="#" class="btn">예매 바로가기</a>
+              <a href="#" class="btn-rect">임시저장</a>
+              <a href="#" class="btn-rect bg-dark">등록하기</a>
+              <a href="#" class="btn size-sm c-primary">도움이 되요</a>
+              <a href="#" class="btn size-sm c-gray">도움이 안되요</a>
+              <a href="#" class="btn-rect size-sm bg-dy">999+</a>
+              <a href="#" class="btn-rect size-sm bg-primary">공연 정보 보기 <i class="ico ico-arrow"></i></a>
+
+              <h3 class="g-h3">Tab</h3>
+
+              <!-- tabs -->
+              <div class="tab-block">
+                <div class="tab">
+                  <button type="button" class="tab__cur">뮤지컬</button>
+                  <!-- tab  : button 활성화 'is-active' -->
+                  <ul class="tab__list" data-tab="tab-list">
+                    <li class="tab__item"><a href="#" class="tab__btn is-active">뮤지컬</a></li>
+                    <li class="tab__item"><a href="#" class="tab__btn">오페라</a></li>
+                    <li class="tab__item"><a href="#" class="tab__btn">연극</a></li>
+                    <li class="tab__item"><a href="#" class="tab__btn">무용</a></li>
+                    <li class="tab__item"><a href="#" class="tab__btn">발레</a></li>
+                    <li class="tab__item"><a href="#" class="tab__btn">영화</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--// tabs -->
+
+            </div>
+          </section>
+          <!-- //section1 -->
+
+          <!-- section2 -->
+          <section id="g-section2" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">아이콘 버튼</h2>
+            </div>
+            <div class="g-section-body">
+
+              <button type="button" class="btn-reset" aria-label="Reset">초기화</button>
+              <button type="button" class="btn-like"><span class="num">좋아요</span></button>
+              <button type="button" class="btn-re-reply"><span class="num">댓글쓰기</span></button>
+              <button type="button" class="btn-report"><span class="btn-txt">신고하기</span></button>
+
+              <div style="padding:10px; background-color: #000;">
+                <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                <button type="button" class="btn-fav" aria-label="Like"></button>
+              </div>
+
+              <br>
+
+              <button type="button" class="btn-filter">필터</button>
+
+            </div>
+          </section>
+          <!-- //section2 -->
+
+          <!-- section3 -->
+          <section id="g-section3" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">첨부파일명</h2>
+            </div>
+            <div class="g-section-body">
+
+              <span class="photo-add__select">
+                <button type="button" class="file-name">attach_filename_20221225-1.jpg</button>
+                <button type="button" class="btn-del" aria-label="delete"></button>
+              </span>
+
+            </div>
+          </section>
+          <!-- //section3 -->
+
+
+
+        </div>
+      </article>
+      <!-- //Content -->
+    </div>
+    <script>
+      include.footer()
+    </script>
+  </div>
+</body>
+
+</html>

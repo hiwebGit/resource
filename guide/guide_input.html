@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Form요소 가이드</title>
+  <script src="js/guide_layout.js"></script>
+  <script>
+    include.meta()
+  </script>
+  <script>
+    include.head()
+  </script>
+</head>
+
+<body>
+  <div class="g-wrapper" id="g-convention-wrap">
+    <script>
+      include.header()
+    </script>
+    <div class="g-container">
+      <script>
+        include.aside.init()
+      </script>
+
+      <!-- Content -->
+      <article class="g-content">
+        <div class="g-content-header">
+          <h1 class="g-h1">Form 요소들</h1>
+          <!-- <p class="g-explain-h1">버튼</p> -->
+        </div>
+        <div class="g-content-body">
+          <!-- section1 -->
+          <section id="g-section1" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">Input</h2>
+            </div>
+            <div class="g-section-body">
+              <!-- <ul class="g-desc">
+                <li></li>
+              </ul> -->
+
+              <h3 class="g-h3">Text</h3>
+              <!-- <ul class="g-desc">
+                <li></li>
+              </ul> -->
+              <h3 class="g-h4">검색영역</h3>
+              <span class="search-box">
+                <input type="text" class="o-input" placeholder="검색">
+                <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+              </span>
+
+
+              <!-- <h3 class="g-h3">Checkbox</h3> -->
+              <!-- <ul class="g-desc">
+                <li></li>
+              </ul> -->
+
+              <h3 class="g-h3">Radio / Checkbox</h3>
+              <!-- <ul class="g-desc">
+                <li></li>
+              </ul> -->
+
+              <label class="o-rdo"><input type="radio" class="o-input" name="chk-grade"><span
+                  class="o-rdo__label">선택1</span></label>
+              <label class="o-rdo"><input type="radio" class="o-input" name="chk-grade"><span
+                  class="o-rdo__label">선택2</span></label>
+
+              <br>
+
+              <ul class="form-group form-group--col3">
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-cate" checked=""><span
+                      class="label-text">전체</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-cate"><span
+                      class="label-text">연극</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-cate"><span
+                      class="label-text">뮤지컬</span></label></li>
+              </ul>
+
+              <br>
+
+              <ul class="form-group form-group--col6">
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-term" checked=""><span
+                      class="label-text">전체</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-term"><span
+                      class="label-text">1일</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-term"><span
+                      class="label-text">1주</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-term"><span
+                      class="label-text">1개월</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-term"><span
+                      class="label-text">6개월</span></label></li>
+                <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-term"><span
+                      class="label-text">1년</span></label></li>
+              </ul>
+
+              <h3 class="g-h3">파일선택</h3>
+
+              <label class="btn-file">
+                <input type="file" class="btn-file__input"> <em>파일선택</em>
+              </label>
+              <!-- s: 비활성화시 버튼 -->
+              <!-- <label class="btn-file disabled">
+                <input type="file" class="btn-file__input" disabled> <em>파일선택</em>
+              </label> -->
+              <!-- e: 비활성화시 버튼 -->
+              <h3 class="g-h3">Calendar</h3>
+
+              <div class="calendar-box">
+                <span class="calendar-holder">
+                  <input type="text" class="o-text" value="22.12.30">
+                </span>
+                <span class="spbar">-</span>
+                <span class="calendar-holder">
+                  <input type="text" class="o-text" value="22.12.30">
+                </span>
+              </div>
+
+              <br>
+
+
+
+
+            </div>
+          </section>
+          <!-- //section1 -->
+
+          <!-- section2 -->
+          <section id="g-section2" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">Select</h2>
+            </div>
+            <div class="g-section-body">
+
+              <select class="o-select" name="" id="">
+                <option value="">최신 업데이트 순</option>
+              </select>
+
+              <span class="o-select-holder ico-list">
+                <select class="o-select" name="" id="">
+                  <option value="">공연 장르</option>
+                </select>
+              </span>
+
+              <span class="o-select-holder ico-video">
+                <select class="o-select" name="" id="">
+                  <option value="">현재 공연중</option>
+                </select>
+              </span>
+
+              <span class="o-select-holder ico-comment">
+                <select class="o-select" name="" id="">
+                  <option value="">리뷰전체</option>
+                </select>
+              </span>
+
+              <span class="o-select-holder ico-score">
+                <select class="o-select" name="" id="">
+                  <option value="">평점전체</option>
+                </select>
+              </span>
+            </div>
+          </section>
+          <!-- //section2 -->
+
+          <!-- section3 -->
+          <section id="g-section3" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">SCRIPT</h2>
+            </div>
+            <div class="g-section-body">
+
+            </div>
+          </section>
+          <!-- //section3 -->
+
+        </div>
+      </article>
+      <!-- //Content -->
+    </div>
+    <script>
+      include.footer()
+    </script>
+  </div>
+</body>
+
+</html>

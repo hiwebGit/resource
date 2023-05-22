@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : BOOK 읽다</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+
+      <!-- KV -->
+      <div class="kv-offer">
+        <div class="offer__box-l">
+          <!-- 배경이미지 -->
+          <!-- <img src="../assets/images/@temp/@temp_thumb_l5.png" alt="" class="offer__bg"> -->
+          <span class="offer__bg bg-gra"></span>
+          <!-- //배경이미지 -->
+          <div class="offer__box">
+            <div class="thumb-img">
+              <span class="img-holder">
+                <img src="../assets/images/@temp/@temp_thumb_l5.png" alt="">
+              </span>
+              <!-- <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button> -->
+              <span class="tag-gen show-mo">뮤지컬</span>
+            </div>
+          </div>
+        </div>
+        <div class="offer__box-r">
+          <div class="offer-info">
+            <div class="offer-info__wrap">
+              <div class="offer-info__cont">
+                <div class="view__tags">
+                  <span class="tag-gen-s w-auto">책</span>
+                </div>
+                <p class="offer-info__title">[소설] 슈레딩거의 고양이</p>
+                <div class="offer-info__list">
+                  <!-- <div class="offer-info__box">
+                    <span class="offer-info__period">2022.10.20~2023.01.01</span>
+                    <span class="offer-info__locate">잠실종합운동장 내 빅탑</span>
+                  </div> -->
+                  <div class="offer-info__box">
+                    <strong class="offer-info__sub">전체 평점</strong>
+                    <a href="#">
+                      <span class="grade">
+                        <span class="star"><i class="star__point p10"></i></span>
+                        <span class="star"><i class="star__point p10"></i></span>
+                        <span class="star"><i class="star__point p10"></i></span>
+                        <span class="star"><i class="star__point p10"></i></span>
+                        <span class="star"><i class="star__point p1"></i></span>
+                        <em class="grade__num">8.0</em>
+                        <span class="join__num">(참여 50명)</span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="offer-info__box">
+                    <ul class="offer-info__host">
+                      <li class="offer-info__item book-info">
+                        <span class="offer-info__sub">저자</span>
+                        <span>이정은</span>
+                      </li>
+                      <li class="offer-info__item book-info">
+                        <span class="offer-info__sub">출판</span>
+                        <span>냐남</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="art-info-sub">
+                    <div class="access-nums">
+                      <span class="acc-num acc-num--view"><em>25</em></span>
+                      <span class="acc-num acc-num--like"><em>120k</em></span>
+                    </div>
+                    <button type="button" class="btn-fav" aria-label="Like"></button>
+                    <button type="button" class="btn-share" aria-label="Share"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="booking__wrap">
+                <button type="button" class="btn book-btn">구매하기<i class="ico-booking"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- 사이드 리뷰 섹션 -->
+          <section class="offer-review side">
+            <div class="offer-review__group">
+              <div class="offer-review__header">
+                <!-- tab  : button 활성화 'is-active' -->
+                <div class="tab bg-type">
+                  <ul class="tab__list ml__8" data-tab="tab-list">
+                    <li class="tab__item"><a href="#" class="tab__btn is-active" data-tab-btn="tab01">전문가 리뷰</a></li>
+                    <li class="tab__item"><a href="#" class="tab__btn" data-tab-btn="tab02">회원 리뷰</a></li>
+                  </ul>
+                </div>
+                <!-- 리뷰가 없을 경우 버튼 삭제 -->
+                <button type="button" class="btn no-line ss">리뷰 더보기<i class="ico ico-arrow"></i></button>
+                <!-- //리뷰가 없을 경우 버튼 삭제 -->
+              </div>
+              <div class="offer-review__cont">
+                <!-- s 리뷰 있을때 a 링크 추가 -->
+                <a href="#">
+                  <div class="offer-review__box">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_offer_sub01.png" alt=""></span>
+                    </div>
+                    <div class="offer-review__inbox">
+                      <div class="offer-review__titbox">
+                        <h4 class="offer-review__intit">희망을 노래하는 화려한 춤의 향연</h4>
+                      </div>
+                      <p class="offer-review__txt">과연 '쇼 뮤지컬'이다. 시작하자마자 30여 명 배우들이 추는 탭댄스 소리가 객석을 꽉 채운다. 보통은 처음엔 잔잔하게
+                        시작해
+                        점차 긴장감을 고조하는데, 뮤지컬 '브로드웨이 42번가'는 처음부터 에너지 넘치는 군</p>
+                      <div class="view__tags">
+                        <span class="byname">서정원</span>
+                        <span class="tag">arte</span>
+                        <span class="grade">
+                          <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
+                          <span class="badge-star p2"></span>
+                        </span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.10.20</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- e 리뷰 있을때 a 링크 추가 -->
+                <!-- 리뷰가 없을 경우 -->
+                <!-- <div class="offer-review__box">
+                  <div class="offer-review-none">
+                    <p class="offer-review-none__txt">해당 책에 대한 회원 리뷰가 아직 없습니다!</p>
+                    <div class="offer-review-none__btnbox">
+                      <button type="button" class="btn-rect size-sm">리뷰 쓰기<i class="ico ico-arrow"></i></button>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- //리뷰가 없을 경우 -->
+              </div>
+            </div>
+          </section>
+          <!-- //사이드 리뷰 섹션 -->
+        </div>
+      </div>
+      <!--// KV -->
+
+      <!-- START -->
+      <div class="content">
+
+        <section class="view-wrap">
+          <!-- 모바일 이동 버튼 -->
+          <div class="offer-anchor-wrap">
+            <ul class="offer-anchor__list">
+              <li class="anchor__item"><a href="#section_introduct" class="anchor__btn is-active">소개</a></li>
+              <li class="anchor__item"><a href="#section_review01" class="anchor__btn">전문가 리뷰</a></li>
+              <li class="anchor__item"><a href="#section_review02" class="anchor__btn">회원 리뷰</a></li>
+              <li class="anchor__item"><a href="#section_comment" class="anchor__btn">한줄평</a></li>
+            </ul>
+          </div>
+          <!-- //모바일 이동 버튼 -->
+          <!-- s: 개요-->
+          <section class="offer-summ" id="section_introduct">
+            <div class="offer-summ__top">
+              <h3 class="offer-summ__tit">개요</h3>
+            </div>
+            <div class="offer-summ__host">
+              <ul class="offer-summ__list">
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">제목</span>
+                    <span class="txt">슈레딩거의 고양이</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">부제</span>
+                    <span class="txt">만일 내가 인생을 다시 산다면</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">원제</span>
+                    <span class="txt">만일 내가 인생을 다시 산다면</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">저자</span>
+                    <span class="txt">김혜남 저 외 5명 </span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">출판사</span>
+                    <span class="txt">나남</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">출판일</span>
+                    <span class="txt">2022.11.10</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">가격</span>
+                    <span class="txt">15,000원</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">판매가/ <br />할인율</span>
+                    <span class="txt">14,000원/ 10%</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">판차</span>
+                    <span class="txt">전 1권, 개정 4판</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">판형</span>
+                    <span class="txt">큰글씨, 큰 판형</span>
+                  </div>
+                </li>
+                <li class="offer-summ__item">
+                  <div class="offer-summ__item__box">
+                    <span class="tit">구분</span>
+                    <span class="txt">도서</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- e: 개요-->
+
+          <!-- s: 공연줄거리-->
+          <section class="offer-whole">
+
+            <!-- 소개 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">책소개</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <p class="txt__list">
+                    수천 명의 코러스들을 위해서라도 너는 꼭 성공해야 해!<br /><br />
+
+                    “오디션을 보러 왔어요”<br />
+                    대규모 오디션이 열리고 있는 무대 뒷편, 수십명의 댄서들이 뮤지컬 '프리티 레이디'의 배역을 얻기위해 오디션에 열중하고 있다. 시골 출신의 페기 역시 뮤지컬 댄서가 되는 게
+                    꿈이다. 불황에 빠진 공연계에서 ‘프리티 레이디’라는 작품으로 재기하려는 연출가 줄리안 마쉬가 진행하는 오디션에 응시하려 하지만 오디션 시간에 늦게 되어 좌절된다.
+                    참가자들의 장난으로 페기는 남자 탈의실에 들어가게 되고 막 옷을 입고 있던 빌리 롤러를 만난다. 빌리는 도로시와 함께 주연배우다. 빌리는 페기에게 관심을 보인다.
+                  </p>
+                  <!-- 책 정보 상세 wrap ui.js에서 추가 운영서버와 맞게 수정 -->
+                  <iframe width="1115" height="627" src="https://www.youtube.com/embed/o8mLMO6P5-A"
+                    title="[LIVE] 서진과 이정란, 한경arte 더클래식 2023" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                </div>
+              </div>
+
+            </div>
+            <!-- 소개 -->
+
+            <!-- 목차 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">목차</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win is-active">
+                    <div class="txt__list">
+                      <p>
+                        책머리에 | 이 책은 러브스토리다<br /><br />
+
+                        1 나의 글쓰기<br />
+
+                        쓰는 직업, 쓰는 사람<br />
+                        독자란 누구인가<br />
+                        역경을 거쳐 별에 이르도록<br /><br />
+
+                        2 기자로 산다는 것<br />
+                      </p>
+                    </div>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //목차 -->
+            <!-- 책속으로 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">책속으로</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <p>
+                      삶이 그대를 속이면 분노하라.<br>
+                      ---「첫 문장」중에서<br><br>
+
+                      인생은 자전거와 같다. 뒷바퀴를 돌리는 것은 당신의 발이지만 앞바퀴를 돌려 방향을 잡는 것은 당신의 손이며 눈이고 의지이며 정신이다. 당신의 발이 ‘생활’이라는 이름으로 당신을
+                      움직여는 주지만 정작 당신의 손은 호주머니 속에 깊이 박혀 있는지도 모른다. 정작 당신의 눈은 당신 앞에 놓인 길을 바라보지 않고 옆에서 빠른 속도로 지나가는 오토바이들과
+                      스포츠카만 부러운 마음으로 바라볼지도 모른다. 때문에 비록 열심히 페달을 밟고는 있지만 당신이 탄 자전거는 제자리를 맴돌 뿐이다.
+                    </p>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //책속으로 -->
+            <!-- 캐스팅 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">캐스팅</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <p>최호중, 성태준, 김기택, 임진섭, 양승리, 임준혁, 조풍래, 진태화, 최연우</p>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //캐스팅 -->
+            <!-- 사양 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">사양</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <div class="author__info">
+                      <p>48쪽 | 432g | 241*241*10mm</p>
+                    </div>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //사양 -->
+            <!-- 줄거리 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">줄거리</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <p>
+                      “하나의 문이 닫히면 또 하나의 문이 열린다.<br>
+                      그러니 더 이상 고민하지 말고 그냥 재미있게 살아라!”<br><br>
+
+                      30년 동안 정신분석 전문의로 일해 온 김혜남이 벌써 마흔이 된 당신에게 해 주고 싶은 말들을 담은 책이다. 그녀는 지금껏 살면서 한 가지 후회하는 게 있다면 스스로를 너무
+                      닦달하며 인생을 숙제처럼 산 것이라고 말한다. 의사로, 엄마로, 아내로, 며느리로, 딸로 살면서 늘 의무와 책임감에 치여 어떻게든 그 모든 역할을 잘해 내려 애썼고 그러다 보니
+                      정작 누려야 할 삶의 즐거움들을 놓쳐 버렸다는 것이다. 그러다 22년 전 마흔세 살에 파킨슨병 진단을 받으며 비로소 알게 되었다. 자신이 없으면 집안도 병원도 제대로 안 굴러갈
+                      것
+                      같았는데 세상은 너무나 멀쩡히 잘 굴러갔다. 그제야 그녀는 자신의 곁을 지켜 주는 사람들을 다시 보게 되었고, 놓쳐서는 안 될 인생의 소중한 것들이 무엇인지를 돌아보게 되었다.
+                      그래서 벌써 마흔이 되어 버린, 후회 없는 인생을 살고 싶은 사람들에게 말해 주고 싶은 것도 딱 한가지다.
+                    </p>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //줄거리 -->
+            <!-- 관련 자료 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">관련 자료</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <p>
+                      작가 . 김혜남​<br>
+                      1959년 서울에서 태어나 고려대학교 의과대학을 졸업하고 국립 정신병원(현 국립정신건강센터)에서 12년 동안 정신분석 전문의로 일했다. 경희대 의대, 성균관대 의대, 인제대
+                      의대
+                      외래교수이자 서울대 의대 초빙교수로 학생들을 가르쳤고, 김혜남 신경정신과의원 원장으로 환자들을 돌보았다. 80만 부 베스트셀러 《서른 살이 심리학에게 묻다》, 《심리학이 서른
+                      살에게
+                      답하다》를 비롯해, 《나는 정말 너를 사랑하는 걸까?》...​
+                    </p>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //관련 자료 -->
+            <!-- 제작사 리뷰 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">제작사 리뷰</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <p>
+                      양명(陽明) 왕수인(王守仁)은 1472년에 태어나 1528년 57세의 나이로 세상을 떠난 중국 명나라의 정치인이자 교육자이며 사상가이다. 수인(守仁)은 이름이고, 호(號)는
+                      양명(陽明), 자(字)는 백안(伯安)이다. 35세이던 1506년, 당시 최고 실세 환관인 유근(劉瑾)의 비리를 고발하는 상소문을 올렸다가, 귀주성(貴州省) 용장(龍場)의 말단
+                      관리로 좌천되었다.
+                    </p>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //제작사 리뷰 -->
+            <!-- 저자 소개 -->
+            <div class="tit-line-box__wrap">
+              <div class="tit-line-box_header">
+                <h3 class="offer-summ__tit">저자 소개</h3>
+              </div>
+              <div class="tit-line-box_cont">
+                <div class="tit-line-box__item">
+                  <!-- 더보기 클릭시 is-active 클래스 추가 -->
+                  <div class="tit-line-box__win">
+                    <p>
+                      작가 . 김혜남​<br>
+                      1959년 서울에서 태어나 고려대학교 의과대학을 졸업하고 국립 정신병원(현 국립정신건강센터)에서 12년 동안 정신분석 전문의로 일했다. 경희대 의대, 성균관대 의대, 인제대
+                      의대
+                      외래교수이자 서울대 의대 초빙교수로 학생들을 가르쳤고, 김혜남 신경정신과의원 원장으로 환자들을 돌보았다. 80만 부 베스트셀러 《서른 살이 심리학에게 묻다》
+                    </p>
+                  </div>
+                  <!-- //더보기 클릭시 is-active 클래스 추가 -->
+                </div>
+              </div>
+              <div class="tit-line-box__bottom">
+                <span class="source__txt">출처-예스24</span>
+                <button type="button" class="btn no-line h-auto-btn">더보기<i class="ico ico-add-arrow"></i></button>
+              </div>
+            </div>
+            <!-- //저자 소개 -->
+
+
+            <div class="mt_6">
+              <div class="hashtag-block">
+                <a href="#" class="hashtag"># 김아미</a>
+                <a href="#" class="hashtag"># 버키</a>
+                <a href="#" class="hashtag"># NKSIN</a>
+                <a href="#" class="hashtag"># 엔케이신</a>
+                <a href="#" class="hashtag"># 시베리아</a>
+                <a href="#" class="hashtag"># 갤러리애프터눈</a>
+                <a href="#" class="hashtag"># 바로크 시대</a>
+              </div>
+            </div>
+          </section>
+          <!-- e: 공연줄거리-->
+
+          <!-- ad-banner -->
+          <div class="ad-banner-wrap">
+            <div class="ad-banner swiper">
+              <div class="ad-banner__list swiper-wrapper">
+                <a href="#" class="ad-banner__item swiper-slide">
+                  <!-- Img PC -->
+                  <!-- 띠 배너  pc :  1824 * 300 mobile :  656 * 256 -->
+                  <img src="../assets/images/@temp/@ad_banner_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                  <!-- Img PC 2 -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                  <!-- Img Tablet -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                  <!-- Img Tablet 2 -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                  <!-- Img Mobile -->
+                  <img src="../assets/images/@temp/@ad_banner_mobile@2x.png" alt="banner"
+                    class="ad-banner__img img--mo" />
+                </a>
+                <a href="#" class="ad-banner__item swiper-slide">
+                  <img src="../assets/images/@temp/@ad_banner02_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                  <!-- <img src="../assets/images/@temp/@ad_banner02_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner02_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner02_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                  <img src="../assets/images/@temp/@ad_banner02_mobile@2x.png" alt="banner"
+                    class="ad-banner__img img--mo" />
+                </a>
+              </div>
+            </div>
+            <div class="ad-banner__pagination"></div>
+          </div>
+          <!--// ad-banner -->
+
+          <!-- 전문가리뷰/회원리뷰 -->
+          <div class="offer-review__full" id="section_review01">
+            <!-- 리뷰가 없는 경우 -->
+            <!-- <div class="offer-review-none-mo show-mo">
+              <p class="offer-review-none-mo__txt">해당 공연에 대한 회원 리뷰가<br />아직 없습니다!</p>
+              <div class="offer-review-none-mo__btnbox">
+                <button type="button" class="btn-rect bg-primary">리뷰 쓰기</button>
+              </div>
+            </div> -->
+            <!-- //리뷰가 없는 경우 -->
+            <div class="offer-review__header">
+              <div class="tab bg-type">
+                <ul class="tab__list ml__8" data-tab="tab-list">
+                  <!-- tab  : button 활성화 'is-active' -->
+                  <li class="tab__item"><a href="#" class="tab__btn is-active" data-tab-btn="tab01">전문가 리뷰<span
+                        class="num">(<em>20</em>)
+                      </span></a> </li>
+                  <li class="tab__item"><a href="#" class="tab__btn" data-tab-btn="tab02">회원
+                      리뷰<span class="num">(<em>101</em>)
+                      </span></a></li>
+                </ul>
+              </div>
+              <div class="offer-summ__top show-mo">
+                <h3 class="offer-summ__tit">전문가 리뷰</h3>
+              </div>
+              <button type="button" class="btn-rect size-sm bg-primary show-pc">리뷰 쓰기</button>
+            </div>
+            <div class="offer-review__cont">
+              <div class="offer-review-cont__wrap">
+                <ul class="offer-review-list">
+                  <li class="offer-review__item">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- s : 전문가리뷰 -->
+                          <span class="tag">arte</span>
+                          <span class="grade">
+                            <!-- 뱃지가 두개일 경우 p2, 세개일 경우 p3 클래스 추가 -->
+                            <span class="badge-star"></span>
+                          </span>
+                          <!-- e : 전문가리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="offer-review__item">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- s : 전문가리뷰 -->
+                          <span class="tag">arte</span>
+                          <span class="grade">
+                            <!-- 뱃지가 두개일 경우 p2, 세개일 경우 p3 클래스 추가 -->
+                            <span class="badge-star p2"></span>
+                          </span>
+                          <!-- e : 전문가리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="offer-review__item">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- s : 전문가리뷰 -->
+                          <span class="tag">arte</span>
+                          <span class="grade">
+                            <!-- 뱃지가 두개일 경우 p2, 세개일 경우 p3 클래스 추가 -->
+                            <span class="badge-star p3"></span>
+                          </span>
+                          <!-- e : 전문가리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="offer-review__item show-pc">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <!-- s : 회원리뷰 -->
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- 회원리뷰인 경우 tag--reverse -->
+                          <span class="tag--reverse">회원</span>
+                          <span class="grade">
+                            <span class="star"><i class="star__point p8"></i></span>
+                            <em class="grade__num">8.0</em>
+                          </span>
+                          <!-- e : 회원리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="offer-review__item show-pc">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <!-- s : 회원리뷰 -->
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- 회원리뷰인 경우 tag--reverse -->
+                          <span class="tag--reverse">회원</span>
+                          <span class="grade">
+                            <span class="star"><i class="star__point p8"></i></span>
+                            <em class="grade__num">8.0</em>
+                          </span>
+                          <!-- e : 회원리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Paging -->
+                <div class="paging">
+                  <!-- PC -->
+                  <a href="#" class="paging__btn paging__btn--first">처음</a>
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap show-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                    <a href="#" class="paging__num">6</a>
+                    <a href="#" class="paging__num">7</a>
+                    <a href="#" class="paging__num">8</a>
+                    <a href="#" class="paging__num">9</a>
+                    <a href="#" class="paging__num">10</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <a href="#" class="paging__btn paging__btn--last">마지막</a>
+                  <!-- Mobile -->
+                  <div class="paging__num-wrap show-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+                <!-- Paging -->
+              </div>
+            </div>
+          </div>
+          <!-- //전문가리뷰/회원리뷰 -->
+
+          <!-- 회원리뷰 -->
+          <div class="offer-review__full show-mo" id="section_review02">
+            <!-- 리뷰가 없는 경우 -->
+            <!-- <div class="offer-review-none-mo show-mo">
+              <p class="offer-review-none-mo__txt">해당 공연에 대한 회원 리뷰가<br />아직 없습니다!</p>
+              <div class="offer-review-none-mo__btnbox">
+                <button type="button" class="btn-rect bg-primary">리뷰 쓰기</button>
+              </div>
+            </div> -->
+            <!-- //리뷰가 없는 경우 -->
+            <div class="offer-review__header">
+              <div class="tab bg-type">
+                <ul class="tab__list ml__8" data-tab="tab-list">
+                  <!-- tab  : button 활성화 'is-active' -->
+                  <li class="tab__item"><a href="#" class="tab__btn is-active" data-tab-btn="tab01">전문가 리뷰<span
+                        class="num">(<em>20</em>)
+                      </span></a> </li>
+                  <li class="tab__item"><a href="#" class="tab__btn" data-tab-btn="tab02">회원
+                      리뷰<span class="num">(<em>101</em>)
+                      </span></a></li>
+                </ul>
+              </div>
+              <div class="offer-summ__top">
+                <h3 class="offer-summ__tit">회원 리뷰</h3>
+              </div>
+              <button type="button" class="btn-rect size-sm bg-primary">리뷰 쓰기</button>
+            </div>
+            <div class="offer-review__cont">
+              <div class="offer-review-cont__wrap">
+                <ul class="offer-review-list">
+                  <li class="offer-review__item">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <!-- s : 회원리뷰 -->
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- 회원리뷰인 경우 tag--reverse -->
+                          <span class="tag--reverse">회원</span>
+                          <span class="grade">
+                            <span class="star"><i class="star__point p8"></i></span>
+                            <em class="grade__num">8.0</em>
+                          </span>
+                          <!-- e : 회원리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="offer-review__item">
+                    <div class="reviewbox">
+                      <div class="reviewbox__summary">
+                        <p class="reviewbox__title">
+                          <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                            매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                        </p>
+                      </div>
+                      <a href="#">
+                        <span class="reviewbox__detail">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                          드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                          역시 믿고 듣는 보이스 입니다 !!
+                          그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                          모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        </span>
+                      </a>
+                      <div class="reviewbox__info">
+                        <div class="reviewbox-by">
+                          <!-- s : 회원리뷰 -->
+                          <span class="byname">내 귀에 캔디</span>
+                          <!-- 회원리뷰인 경우 tag--reverse -->
+                          <span class="tag--reverse">회원</span>
+                          <span class="grade">
+                            <span class="star"><i class="star__point p8"></i></span>
+                            <em class="grade__num">8.0</em>
+                          </span>
+                          <!-- e : 회원리뷰 -->
+                        </div>
+                        <div class="reviewbox-sub">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--view"><em>25</em></span>
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <span class="acc-num acc-num--comment"><em>25</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Paging -->
+                <div class="paging">
+                  <!-- PC -->
+                  <a href="#" class="paging__btn paging__btn--first">처음</a>
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap show-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                    <a href="#" class="paging__num">6</a>
+                    <a href="#" class="paging__num">7</a>
+                    <a href="#" class="paging__num">8</a>
+                    <a href="#" class="paging__num">9</a>
+                    <a href="#" class="paging__num">10</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <a href="#" class="paging__btn paging__btn--last">마지막</a>
+                  <!-- Mobile -->
+                  <div class="paging__num-wrap show-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+                <!-- Paging -->
+              </div>
+            </div>
+          </div>
+          <!-- //회원리뷰 -->
+
+          <!-- concert-rating -->
+          <ul class="rating-wrap">
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">전문가 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="badge-box">
+                  <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
+                  <span class="badge-star"></span>
+                </div>
+                <span class="rating-text">읽을 만한 책</span>
+              </div>
+            </li>
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">회원 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="rating-score">
+                  <span class="rating-score__current">8.0</span>
+                  <span class="rating-score__total">/10</span>
+                </div>
+              </div>
+              <div class="rating-box">
+                <div class="star-box">
+                  <!-- [D] 0.5단위일 경우 p5 클래스 추가 / 1단위일 경우 p10 클래스 추가 -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p5"></i></span>
+                </div>
+                <span class="rating-text">총 68명</span>
+              </div>
+            </li>
+            <li class="raito">
+              <p class="rating-title">회원 평점 분포</p>
+              <ul class="graph">
+                <li>
+                  <span class="ing-txt">10%</span>
+                  <div class="total-bar">
+                    <!-- 평점 비율 height 적용-->
+                    <span class="ing-bar" style="height: 10%;"></span>
+                  </div>
+                  <span class="age">9~10점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">2%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 2%;"></span>
+                  </div>
+                  <span class="age">7~8점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">5~6점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">40%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 40%;"></span>
+                  </div>
+                  <span class="age">3~4점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">1~2점</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="rating-wrap">
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">전문가 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="badge-box">
+                  <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
+                  <span class="badge-star p2"></span>
+                </div>
+                <span class="rating-text">혼자 보기 아까운 책</span>
+              </div>
+            </li>
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">회원 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="rating-score">
+                  <span class="rating-score__current">8.0</span>
+                  <span class="rating-score__total">/10</span>
+                </div>
+              </div>
+              <div class="rating-box">
+                <div class="star-box">
+                  <!-- [D] 0.5단위일 경우 p5 클래스 추가 / 1단위일 경우 p10 클래스 추가 -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p5"></i></span>
+                </div>
+                <span class="rating-text">총 68명</span>
+              </div>
+            </li>
+            <li class="raito">
+              <p class="rating-title">회원 평점 분포</p>
+              <ul class="graph">
+                <li>
+                  <span class="ing-txt">10%</span>
+                  <div class="total-bar">
+                    <!-- 평점 비율 height 적용-->
+                    <span class="ing-bar" style="height: 10%;"></span>
+                  </div>
+                  <span class="age">9~10점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">2%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 2%;"></span>
+                  </div>
+                  <span class="age">7~8점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">5~6점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">40%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 40%;"></span>
+                  </div>
+                  <span class="age">3~4점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">1~2점</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="rating-wrap">
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">전문가 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="badge-box">
+                  <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
+                  <span class="badge-star p3"></span>
+                </div>
+                <span class="rating-text">소장할 가치가 있는 책</span>
+              </div>
+            </li>
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">회원 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="rating-score">
+                  <span class="rating-score__current">8.0</span>
+                  <span class="rating-score__total">/10</span>
+                </div>
+              </div>
+              <div class="rating-box">
+                <div class="star-box">
+                  <!-- [D] 0.5단위일 경우 p5 클래스 추가 / 1단위일 경우 p10 클래스 추가 -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p5"></i></span>
+                </div>
+                <span class="rating-text">총 68명</span>
+              </div>
+            </li>
+            <li class="raito">
+              <p class="rating-title">회원 평점 분포</p>
+              <ul class="graph">
+                <li>
+                  <span class="ing-txt">10%</span>
+                  <div class="total-bar">
+                    <!-- 평점 비율 height 적용-->
+                    <span class="ing-bar" style="height: 10%;"></span>
+                  </div>
+                  <span class="age">9~10점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">2%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 2%;"></span>
+                  </div>
+                  <span class="age">7~8점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">5~6점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">40%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 40%;"></span>
+                  </div>
+                  <span class="age">3~4점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">1~2점</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="rating-wrap">
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">전문가 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="badge-box">
+                  <!-- 리뷰가 없으면 p0 추가 -->
+                  <span class="badge-star p0"></span>
+                </div>
+                <span class="rating-text">평점이 없습니다.</span>
+              </div>
+            </li>
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">회원 평점
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+                <div class="rating-score">
+                  <span class="rating-score__current">8.0</span>
+                  <span class="rating-score__total">/10</span>
+                </div>
+              </div>
+              <div class="rating-box">
+                <div class="star-box">
+                  <!-- [D] 0.5단위일 경우 p5 클래스 추가 / 1단위일 경우 p10 클래스 추가 -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p5"></i></span>
+                </div>
+                <span class="rating-text">총 68명</span>
+              </div>
+            </li>
+            <li class="raito">
+              <p class="rating-title">회원 평점 분포</p>
+              <ul class="graph">
+                <li>
+                  <span class="ing-txt">10%</span>
+                  <div class="total-bar">
+                    <!-- 평점 비율 height 적용-->
+                    <span class="ing-bar" style="height: 10%;"></span>
+                  </div>
+                  <span class="age">9~10점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">2%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 2%;"></span>
+                  </div>
+                  <span class="age">7~8점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">5~6점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">40%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 40%;"></span>
+                  </div>
+                  <span class="age">3~4점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">1~2점</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!--// concert-rating -->
+
+          <!-- 한줄평 쓰기 -->
+          <div class="concert-review" id="section_comment">
+            <div class="concert-review__head">
+              <p class="rating-total">총 345개</p>
+              <button type="button" class="btn-rect size-sm bg-primary" data-pop-open="popupComment">한줄평 쓰기</button>
+            </div>
+
+            <div class="swiper review-thum">
+              <ul class="review-thum__wrap swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="../assets/images/@temp/@c11_review_thum01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                  <img src="../assets/images/@temp/@c11_review_thum01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                  <img src="../assets/images/@temp/@c11_review_thum01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                  <img src="../assets/images/@temp/@c11_review_thum01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                  <!-- [D] 작성된 리뷰가 없을 경우 -->
+                  <div class="review-thum_msg">
+                    <span class="review-thum_text">작성된 사진 리뷰가<br />없습니다.</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <img src="../assets/images/@temp/@c11_review_thum01.png" alt="">
+                  <button type="button" class="all-review" data-pop-open="popupGallery">더보기<em>+</em></button>
+                </li>
+              </ul>
+            </div>
+
+            <!--List -->
+            <div class="concert-review-wrap">
+              <ul class="concert-review-list">
+                <li class="concert-review__item">
+                  <div class="one-line">
+                    <div class="concert-review__thumbnail">
+                      <ul>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb10.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb11.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb12.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb13.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb14.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="setting" data-role="visible_wrap">
+                        <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                          data-role="visible_btn"></button>
+                        <div class="setting__layer" data-role="visible_cont">
+                          <ul>
+                            <li><a href="#">신고하기</a></li>
+                          </ul>
+                          <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- 아코디언 버튼 클릭시 is-active 추가 -->
+                      <span class="one-line__detail is-active">
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                      </span>
+                    </div>
+                    <div class="one-line__info">
+                      <div class="one-line-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p9"></i></span>
+                          <em class="grade__num">4.0</em>
+                        </span>
+                      </div>
+                      <div class="one-line-sub">
+                        <div class="one-line-sub__box">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                        <div class="one-line-sub__box">
+                          <!-- 클릭시 active 클래스가 붙는다. -->
+                          <button type="button" class="btn no-line h-add-btn"><span class="arrow-txt">한줄평
+                              닫기</span>
+                            <i class="ico ico-above"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="concert-review__item">
+                  <div class="one-line">
+                    <div class="concert-review__thumbnail">
+                      <ul>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb10.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb11.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="setting" data-role="visible_wrap">
+                        <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                          data-role="visible_btn"></button>
+                        <div class="setting__layer" data-role="visible_cont">
+                          <ul>
+                            <li><a href="#">신고하기</a></li>
+                          </ul>
+                          <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- 아코디언 버튼 클릭시 is-active 추가 -->
+                      <span class="one-line__detail">
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </span>
+                    </div>
+                    <div class="one-line__info">
+                      <div class="one-line-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p9"></i></span>
+                          <em class="grade__num">4.0</em>
+                        </span>
+                      </div>
+                      <div class="one-line-sub">
+                        <div class="one-line-sub__box">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                        <div class="one-line-sub__box">
+                          <!-- 클릭시 active 클래스가 붙는다. -->
+                          <button type="button" class="btn no-line h-add-btn is-active"><span class="arrow-txt">한줄평
+                              열기</span>
+                            <i class="ico ico-above"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- 본인 작성글 수정하기 삭제하기 케이스 추가 -->
+                <li class="concert-review__item">
+                  <div class="one-line">
+                    <div class="concert-review__thumbnail">
+                      <ul>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb10.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb11.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="setting" data-role="visible_wrap">
+                        <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                          data-role="visible_btn"></button>
+                        <div class="setting__layer" data-role="visible_cont">
+                          <ul>
+                            <li><a href="#">수정하기</a></li>
+                            <li><a href="#">삭제하기</a></li>
+                          </ul>
+                          <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- 아코디언 버튼 클릭시 is-active 추가 -->
+                      <span class="one-line__detail">
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </span>
+                    </div>
+                    <div class="one-line__info">
+                      <div class="one-line-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p9"></i></span>
+                          <em class="grade__num">4.0</em>
+                        </span>
+                      </div>
+                      <div class="one-line-sub">
+                        <div class="one-line-sub__box">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                        <div class="one-line-sub__box">
+                          <!-- 클릭시 active 클래스가 붙는다. -->
+                          <button type="button" class="btn no-line h-add-btn is-active"><span class="arrow-txt">한줄평
+                              열기</span>
+                            <i class="ico ico-above"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- 본인 작성글 수정하기 삭제하기 케이스 추가 -->
+              </ul>
+              <!-- Paging -->
+              <div class="paging">
+                <!-- PC -->
+                <a href="#" class="paging__btn paging__btn--first">처음</a>
+                <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                <div class="paging__num-wrap show-pc">
+                  <a href="#" class="paging__num paging__num--active">1</a>
+                  <a href="#" class="paging__num">2</a>
+                  <a href="#" class="paging__num">3</a>
+                  <a href="#" class="paging__num">4</a>
+                  <a href="#" class="paging__num">5</a>
+                  <a href="#" class="paging__num">6</a>
+                  <a href="#" class="paging__num">7</a>
+                  <a href="#" class="paging__num">8</a>
+                  <a href="#" class="paging__num">9</a>
+                  <a href="#" class="paging__num">10</a>
+                </div>
+                <a href="#" class="paging__btn paging__btn--next">다음</a>
+                <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                <!-- Mobile -->
+                <div class="paging__num-wrap show-mo">
+                  <a href="#" class="paging__more">더보기</a>
+                </div>
+              </div>
+              <!-- Paging -->
+            </div>
+            <!--//List -->
+
+            <div class="editor-paging">
+              <a href="#" class="paging__list">
+                <span class="paging__list__text">LIST</span>
+              </a>
+            </div>
+          </div>
+          <!--// 한줄평 쓰기 -->
+          <!-- <div class="poll">
+            컨텐츠 추가예정<br />
+            아르떼 폴
+          </div> -->
+        </section>
+
+        <!-- s: Full 지도-->
+        <!-- concert-loca -->
+        <!-- <div class="concert-loca">
+          <strong class="concert-loca__title mo">예술의 전당 CJ 토월극장</strong>
+          <div class="concert-loca__map">
+            <img src="../assets/images/@temp/@c11_map_01.png" alt="">
+          </div>
+          <div class="concert-loca__info">
+            <div class="concert-loca__info-inner">
+              <strong class="concert-loca__info-title">예술의 전당 CJ 토월극장</strong>
+              <ul class="concert-loca__info-title-list">
+                <li>
+                  <span>주소</span>
+                  <p>서울틀별시 서초구 남부순환로 2406 (서초동)​</p>
+                </li>
+                <li>
+                  <span>홈페이지</span>
+                  <p>www.sac.or.kr​</p>
+                </li>
+                <li>
+                  <span>시설특성</span>
+                  <p>국립</p>
+                </li>
+                <li>
+                  <span>공연장수</span>
+                  <p>2</p>
+                </li>
+                <li>
+                  <span>객석수</span>
+                  <p>1000</p>
+                </li>
+                <li>
+                  <span>개관연도</span>
+                  <p>2002</p>
+                </li>
+              </ul>
+              <div class="concert-loca__info-bottom">
+                <div class="concert-loca__info-bottom-left">
+                  <ul class="concert-loca__kopis">
+                    <li>KOPIS (공연예술통합전산망)</li>
+                    <li>http://www.kopis.or.kr</a></li>
+                  </ul>
+                  <p class="concert-loca__info-update">
+                    본 정보는 주최 측의 사정에 따라 변경될 수 있습니다.​<br />
+                    최종 업데이트 2022. 12. 05
+                  </p>
+                </div>
+                <a href="https://www.kopis.or.kr/por/cs/modinfo/csModInfoAdd.do?menuId=MNU_00038" target="_blank"
+                  class="concert-loca__report">정보 오류 수정 요청</a>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+        <!--// concert-loca -->
+        <!-- e: Full 지도-->
+
+        <div class="view-wrap">
+          <!-- s: 작가의 다른 책-->
+          <!-- <div class="offer__wrap">
+            <div class="art-vt__container">
+              <div class="offer-art-vt__titbox">
+                <h2 class="offer-summ__tit">작가의 다른 책</h2>
+                <p class="offer-art-vt__sub">동일한 작가가 쓴 다른 책</p>
+              </div>
+              <div class="art-vt-slide__wrap art-vt-slide art-vt-writer">
+                <div class="art-vt-slide__content swiper art-vt-grid__xs">
+                  <ul class="art-vt-slide__box swiper-wrapper">
+                    <li class="art-vt-grid__item swiper-slide">
+                      <button type="button" class="btn-fav" aria-label="Like"></button>
+                      <div class="art-vt-block">
+                        <a href="#" class="art-vt-block__link">
+                          <div class="thumb-img">
+                            <span class="tag-gen tag-gen--gy">책</span>
+                            <span class="img-holder"><img src="../assets/images/@temp/@temp_book_07.jfif" alt=""></span>
+                          </div>
+                          <div class="art-vt-block__titbox">
+                            <p class="art-vt-block__title">나도 모르는 내 마음의 심리법칙</p>
+                          </div>
+                        </a>
+                        <div class="art-vt-block__inbox">
+                          <ul class="art-info">
+                            <li>야오야오</li>
+                            <li>미디어숲</li>
+                          </ul>
+                          <div class="art-vt-block__tags">
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-vt-grid__item swiper-slide">
+                      <button type="button" class="btn-fav" aria-label="Like"></button>
+                      <div class="art-vt-block">
+                        <a href="#" class="art-vt-block__link">
+                          <div class="thumb-img">
+                            <span class="tag-gen tag-gen--gy">책</span>
+                            <span class="img-holder"><img src="../assets/images/@temp/@temp_book_08.jfif" alt=""></span>
+                          </div>
+                          <div class="art-vt-block__titbox">
+                            <p class="art-vt-block__title">나도 모르는 내 마음의 심리법칙</p>
+                          </div>
+                        </a>
+                        <div class="art-vt-block__inbox">
+                          <ul class="art-info">
+                            <li>야오야오</li>
+                            <li>미디어숲</li>
+                          </ul>
+                          <div class="art-vt-block__tags">
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-vt-grid__item swiper-slide">
+                      <button type="button" class="btn-fav" aria-label="Like"></button>
+                      <div class="art-vt-block">
+                        <a href="#" class="art-vt-block__link">
+                          <div class="thumb-img">
+                            <span class="tag-gen tag-gen--gy">책</span>
+                            <span class="img-holder"><img src="../assets/images/@temp/@temp_book_03.png" alt=""></span>
+                          </div>
+                          <div class="art-vt-block__titbox">
+                            <p class="art-vt-block__title">나도 모르는 내 마음의 심리법칙</p>
+                          </div>
+                        </a>
+                        <div class="art-vt-block__inbox">
+                          <ul class="art-info">
+                            <li>야오야오</li>
+                            <li>미디어숲</li>
+                          </ul>
+                          <div class="art-vt-block__tags">
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="art-vt-slide__pagination"></div>
+              </div>
+            </div>
+          </div> -->
+          <!-- e: 작가의 다른 책-->
+
+          <div class="map-wrap show-pc">
+            <div class="map-wrap__item">
+              <div class="concert-loca__box">
+                <div class="concert-loca__image"><img src="../assets/images/yes24_logo.png" alt=""></div>
+                <span>예스 24</span>
+                <span><a href="http://www.yes24.com">http://www.yes24.com</a></span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--// END -->
+      </div>
+      <!--// Container -->
+
+      <!-- Footer -->
+      <footer class="footer" id="footer"></footer>
+      <!--// Footer -->
+
+      <!-- (확인용)댓글 관련 팝업 : 각 파일에서 코드 확인 필요-->
+      <div class="pop1">후기 작성 : PW_I_ON_CP_01_00.html</div>
+      <div class="pop2">후기 이미지 모아보기 : PW_I_ON_CP_02_00.html</div>
+      <!--// (확인용)댓글 관련 팝업 -->
+
+    </div>
+
+    <!-- Script -->
+    <script src="../assets/js/libs/jquery.min.js"></script>
+    <script src="../assets/js/libs/swiper.min.js"></script>
+    <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+    <script src="../assets/js/ui.js"></script>
+    <!--// Script -->
+    <script>
+      layoutHeader({
+        type: 3,
+        menu1: 4,
+        menu2: 3,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        //팝업 확인용 load
+        $(".pop1").load("PW_I_ON_CP_01_00.html .pop-wrap");
+        $(".pop2").load("PW_I_ON_CP_02_00.html .pop-wrap");
+
+        const textBox = document.querySelectorAll('.tit-line-box__win');
+        const moreBtn = document.querySelectorAll('.btn.no-line.h-auto-btn');
+        const arrow = document.querySelectorAll('.tit-line-box__bottom .ico-add-arrow');
+
+        for (let i = 0; i < moreBtn.length; i++) {
+          moreBtn[i].addEventListener('click', function () {
+            if (!textBox[i].classList.contains('is-active')) {
+              textBox[i].classList.add('is-active');
+              arrow[i].classList.add('on');
+            } else {
+              textBox[i].classList.remove('is-active');
+              arrow[i].classList.remove('on');
+
+            }
+
+          });
+        }
+      });
+    </script>
+  </div>
+</body>
+
+</html>

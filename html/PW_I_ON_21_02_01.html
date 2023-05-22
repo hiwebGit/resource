@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : 마이페이지</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="my-container">
+        <!-- snb -->
+        <div class="my-snb-section">
+          <div class="my-namebox">
+            <span class="my-namebox__name">간만에카페인간만에카</span>
+          </div>
+          <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <div class="my-lnb">
+            <ul class="my-lnb__list">
+              <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
+              <!-- <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#" class="is-active">음악·공연·전시·책</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
+              </li>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">작성 글</a></li>
+                  <li><a href="#">작성 댓글·답글</a></li>
+                  <li><a href="#">임시저장 글</a></li>
+                </ul>
+              </li> -->
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep" data-accordion="btn">나의 정보</a>
+              </li>
+              <li class="my-lnb__item">
+                <a href="#" class="my-lnb__1dep">1:1 문의</a>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+        <!--// snb -->
+        <div class="my-content">
+          <!-- summary box -->
+          <div class="my-summary">
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">작성글</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">작성댓글</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">좋아요</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+          </div>
+          <!--// summary box -->
+
+          <!-- no data
+          <div class="artbox-nodata">
+            <p class="artbox-nodata__text">회원님, 아직 좋아한 콘텐츠가 없네요.<br />한 번 찾으러 가 볼까요?</p>
+            <div class="artbox-nodata__links">
+              <a href="#" class="artbox-nodata__btn">음악 공연 정보</a>
+              <a href="#" class="artbox-nodata__btn">공연·영화 정보</a>
+              <a href="#" class="artbox-nodata__btn">전시 정보</a>
+              <a href="#" class="artbox-nodata__btn">책 정보</a>
+            </div>
+          </div>
+          // no data -->
+
+          <!-- List -->
+          <h2 class="sec-tit show-mo">좋아한 콘텐츠 > 음악·공연·전시·도서</h2>
+
+          <!-- 작성된 글이 없을 경우 추가-->
+          <div class="no-like">좋아요한 콘텐츠가 없습니다.</div>
+          <!-- //작성된 글이 없을 경우 추가-->
+
+          <!-- List -->
+          <div class="pdt-grid-wrap">
+            <div class="pdt-grid pdt-grid--col4">
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉 </a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <!-- 활성화시 'is-fav' -->
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item : arte's pick -->
+              <div class="pdt-grid__item">
+                <div class="pdt pdt--pick">
+                  <div class="pdt__head">
+                    <strong class="pdt__stit">ARTE’s Pick </strong>
+                    <p class="pdt__stit-desc"><span class="hide-mo">이번 주 놓쳐선 안될 공연 </span>TOP 5</p>
+                  </div>
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb03.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item : arte's pick -->
+              <!-- item : book -->
+              <div class="pdt-grid__item">
+                <!-- book type 'pdt--sm'추가 -->
+                <div class="pdt pdt--sm">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_book_02.png" alt="">
+                      </span>
+                      <span class="tag-gen tag-gen--gy">책</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                      <ul class="art-info">
+                        <li>이치조 미사키</li>
+                        <li>모모</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item : book -->
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item : book -->
+              <div class="pdt-grid__item">
+                <div class="pdt pdt--sm">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_book_04.png" alt="">
+                      </span>
+                      <span class="tag-gen tag-gen--gy">책</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">오늘 밤, 세계에서 이 사랑이 사라진다 해도</a>
+                      <ul class="art-info">
+                        <li>김연수</li>
+                        <li>문학동네</li>
+                      </ul>
+                      <div class="pdt__status">
+                        <span class="tag-gen-s w-auto">책</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p8"></i></span>
+                          <em class="grade__num">8.0</em>
+                        </span>
+                        <button type="button" class="btn-fav btn-fav--gy" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item : book -->
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb03.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                        말줄임</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item : arte's pick -->
+              <div class="pdt-grid__item">
+                <div class="pdt pdt--pick">
+                  <div class="pdt__head">
+                    <strong class="pdt__stit">ARTE’s Pick </strong>
+                    <p class="pdt__stit-desc"><span class="hide-mo">이번 주 놓쳐선 안될 공연 </span>TOP 5</p>
+                  </div>
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb04.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item : arte's pick -->
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item -->
+              <div class="pdt-grid__item">
+                <div class="pdt">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                      </span>
+                      <span class="tag-gen">연극</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                        말줄임</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item -->
+              <!-- item : book -->
+              <div class="pdt-grid__item">
+                <!-- book type 'pdt--sm'추가 -->
+                <div class="pdt pdt--sm">
+                  <div class="pdt__card">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder">
+                        <img src="../assets/images/@temp/@temp_book_01.png" alt="">
+                      </span>
+                      <span class="tag-gen tag-gen--gy">책</span>
+                    </a>
+
+                    <div class="pdt__inbox">
+                      <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                        말줄임</a>
+                      <ul class="art-info">
+                        <li>2022. 03. 16 ~2022. 11. 27</li>
+                        <li>잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <button type="button" class="btn-fav btn-fav--wt is-fav" aria-label="Like"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// item : book -->
+            </div>
+
+            <!-- Paging -->
+            <div class="paging">
+              <!-- PC -->
+              <a href="#" class="paging__btn paging__btn--first">처음</a>
+              <a href="#" class="paging__btn paging__btn--prev">이전</a>
+              <div class="paging__num-wrap paging-pc">
+                <a href="#" class="paging__num paging__num--active">1</a>
+                <a href="#" class="paging__num">2</a>
+                <a href="#" class="paging__num">3</a>
+                <a href="#" class="paging__num">4</a>
+                <a href="#" class="paging__num">5</a>
+                <a href="#" class="paging__num">6</a>
+                <a href="#" class="paging__num">7</a>
+                <a href="#" class="paging__num">8</a>
+                <a href="#" class="paging__num">9</a>
+                <a href="#" class="paging__num">10</a>
+              </div>
+              <a href="#" class="paging__btn paging__btn--next">다음</a>
+              <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+              <!-- Mobile -->
+              <div class="paging__num-wrap paging-mo">
+                <a href="#" class="paging__more">더보기</a>
+              </div>
+            </div>
+            <!-- Paging -->
+          </div>
+          <!--// List -->
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+
+  <script>
+    layoutHeader({
+      type: 2,
+      menu1: 8,
+      menu2: 1,
+    });
+  </script>
+
+  <!--// Script -->
+</body>
+
+</html>

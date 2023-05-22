@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>(팝업) 비디오 팝업 | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupVideo">(팝업) 비디오 팝업</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 비디오 팝업 -->
+    <section class="pop-wrap pop-video" data-pop="popupVideo">
+      <div class="pop bg-light mo-full ">
+        <div class="pop__head hide-pc">
+          <h2 class="pop__head-title">비디오 팝업</h2>
+          <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+        </div>
+        <div class="pop__inner pop-comment__inner swiper">
+          <!-- <div class="pop__head hide-pc">
+            <h2 class="pop__head-title">비디오 팝업</h2>
+            <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+          </div> -->
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="thumb-img">
+                <iframe width="912" height="540" src="https://www.youtube.com/embed/Th84afHZ8XA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="pdt__inbox">
+                <p class="pdt__title">성남시립교향악단 금난새_아시아실리콘밸리 성남무빙온 콘서트​</p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb-img">
+                <iframe width="912" height="540" src="https://www.youtube.com/embed/HJ59IWQ-Fd8"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="pdt__inbox">
+                <p class="pdt__title">훈련 포함 멀티 장타​훈련 포함 멀티 장타​훈련 포함 멀티 장타​훈련 포함 멀티 장타​훈련 포함 멀티 장타​</p>
+              </div>
+            </li>
+
+          </ul>
+          <button type="button" class="pop__close is-top" data-label="닫기" data-pop-btn="close"></button>
+        </div>
+        <div class="swiper-controls">
+          <div class="swiper-pagination"></div>
+          <button type="button" class="swiper--btn swiper-prev"><span class="blind">이전</span></button>
+          <button type="button" class="swiper--btn swiper-next"><span class="blind">다음</span></button>
+        </div>
+      </div>
+    </section>
+    <!-- 비디오 팝업 -->
+
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    $(function () {
+      //popup test
+      $('[data-pop-open=popupVideo]').trigger('click');
+    })
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      function artistVodPopupSwiper() {
+        var artist_vod_popup_swiper = new Swiper(".pop-video .pop-comment__inner.swiper", {
+          loop: true,
+          navigation: {
+            nextEl: ".pop-video .swiper-next",
+            prevEl: ".pop-video .swiper-prev",
+          },
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          breakpoints: {
+            768: {
+              pagination: {
+                el: ".pop-video .pagination_bullet",
+                type: 'bullets',
+              },
+              spaceBetween: 16,
+              speed: 100,
+            }
+          },
+        });
+      }
+      artistVodPopupSwiper();
+    });
+  </script>
+</body>
+
+</html>

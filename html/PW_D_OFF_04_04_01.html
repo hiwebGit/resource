@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : arte TALK</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- page title -->
+      <div class="headline">
+        <h1 class="headline__title">Notice & Event</h1>
+      </div>
+      <!--// page title -->
+      <div class="content">
+        <!-- START -->
+        <div class="view-wrap view-wrap__detail">
+          <div class="editor-section">
+            <div class="editor-info-section">
+              <h2 class="editor-info__title">사상 최고 매출 찍고...성장세 탄 K-뮤지컬</h2>
+              <div class="editor-info__util">
+                <div class="art-info-sub">
+                  <span class="text-date">2022.10.20</span>
+                  <div class="access-nums">
+                    <span class="acc-num acc-num--view"><em>25</em></span>
+                  </div>
+                </div>
+                <button type="button" class="btn-share" aria-label="Share"></button>
+              </div>
+            </div>
+            <!-- s: 에디터등록영역 -->
+            <div class="view-editor">
+              <img src="../assets/images/@temp/@notice_img01.jpg" />
+              <br><br>
+              <p>
+                2022년 뮤지컬 시장의 역대 최고 티켓 판매액 기록은 하루 아침에 일어난 ‘기적’이 아니다.
+                2001년 당도해 한국 뮤지컬의 산업화를 이끈 ‘오페라의 유령’ 이후 20여년간 시기마다 극적 성장의 계기가 마련됐다.
+                <br><br>
+
+                원종원 교수는 “뮤지컬 시장은 경제 위기와 코로나19 팬데믹 등 몇 번의 예측할 수 없던 시기를 제외하면 꾸준한 성장을 이어왔다”며 “4000억원 시장 돌파는 뮤지컬이 잠재적 성장
+                가능성이 높은 문화산업 장르라를 것을 보여준 것으로, 느닷없는 성과가 아니라 지속적 성장의 결과다”라고 설명했다.
+
+                <br><br>
+                지난해 뮤지컬 시장에서 나타난 중요한 특징 중 하나는 창작뮤지컬이 대폭 늘었다는 점이다. 올해로 세 번째 시즌을 맞은 EMK뮤지컬컴퍼니의 ‘웃는 남자’를 필두로 ‘엘리자벳’,
+                ‘마타하리’, ‘서편제’ 등의 작품이 시장 회복에 중요한 역할을 했다. 대극장 뿐만 아니라, ‘프리다’, ‘쇼맨_어느 독재자의 네 번째 대역배우’, ‘렛미플라이’ 등 중소극장 창작
+                뮤지컬도 약진했다.
+              </p>
+              <!-- 태그추가 -->
+              <div class="mt_6">
+              <div class="hashtag-block">
+                <a href="#" class="hashtag"># 김아미</a>
+                <a href="#" class="hashtag"># 버키</a>
+                <a href="#" class="hashtag"># NKSIN</a>
+                <a href="#" class="hashtag"># 엔케이신</a>
+                <a href="#" class="hashtag"># 시베리아</a>
+                <a href="#" class="hashtag"># 갤러리애프터눈</a>
+                <a href="#" class="hashtag"># 바로크 시대</a>
+              </div>
+            </div>
+            </div>
+            
+            <!-- e: 에디터등록영역 -->
+          </div>
+          <div class="editor-paging">
+            <div class="editor-paging__right">
+              <a href="#" class="btn-arrow__left">PREV</a>
+              <a href="#" class="btn-arrow__next">NEXT</a>
+            </div>
+            <div class="editor-paging__left">
+              <a href="#" class="paging__list">
+                <span class="paging__list__text">LIST</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--// END -->
+      </div>
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 3,
+      menu1: 5,
+      menu2: 3,
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".faq dt").on("click", function () {
+        $(this).parent().parent().toggleClass("on");
+      })
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : artist DB</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretend ard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- Full KV    -->
+      <div class="page-kv kv-artist-db-wrapper">
+        <div class="swiper kv-swiper case04 kv-artist-db" data-slider="curation" data-curation-style="active-bigger"
+          data-curation-nav="preview" data-swiper='{
+            "slidesPerView": "auto",
+            "pagination": {
+              "type": "fraction"
+            },
+            "autoplay": true,
+            "touchRatio": 0.2,
+            "centeredSlides": true,
+            "loop":true,
+            "navigation": true,
+            "breakpoints": {
+            "768": {
+              "spaceBetween": 120
+              }
+            }
+          }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="kv-swiper__img">
+                <a href="#none">
+                  <img src="../assets/images/@temp/@artist_db_result.png" alt="kv swiper thumbnail">
+                </a>
+              </div>
+              <div class="kv-swiper__text">
+                <a href="#none">
+                  <p class="kv-swiper__title--intro">피아노 연주가</p>
+                  <h3 class="kv-swiper__title">임윤찬</h3>
+                  <p class="kv-swiper__title--sub">세계를 놀라게 한 차세대 스타 피아니스트</p>
+                  <p class="kv-swiper__description">제16회 반클라이번 국제 피아노 콩쿠르 우승 (2022년)<br>윤이상 국제음악콩쿠르 1위 (2019년) </p>
+                </a>
+                <div class="art-info-sub">
+                  <span class="text-date">2022.11.24</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="kv-swiper__img">
+                <a href="#none">
+                  <img src="../assets/images/@temp/@kv1_roll03.jpg" alt="kv swiper thumbnail">
+                </a>
+              </div>
+              <div class="kv-swiper__text">
+                <a href="#none">
+                  <p class="kv-swiper__title--intro">피아노 연주가</p>
+                  <h3 class="kv-swiper__title">임윤찬</h3>
+                  <p class="kv-swiper__title--sub">세계를 놀라게 한 차세대 스타 피아니스트</p>
+                  <p class="kv-swiper__description">제16회 반클라이번 국제 피아노 콩쿠르 우승 (2022년)<br>윤이상 국제음악콩쿠르 1위 (2019년) </p>
+                </a>
+                <div class="art-info-sub">
+                  <span class="text-date">2022.11.24</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="kv-swiper__img">
+                <a href="#none">
+                  <img src="../assets/images/@temp/@temp_thumb31.jpg" alt="kv swiper thumbnail">
+                </a>
+              </div>
+              <div class="kv-swiper__text">
+                <a href="#none">
+                  <p class="kv-swiper__title--intro">피아노 연주가</p>
+                  <h3 class="kv-swiper__title">임윤찬</h3>
+                  <p class="kv-swiper__title--sub">세계를 놀라게 한 차세대 스타 피아니스트</p>
+                  <p class="kv-swiper__description">제16회 반클라이번 국제 피아노 콩쿠르 우승 (2022년)<br>윤이상 국제음악콩쿠르 1위 (2019년) </p>
+                </a>
+                <div class="art-info-sub">
+                  <span class="text-date">2022.11.24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls">
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper--btn swiper-prev">이전<span class="swiper--btn__bg"></span></button>
+            <button type="button" class="swiper--btn swiper-next">다음<span class="swiper--btn__bg"></span></button>
+          </div>
+        </div>
+      </div>
+      <!--// Full KV -->
+
+      <!-- START -->
+      <div class="content">
+
+        <section class="artist-db-list">
+          <h2 class="artist-db-tit">Artist DB</h2>
+          <div class="sort-section">
+            <div class="sort-section__block">
+              <p class="result-text">검색결과 총 204개</p>
+              <div class="sort-section__side">
+                <!-- sort list -->
+                <div class="view-sort">
+                  <button type="button" class="view-sort__cur">최신순</button>
+                  <ul class="view-sort__list">
+                    <li class="sort-on"><button type="button" class="view-sort__btn">최신순</button></li>
+                    <li><button type="button" class="view-sort__btn">조회순</button></li>
+                    <li><button type="button" class="view-sort__btn">좋아요순</button></li>
+                    <li><button type="button" class="view-sort__btn">댓글순</button></li>
+                  </ul>
+                </div>
+                <!--// sort list -->
+                <div class="rbox-block">
+                  <span class="search-box">
+                    <input type="text" class="o-input" placeholder="아티스트 명을 입력해 주세요.">
+                    <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 검색결과 없음 -->
+          <div class="search-result__nodata">
+            <p>검색결과가 없습니다.</p>
+          </div>
+          <!--// 검색결과 없음 -->
+
+          <div class="pdt-vt-wrap">
+            <ul class="pdt-vt-five">
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pdt-vt__item">
+                <div class="pdt-vt-block">
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <a href="#" class="pdt-vt__link">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </div>
+                    <div class="pdt-vt__titbox">
+                      <p class="pdt-vt__title">김종규</p>
+                    </div>
+                  </a>
+                  <div class="pdt-vt__inbox">
+                    <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                      독보적인
+                      존재감을
+                      보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                      G단조,
+                      바흐의 두 대의 바이올린을 위한~~~
+                    </p>
+                    <div class="pdt-vt__tags">
+                      <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                      <span class="tag tag--line type2 tag--line--year">1980</span>
+                    </div>
+                    <div class="art-info-sub">
+                      <div class="access-nums">
+                        <span class="acc-num acc-num--view"><em>25</em></span>
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <span class="acc-num acc-num--comment"><em>25</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="paging">
+              <!-- PC -->
+              <a href="#" class="paging__btn paging__btn--first">처음</a>
+              <a href="#" class="paging__btn paging__btn--prev">이전</a>
+              <div class="paging__num-wrap paging-pc">
+                <a href="#" class="paging__num paging__num--active">1</a>
+                <a href="#" class="paging__num">2</a>
+                <a href="#" class="paging__num">3</a>
+                <a href="#" class="paging__num">4</a>
+                <a href="#" class="paging__num">5</a>
+                <a href="#" class="paging__num">6</a>
+                <a href="#" class="paging__num">7</a>
+                <a href="#" class="paging__num">8</a>
+                <a href="#" class="paging__num">9</a>
+                <a href="#" class="paging__num">10</a>
+              </div>
+              <a href="#" class="paging__btn paging__btn--next">다음</a>
+              <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+              <!-- Mobile -->
+              <div class="paging__num-wrap paging-mo">
+                <a href="#" class="paging__more">더보기</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Arte 아티스트 수수께끼 -->
+        <section class="search-part">
+          <div class="riddle-section">
+            <div class="riddle-wrap">
+              <div class="riddle-header">
+                <h3 class="riddle-tit">arte 아티스트 퀴즈</h3>
+                <p class="riddle-sub">예술 전문가 지수 UP!</p>
+              </div>
+              <div class="riddle-cont">
+                <div class="riddle-list-wrap">
+                  <div class="riddle-list__inner">
+                    <div class="riddle-list swiper-wrapper">
+                      <div class="riddle-list__item swiper-slide">
+                        <div class="riddle-artist">
+                          <a href="#" class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb30.jpg" alt="">
+                            </span>
+                          </a>
+                          <div class="riddle-artist__news">
+                            <a href="#"><span class="riddle-artist__news__tit">루이비통과 콜라보한 한국최초의 화가는?</span></a>
+                            <p class="riddle-artist__news__sub">2022. 12. 50</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="riddle-list__item swiper-slide">
+                        <div class="riddle-artist">
+                          <a href="#" class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb31.jpg" alt="">
+                            </span>
+                          </a>
+                          <div class="riddle-artist__news">
+                            <a href="#"><span class="riddle-artist__news__tit">루이비통과 콜라보한 한국최초의 화가는?</span></a>
+                            <p class="riddle-artist__news__sub">2022. 12. 50</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="riddle-list__item swiper-slide">
+                        <div class="riddle-artist">
+                          <a href="#" class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb32.jpg" alt="">
+                            </span>
+                          </a>
+                          <div class="riddle-artist__news">
+                            <a href="#"><span class="riddle-artist__news__tit">루이비통과 콜라보한 한국최초의 화가는?</span></a>
+                            <p class="riddle-artist__news__sub">2022. 12. 50</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="riddle-list__item swiper-slide">
+                        <div class="riddle-artist">
+                          <a href="#" class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb13.png" alt="">
+                            </span>
+                          </a>
+                          <div class="riddle-artist__news">
+                            <a href="#"><span class="riddle-artist__news__tit">루이비통과 콜라보한 한국최초의 화가는?</span></a>
+                            <p class="riddle-artist__news__sub">2022. 12. 50</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-controls riddle-navi">
+                    <div class="swiper-pagination"></div>
+                    <button type="button" class="swiper-btn swiper-prev">이전</button>
+                    <button type="button" class="swiper-btn swiper-next">다음</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //Arte 아티스트 수수께끼 -->
+
+        <!-- //금주 가장 많이 검색한 -->
+        <section class="search-artist-top">
+          <div class="artist-top-section">
+            <div class="artist-top-wrap">
+              <div class="artist-top-header">
+                <h3 class="artist-top-tit">금주 가장 많이 검색한</h3>
+                <p class="artist-top-sub">아티스트 TOP10</p>
+              </div>
+              <div class="artist-top-cont">
+                <div class="artist-top-list-wrap">
+                  <div class="artist-top-list swiper-wrapper">
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb33.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb30.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb32.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb34.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb33.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb30.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb32.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artist-top__item swiper-slide">
+                      <div class="artist-top-art">
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb34.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="artist-top__news">
+                          <a href="#" class="artist-top__news-tit">김영하</a>
+                          <div class="artist-top__info">
+                            <span class="artist-top__info-item job">소설가</span>
+                            <span class="artist-top__info-item birth">1968</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="artist-top-navi">
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //금주 가장 많이 검색한 -->
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/curation.js"></script> <!-- curation slider -->
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 2,
+      menu1: 7,
+      menu2: 3,
+    });
+  </script>
+
+  <script>
+    var swiper = null;
+    $(function () {
+      motionSlide();
+    });
+
+
+    function motionSlide() {
+      var winW = window.innerWidth; //화면 가로사이즈
+      var slideInx = 0; //현재 슬라이드 index
+      var st = null;
+      var activeIdx = null;
+
+      //디바이스 체크
+      var winWChk = '';
+      $(window).on('load resize', function () {
+        winW = window.innerWidth;
+        if (st !== null) {
+          clearTimeout(st);
+        }
+        st = setInterval(function () {
+          if (winWChk != 'mo' && winW <= 768) {
+            inWChk = 'mo';
+            setTimeout(function () {
+              actSlide();
+            }, 150);
+          }
+          if (winWChk != 'pc' && winW >= 769) { //PC 버전으로 전환할 때
+            winWChk = 'pc'
+            setTimeout(function () {
+              actSlide();
+            }, 150);
+          }
+          if (swiper !== null) {
+            swiper.update()
+          }
+          clearTimeout(st);
+          st = null;
+        }, 150)
+      })
+
+      function actSlide() {
+        //슬라이드 초기화
+        if (swiper != null) {
+          swiper.destroy();
+          swiper = null;
+        }
+        // Arte 아티스트 수수께끼 swiper
+        var swiper = new Swiper('.riddle-list__inner', {
+          slidesPerView: "auto",
+          touchRatio: 0.2,
+          loop: true,
+          speed: 650,
+          navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+          },
+          pagination: {
+            el: '.riddle-navi .swiper-pagination',
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+              return ('0' + number).slice(-2);
+            },
+            formatFractionTotal: function (number) {
+              return ('0' + number).slice(-2);
+            },
+            renderFraction: function (currentClass, totalClass) {
+              return '<span class="' + currentClass + '"></span><span class="bar"></span><span class="' +
+                totalClass + '"></span>';
+            }
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 1,
+              speed: 800,
+            },
+          },
+          on: {},
+        });
+
+        // 금주 가장 많이 검색한 swiper
+        var swiper = new Swiper('.artist-top-list-wrap', {
+          slidesPerView: "auto",
+          observer: true,
+          observeParents: true,
+          speed: 1000,
+          pagination: {
+            el: ".artist-top-cont .swiper-pagination",
+            clickable: true,
+            type: "progressbar",
+          },
+          breakpoints: {
+            768: {
+              touchRatio: 0.2,
+              speed: 800,
+            },
+          },
+          on: {},
+        });
+
+
+      };
+    };
+  </script>
+</body>
+
+</html>

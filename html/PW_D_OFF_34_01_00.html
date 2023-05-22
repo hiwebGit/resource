@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : arte Calendar</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode  경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- page title -->
+      <div class="headline--calendar show-pc">
+        <h1 class="headline__title">arte Calendar</h1>
+      </div>
+      <!--// page title -->
+
+      <!-- START -->
+      <div class="content">
+        <section class="calendar-section">
+          <!-- pc calendar -->
+          <div class="calendar-container show-pc">
+            <div class="calendar-wrap">
+              <div class="calendar-controls">
+                <button type="button" class="date-btn date-btn--prev" aria-label="prev"></button>
+                <span class="current-date">2023.03</span>
+                <button type="button" class="date-btn date-btn--next" aria-label="next"></button>
+                <div class="calendar-controls__right">
+                  <button class="btn-today">TODAY</button>
+                </div>
+              </div>
+
+              <div class="calendar">
+                <table class="calendar-table">
+                  <caption>달력</caption>
+                  <thead>
+                    <tr>
+                      <th>SUN</th>
+                      <th>MON</th>
+                      <th>TUE</th>
+                      <th>WED</th>
+                      <th>THU</th>
+                      <th>FRI</th>
+                      <th>SAT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="other-month">
+                        <!-- d: 해당 달이 아닐 경우 td에 other-month 클래스 추가 -->
+                        <a href="#">
+                          <span class="days-number">26일</span>
+                          <div class="calendar-art-list"></div>
+                        </a>
+                      </td>
+                      <td class="other-month">
+                        <!-- d: 해당 달이 아닐 경우 td에 other-month 클래스 추가 -->
+                        <a href="#">
+                          <span class="days-number">27일</span>
+                          <div class="calendar-art-list"></div>
+                        </a>
+                      </td>
+                      <td class="other-month">
+                        <!-- d: 해당 달이 아닐 경우 td에 other-month 클래스 추가 -->
+                        <a href="#">
+                          <span class="days-number">28일</span>
+                          <div class="calendar-art-list"></div>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <!-- 오늘 날짜의 경우 'days-number--today' 추가 -->
+                          <span class="days-number days-number--today">3월 1일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">44</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <!-- 다른 일자 선택시 'days-number--is-active' 추가 -->
+                          <span class="days-number days-number--is-active">2일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">28</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">3일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">3</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">4일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">62</span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">5일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">6일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">63</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">7일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">72</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">8일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">96</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">9일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">69</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">10일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">80</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">11일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">12일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">13일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">4</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">14일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">5</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">15일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">28</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">16일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <!-- s: 시작하는 공연 없을 경우 -->
+                              <li class="calendar-art nodata">시작하는 공연 없음</li>
+                              <!-- // e: 시작하는 공연 없을 경우 -->
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">28</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">17일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <!-- s: 시작하는 공연 없을 경우 -->
+                              <li class="calendar-art nodata">시작하는 전시 없음</li>
+                              <!-- // e: 시작하는 공연 없을 경우 -->
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">16</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">18일</span>
+                          <!-- s: 시작하는 공연,전시 없을 경우 -->
+                          <div class="calendar-art-list nodata">시작하는 공연&middot;전시 없음</div>
+                          <!-- e: 시작하는 공연,전시 없을 경우 -->
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">19일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">20일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">41</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">21일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">23</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">22일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">23</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">23일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">44</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">24일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">66</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">25일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">26일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">88</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">27일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">77</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">28일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">21</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">29일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">61</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">30일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">32</span>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span class="days-number">31일</span>
+                          <div class="calendar-art-list">
+                            <ul>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb01.png" alt="슈퍼클로젯">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">슈퍼클로젯</strong>
+                                  <span class="tag-gen-s w-auto">공연</span>
+                                </div>
+                              </li>
+                              <li class="calendar-art">
+                                <div href="#" class="thumb-img">
+                                  <span class="img-holder">
+                                    <img src="../assets/images/@temp/@list_art_thumb02.png"
+                                      alt="미셸 판 데르 아 : 북 오브 워터 - 통영">
+                                  </span>
+                                </div>
+                                <div class="calendar-art__detail">
+                                  <strong class="calendar-art__detail-title">미셸 판 데르 아 : 북 오브 워터 - 통영</strong>
+                                  <span class="tag-gen-s w-auto">전시</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <span class="calendar-art__count">99+</span>
+                        </a>
+                      </td>
+                      <td class="other-month">
+                        <!-- d: 해당 달이 아닐 경우 td에 other-month 클래스 추가 -->
+                        <a href="#">
+                          <span class="days-number">1일</span>
+                          <div class="calendar-art-list"></div>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- // pc calendar -->
+
+          <!-- mobile calendar -->
+          <div class="calendar-container show-mo">
+            <div class="calendar-wrap">
+              <div class="calendar-controls">
+                <button type="button" class="date-btn date-btn--prev" aria-label="prev"></button>
+                <span class="current-date">2023.03</span>
+                <button type="button" class="date-btn date-btn--next" aria-label="next"></button>
+                <div class="calendar-controls__right">
+                  <button class="btn-today">TODAY</button>
+                </div>
+              </div>
+
+              <div class="calendar">
+                <div class="calendar-table">
+                  <div class="calendar-table__thead">
+                    <div class="calendar-table__tr">
+                      <div class="calendar-table__th">SUN</div>
+                      <div class="calendar-table__th">MON</div>
+                      <div class="calendar-table__th">TUE</div>
+                      <div class="calendar-table__th">WED</div>
+                      <div class="calendar-table__th">THU</div>
+                      <div class="calendar-table__th">FRI</div>
+                      <div class="calendar-table__th">SAT</div>
+                    </div>
+                  </div>
+                  <div class="swiper-container">
+                    <div class="calendar-table__tbody">
+                      <div class="calendar-table__tr swiper-slide">
+                        <div class="calendar-table__td other-month">
+                          <a href="#">
+                            <span class="days-number">26</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td other-month">
+                          <a href="#">
+                            <span class="days-number">27</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td other-month">
+                          <a href="#">
+                            <span class="days-number">28</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <!-- 오늘 날짜의 경우 'today' 추가 -->
+                            <span class="days-number today">1</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">2</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <!-- 다른 일자 선택시 'is-active' 추가 -->
+                            <span class="days-number is-active">3</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">4</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="calendar-table__tr swiper-slide">
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">5</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">6</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">7</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">8</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">9</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">10</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">11</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="calendar-table__tr swiper-slide">
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">12</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">13</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">14</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">15</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">16</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">17</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">18</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="calendar-table__tr swiper-slide">
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">19</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">20</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">21</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">22</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">23</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">24</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">25</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="calendar-table__tr swiper-slide">
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">26</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">27</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">28</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">29</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">30</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td">
+                          <a href="#">
+                            <span class="days-number">31</span>
+                          </a>
+                        </div>
+                        <div class="calendar-table__td other-month">
+                          <a href="#">
+                            <span class="days-number">1</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // mobile calendar -->
+        </section>
+        <section class="ex-section">
+          <div class="calendar-controls">
+            <button type="button" class="date-btn date-btn--prev" aria-label="prev"></button>
+            <span class="current-date">2023.03.24</span>
+            <button type="button" class="date-btn date-btn--next" aria-label="next"></button>
+            <div class="calendar-controls__right">
+              <button class="btn-today">TODAY</button>
+            </div>
+          </div>
+          <div class="ex-container">
+            <article class="ex-content">
+              <!-- sort section -->
+              <div class="sort-section">
+                <div class="sort-section__block">
+                  <p class="result-text">검색결과 총 204개</p>
+
+                  <div class="sort-section__side">
+                    <!-- sort list -->
+                    <div class="view-sort">
+                      <button type="button" class="view-sort__cur"><em>최신순</em></button>
+                      <ul class="view-sort__list">
+                        <li class="sort-on"><button type="button" class="view-sort__btn">최신순</button></li>
+                        <li><button type="button" class="view-sort__btn">조회순</button></li>
+                        <li><button type="button" class="view-sort__btn">좋아요순</button></li>
+                        <li><button type="button" class="view-sort__btn">댓글순</button></li>
+                      </ul>
+                    </div>
+                    <!--// sort list -->
+
+                    <div class="rbox-block">
+                      <button type="button" class="filter-button" data-pop-open="filter" data-st-open="열기"
+                        data-st-close="닫기">상세옵션 <span class="st-text">열기</span></button>
+
+                      <span class="search-box hide-mo">
+                        <input type="text" class="o-input" placeholder="공연명, 출연진 등 태그를 입력해 주세요.">
+                        <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+                      </span>
+
+                      <!-- row type 변경시 'btn-row-type' 추가-->
+                      <button type="button" class="grid-type-button btn-row-type" data-toggle="btn-row-type"
+                        data-toggle-rel="pdt-grid" aria-role="보기 방식"></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- filter Layer : 활성화시 'is-open'-->
+                <div class="m-pop filter-option-section" data-pop="filter">
+                  <div class="m-pop__outer">
+                    <div class="m-pop__inner">
+                      <div class="m-pop__head hide-pc">
+                        <span class="m-pop__title">공연&middot;전시 검색</span>
+                        <button type="button" class="m-pop__close" data-label="닫기" data-pop-btn="close"></button>
+                      </div>
+                      <div class="m-pop__body">
+                        <span class="search-box hide-pc">
+                          <input type="text" class="o-input" placeholder="공연명, 전시명, 연기자명 등 태그를 입력해 주세요.">
+                          <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+                        </span>
+                        <div class="filter-options">
+                          <div class="filter-options__top">
+                            <span class="filter-options__tit hide-mo">공연&middot;전시 검색</span>
+                            <div class="filter-options__top-side">
+                              <button type="button" class="btn-reset" aria-label="Reset">초기화</button>
+                              <button type="button" class="btn size-xmd hide-pc" data-label="적용하기"
+                                data-pop-btn="close">적용하기</button>
+                            </div>
+                          </div>
+                          <div class="filter-options__cont">
+                            <!-- 공연 장르 -->
+                            <div class="filter-options__items">
+                              <p class="filter-options__tit">장르</p>
+                              <div class="filter-options__items-cont">
+                                <ul class="filter-options__items-list">
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-status"
+                                        checked /><span class="o-rdo__label">전체</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">연극</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">뮤지컬</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">클래식</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">오페라</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">무용</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">국악</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">복합</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">전시</span></label></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!--//공연 장르 -->
+                            <!-- 공연 지역 -->
+                            <div class="filter-options__items">
+                              <p class="filter-options__tit">지역</p>
+                              <div class="filter-options__items-cont">
+                                <ul class="filter-options__items-list">
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-local"
+                                        checked /><span class="o-rdo__label">전체</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">서울</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">경기도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">충청남도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">충청북도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">강원도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">전라북도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">전라남도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">경상북도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">경상남도</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-local" /><span class="o-rdo__label">제주도</span></label></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!--// 공연 지역 -->
+                            <!--상태 -->
+                            <div class="filter-options__items">
+                              <p class="filter-options__tit">상태</p>
+                              <div class="filter-options__items-cont">
+                                <ul class="filter-options__items-list">
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-status"
+                                        checked /><span class="o-rdo__label">전체</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">예정</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">진행중</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">종료</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">종료 임박</span></label></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!--//상태 -->
+                            <!--평점 -->
+                            <div class="filter-options__items">
+                              <p class="filter-options__tit">평점</p>
+                              <div class="filter-options__items-cont">
+                                <ul class="filter-options__items-list m-col2">
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-status"
+                                        checked /><span class="o-rdo__label">전체</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">강력추천</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">생각보다 좋아요</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">괜찮아요</span></label></li>
+                                  <li class="w-full"><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">그냥 그렇네요</span></label></li>
+                                  <li><label class="o-rdo"><input type="checkbox" class="o-input"
+                                        name="chk-status" /><span class="o-rdo__label">시간 아까워요</span></label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!--//평점 -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // filter Layer -->
+              </div>
+              <!--// sort section -->
+
+              <!-- 검색결과 없음 -->
+              <div class="search-result__nodata">
+                <p>검색결과가 없습니다.</p>
+              </div>
+              <!--// 검색결과 없음 -->
+
+              <!-- List -->
+              <div class="pdt-grid-wrap">
+                <!-- row type 변경시'pdt-grid-wide' 추가 -->
+                <div class="pdt-grid" data-section="pdt-grid" data-toggle-section="pdt-grid-wide">
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉 </a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <!-- 활성화시 'is-fav' -->
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item : arte's pick -->
+                  <div class="pdt-grid__item has-pick">
+                    <div class="pdt pdt--pick">
+                      <div class="pdt__head">
+                        <strong class="pdt__stit">arte's Pick </strong>
+                        <p class="pdt__stit-desc"><span class="hide-mo">이번 주 놓쳐선 안될 공연 </span>TOP 5</p>
+                      </div>
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb03.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item : arte's pick -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb04.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item : mobile wide -->
+                  <div class="pdt-grid__item pdt-grid__item--mowide">
+                    <div class="pdt pdt--molg">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item : mobile wide-->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb03.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                            말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item : arte's pick -->
+                  <div class="pdt-grid__item has-pick">
+                    <div class="pdt pdt--pick">
+                      <div class="pdt__head">
+                        <strong class="pdt__stit">arte's Pick </strong>
+                        <p class="pdt__stit-desc"><span class="hide-mo">이번 주 놓쳐선 안될 공연 </span>TOP 5</p>
+                      </div>
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb04.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item : arte's pick -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                            말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                            말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                            말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb04.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                            말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb06.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울
+                            말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item : mobile wide -->
+                  <div class="pdt-grid__item pdt-grid__item--mowide">
+                    <div class="pdt pdt--molg pdt--momd">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item : mobile wide-->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb04.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item -->
+                  <div class="pdt-grid__item">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb05.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">히사이시 조 영화음악 콘서트 2023_서울 히사이시 조 영화음악 콘서트 2023_서울 말줄임</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item -->
+                  <!-- item : arte's pick -->
+                  <div class="pdt-grid__item has-pick">
+                    <div class="pdt pdt--pick">
+                      <div class="pdt__head">
+                        <strong class="pdt__stit">arte's Pick </strong>
+                        <p class="pdt__stit-desc"><span class="hide-mo">이번 주 놓쳐선 안될 공연 </span>TOP 5</p>
+                      </div>
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb06.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">브로드웨이 42번가</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag-gen-s">연극</span>
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// item : arte's pick -->
+                </div>
+
+                <!-- Paging -->
+                <div class="paging">
+                  <!-- PC -->
+                  <a href="#" class="paging__btn paging__btn--first">처음</a>
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap paging-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                    <a href="#" class="paging__num">6</a>
+                    <a href="#" class="paging__num">7</a>
+                    <a href="#" class="paging__num">8</a>
+                    <a href="#" class="paging__num">9</a>
+                    <a href="#" class="paging__num">10</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                  <!-- Mobile -->
+                  <div class="paging__num-wrap paging-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+                <!-- Paging -->
+              </div>
+              <!--// List -->
+            </article>
+          </div>
+        </section>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 2,
+      menu1: 7,
+      menu2: 2,
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+
+      //mobile 스크롤시 swiper 연결
+      var calendar_swiper = undefined;
+
+      function windowScorll() {
+
+        $(window).scroll(function () {
+          var scrollTop = $(this).scrollTop();
+          console.log(scrollTop);
+          if (scrollTop > 0 && calendar_swiper == undefined) { // 하단으로 스크롤 했을때
+            $('.calendar-section').addClass("scrolled");
+            $('.calendar-table__tbody').addClass("swiper-wrapper");
+            calendar_swiper = new Swiper(".swiper-container", {
+              loop: true,
+            });
+          } else if (scrollTop < 1 && calendar_swiper != undefined) { // 최상단 일때
+            $('.calendar-section').removeClass("scrolled");
+            $('.calendar-table__tbody').removeClass("swiper-wrapper");
+            calendar_swiper.destroy();
+            calendar_swiper = undefined;
+          }
+        })
+      };
+
+      windowScorll();
+
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>(팝업) 후기 작성 | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupComment">(팝업) 후기 작성</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 한줄평 작성 팝업 -->
+    <section class="pop-wrap pop-comment" data-pop="popupComment">
+      <div class="pop bg-light mo-full">
+        <div class="pop__inner pop-comment__inner">
+          <div class="pop__head hide-pc">
+            <h2 class="pop__head-title">한줄평 쓰기</h2>
+            <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+          </div>
+          <div class="pop__body">
+            <div class="pdt">
+              <div class="pdt__card">
+                <div class="thumb-img">
+                  <span class="img-holder">
+                    <img src="../assets/images/@temp/@temp_thumb02.jpg" alt="">
+                  </span>
+                </div>
+
+                <div class="pdt__inbox">
+                  <p class="pdt__title">[뮤지컬] 브로드웨이 42번가</p>
+                  <ul class="art-info">
+                    <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                    <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                  </ul>
+                  <div class="pdt__status">
+                    <span class="tag-gen-s w-auto">뮤지컬</span>
+                    <span class="tag">진행중</span>
+                    <span class="grade">
+                      <span class="star"><i class="star__point p8"></i></span>
+                      <em class="grade__num">8.0</em>
+                    </span>
+                  </div>
+
+                  <div class="rating-box">
+                    <div class="star-box">
+                      <div class="star-range">
+                        <span class="star-range__base"><em>★</em><em>★</em><em>★</em><em>★</em><em>★</em></span>
+                        <span class="star-range__over"><em>★</em><em>★</em><em>★</em><em>★</em><em>★</em></span>
+                        <input type="range" value="1" step="1" min="0" max="10" class="star-range__value" />
+                      </div>
+                    </div>
+                    <div class="rating-score">
+                      <span class="rating-score__current">8.0</span>
+                      <span class="rating-score__total">/10</span>
+                    </div>
+                    <p class="text-guide pc">평점을 입력해 주세요.</p>
+                    <p class="text-guide mob">좌우로 움직여 별점을 채워주세요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pop-comment__input">
+              <textarea name="" id="" placeholder="한줄평을 남겨주세요. 공연과 상관없는 내용은 약관에 의해 제재를 받을 수 있습니다. (0/40)"
+                maxlength="40"></textarea>
+            </div>
+            <div class="review-photo">
+              <h3 class="review-bottom__tit">사진등록<span class="review-photo__num">(<em>0</em>/<em>1</em>)</span></h3>
+              <div class="review-photo__wrap">
+                <label class="btn-file">
+                  <input type="file" class="btn-file__input"> <em>파일선택</em>
+                </label>
+                <!-- s: 비활성화시 버튼 -->
+                <!-- <label class="btn-file disabled">
+                  <input type="file" class="btn-file__input" disabled> <em>파일선택</em>
+                </label> -->
+                <!-- e: 비활성화시 버튼 -->                   
+                <!-- 파일 등록 시 -->
+                <div class="review-photo__box">
+                  <span class="photo-add__select">
+                    <button type="button" class="file-name">attach_filename_20221225-1.jpg</button>
+                    <button type="button" class="btn-del" aria-label="delete"></button>
+                  </span>
+                  <span class="photo-add__select">
+                    <button type="button" class="file-name">attach_filename_20221225-2.jpg</button>
+                    <button type="button" class="btn-del" aria-label="delete"></button>
+                  </span>
+                </div>
+                <!--// 파일 등록 시 -->
+                <p class="text-guide sm">※ 5M 이하의 이미지 파일만 5개까지 첨부 가능합니다. </p>
+                <p class="text-guide sm">※ 첨부가능 파일확장자 : gif, png, jpg, jpeg</p>
+              </div>
+            </div>
+            <div class="review-sumit">
+              <!-- <button type="button" class="btn c-gray" data-pop-btn="close">취소</button> -->
+              <button type="button" class="btn">등록</button>
+            </div>
+          </div>
+          <button type="button" class="pop__close is-top" data-label="닫기" data-pop-btn="close"></button>
+        </div>
+      </div>
+    </section>
+    <!--// 한줄평 작성 팝업 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    $(function () {
+      //popup test
+      $('[data-pop-open=popupComment]').trigger('click');
+    })
+  </script>
+</body>
+
+</html>

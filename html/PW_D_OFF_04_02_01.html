@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : arte TALK</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- KV -->
+      <div class="talk-kv">
+        <div class="talk-kv_box">
+          <span class="talk-kv__img"></span>
+          <div class="talk-kv__title">
+            <p class="talk-kv__title-up">arte에서 시작하는 나만의 평론</p>
+            <p class="talk-kv__title-down"><span>C</span>ulture</p>
+          </div>
+        </div>
+      </div>
+      <!--// KV -->
+
+      <!-- START -->
+      <div class="content">
+        <div class="talk-container">
+
+          <div class="talk-lnb">
+            <!-- tabs : pc (data-tab-mobile 매칭 필요)-->
+            <div class="tab-block tab-block--v show-pc">
+              <div class="tab align-left" data-tab-pc="talkTab">
+                <button type="button" class="tab__cur">뮤지컬</button>
+                <!-- tab  : button 활성화 'is-active' -->
+                <ul class="tab__list" data-tab="tab-list">
+                  <li class="tab__item"><a href="#" class="tab__btn is-active">연극</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">뮤지컬</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">클래식</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">무용</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">발레</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">국악</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">복합</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">전시</a></li>
+                  <li class="tab__item"><a href="#" class="tab__btn">책</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--// tabs : pc-->
+          </div>
+
+          <article class="talk-content">
+            <!-- sort section -->
+            <div class="sort-section">
+              <div class="sort-section__block">
+                <p class="result-text">검색결과 총 204개</p>
+
+                <div class="sort-section__side">
+                  <!-- sort list -->
+                  <div class="view-sort">
+                    <button type="button" class="view-sort__cur">최신순</button>
+                    <ul class="view-sort__list">
+                      <li class="sort-on"><button type="button" class="view-sort__btn">최신순</button></li>
+                      <li><button type="button" class="view-sort__btn">조회순</button></li>
+                      <li><button type="button" class="view-sort__btn">좋아요순</button></li>
+                      <li><button type="button" class="view-sort__btn">댓글순</button></li>
+                    </ul>
+                  </div>
+                  <!--// sort list -->
+
+                  <!-- tabs : mobile (data-tab-pc 매칭 필요)-->
+                  <div class="tab-block show-mo">
+                    <div class="tab" data-tab-mobile="talkTab">
+                      <button type="button" class="tab__cur">뮤지컬</button>
+                      <!-- tab  : button 활성화 'is-active' -->
+                      <ul class="tab__list" data-tab="tab-list">
+                        <li class="tab__item"><a href="#" class="tab__btn is-active">연극</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">뮤지컬</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">클래식</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">무용</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">발레</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">국악</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">복합</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">전시</a></li>
+                        <li class="tab__item"><a href="#" class="tab__btn">책</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--// tabs : mobile -->
+
+                  <div class="rbox-block">
+                    <span class="search-box">
+                      <input type="text" class="o-input" placeholder="검색어를 입력해주세요">
+                      <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+                    </span>
+
+                    <!-- 글쓰기 : pc -->
+                    <div class="show-pc">
+                      <a href="#" class="btn-form c-gray">글쓰기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// sort section -->
+
+            <!-- 검색결과 없음 -->
+            <div class="search-result__nodata">
+              <p>검색결과가 없습니다.</p>
+            </div>
+            <!--// 검색결과 없음 -->
+
+            <!-- List -->
+            <div class="art-list-wrap">
+              <ul class="art-list type-rig">
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <!-- <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img02.jpg" alt=""></span>
+                    </a> -->
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며 독보적인 존재감을 보였던 사라 장은
+                          이번에는
+                          한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 </a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb01.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <!-- <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a> -->
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <!-- <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a> -->
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img02.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <!-- <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a> -->
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <!-- <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a> -->
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <a href="#" class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                    </a>
+                    <div class="artbox__summary">
+                      <p class="artbox__title">
+                        <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                          매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                      </p>
+                    </div>
+                    <div class="artbox__detail">
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.11.24</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="btm-box">
+                <!-- 글쓰기 : mobile -->
+                <div class="show-mo">
+                  <a href="#" class="btn-form c-gray">글쓰기</a>
+                </div>
+
+                <!-- Paging -->
+                <div class="paging">
+                  <!-- PC -->
+                  <a href="#" class="paging__btn paging__btn--first">처음</a>
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap paging-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                    <a href="#" class="paging__num">6</a>
+                    <a href="#" class="paging__num">7</a>
+                    <a href="#" class="paging__num">8</a>
+                    <a href="#" class="paging__num">9</a>
+                    <a href="#" class="paging__num">10</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                  <!-- Mobile -->
+                  <div class="paging__num-wrap paging-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+                <!-- Paging -->
+              </div>
+            </div>
+            <!--// List -->
+
+            <!-- ad-banner -->
+            <div class="ad-banner-wrap">
+              <div class="ad-banner swiper">
+                <div class="ad-banner__list swiper-wrapper">
+                  <a href="#" class="ad-banner__item swiper-slide">
+                    <!-- Img PC -->
+                    <!-- 띠 배너  pc :  1824 * 300 mobile :  656 * 256 -->
+                    <img src="../assets/images/@temp/@ad_banner_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                    <!-- Img PC 2 -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                    <!-- Img Tablet -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                    <!-- Img Tablet 2 -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                    <!-- Img Mobile -->
+                    <img src="../assets/images/@temp/@ad_banner_mobile@2x.png" alt="banner"
+                      class="ad-banner__img img--mo" />
+                  </a>
+                  <a href="#" class="ad-banner__item swiper-slide">
+                    <img src="../assets/images/@temp/@ad_banner02_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                    <!-- <img src="../assets/images/@temp/@ad_banner02_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner02_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner02_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                    <img src="../assets/images/@temp/@ad_banner02_mobile@2x.png" alt="banner"
+                      class="ad-banner__img img--mo" />
+                  </a>
+                </div>
+              </div>
+              <div class="ad-banner__pagination"></div>
+            </div>
+            <!--// ad-banner -->
+
+            <!-- 이 달의 공연 -->
+            <article class="box-section">
+              <h3 class="box-section__title">이 달의 공연</h3>
+              <div class="box-pdts swiper this-month-pdts">
+                <div class="box-pdts__wrapper swiper-wrapper mobile-slide">
+                  <div class="box-pdts__item swiper-slide">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉 </a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <!-- 활성화시 'is-fav' -->
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-pdts__item swiper-slide">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">〈호두까기인형〉 </a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-pdts__item swiper-slide">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">발레</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-pdts__item swiper-slide">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단</a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-pdts__item swiper-slide">
+                    <div class="pdt">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                          <span class="tag-gen">연극</span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉 </a>
+                          <ul class="art-info">
+                            <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                            <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                          </ul>
+                          <div class="pdt__status">
+                            <span class="tag">진행중</span>
+                            <span class="grade">
+                              <span class="star"><i class="star__point p8"></i></span>
+                              <em class="grade__num">8.0</em>
+                            </span>
+                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!--// 이 달의 공연 -->
+
+            <!-- Poll -->
+            <!-- <div class="poll">
+              컨텐츠 추가예정<br />
+              아르떼 폴
+            </div> -->
+            <!--// Poll -->
+          </article>
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 2,
+      menu1: 5,
+      menu2: 2,
+    });
+  </script>
+</body>
+
+</html>

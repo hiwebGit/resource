@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>댓글 영역(공통) | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <!-- <header class="header" id="header"></header> -->
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+
+
+
+
+        <div class="reply-commit">
+          <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+          <div class="reply-input reply-input__line before-login">
+            <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+            <!-- S: [D] 로그인 전 인풋 -->
+            <textarea minlength="5" maxlength="1000" placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요." readonly></textarea>
+            <!-- E: [D] 로그인 전 인풋 -->
+
+            <!-- S: [D] 로그인 후 인풋 -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="댓글을 입력해 주세요."></textarea> -->
+            <!-- E: [D] 로그인 후 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+            <!-- <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000"
+              placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+            <!-- <strong class="reply-input__writer">하얀마음백범김구</strong> -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+          </div>
+
+          <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+          <button type="button" class="btn-rect__brown" disabled>등록</button>
+        </div>
+
+        <div class="reply-commit">
+          <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+          <div class="reply-input reply-input__line">
+            <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+            <!-- S: [D] 로그인 전 인풋 -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="댓글을 입력해 주세요."></textarea> -->
+            <!-- E: [D] 로그인 전 인풋 -->
+
+            <!-- S: [D] 로그인 후 인풋 -->
+            <textarea minlength="5" maxlength="1000" placeholder="댓글을 입력해 주세요."></textarea>
+            <!-- E: [D] 로그인 후 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+            <!-- <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000"
+              placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+            <!-- <strong class="reply-input__writer">하얀마음백범김구</strong> -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+          </div>
+
+          <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+          <button type="button" class="btn-rect__brown">등록</button>
+        </div>
+
+        <div class="reply-commit">
+          <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+          <div class="reply-input">
+            <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+            <!-- S: [D] 로그인 전 인풋 -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요."></textarea> -->
+            <!-- E: [D] 로그인 전 인풋 -->
+
+            <!-- S: [D] 로그인 후 인풋 -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="댓글을 입력해 주세요."></textarea> -->
+            <!-- E: [D] 로그인 후 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+            <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000"
+              placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea>
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+            <!-- <strong class="reply-input__writer">하얀마음백범김구</strong> -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+          </div>
+
+          <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+          <button type="button" class="btn-rect__brown" disabled>등록</button>
+        </div>
+
+        <div class="reply-commit">
+          <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+          <div class="reply-input">
+            <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+            <!-- S: [D] 로그인 전 인풋 -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요."></textarea> -->
+            <!-- E: [D] 로그인 전 인풋 -->
+
+            <!-- S: [D] 로그인 후 인풋 -->
+            <!-- <textarea minlength="5" maxlength="1000" placeholder="댓글을 입력해 주세요."></textarea> -->
+            <!-- E: [D] 로그인 후 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+            <!-- <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000"
+              placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+            <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+            <strong class="reply-input__writer">하얀마음백범김구</strong>
+            <textarea minlength="5" maxlength="1000"
+              placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea>
+            <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+          </div>
+
+          <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+          <button type="button" class="btn-rect__brown">등록</button>
+        </div>
+        <div class="reply-list-wrap">
+          <div class="reply-list-top">
+            <strong>댓글 <span class="reply-num">(25)</span>
+              <button type="button" class="btn-info" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+            </strong>
+            <div class="sort-area">
+              <button type="button" class="btn-recent"><span class="btn-txt">등록순</span></button>
+              <button type="button" class="btn-like"><span class="btn-txt num">좋아요순</span></button>
+            </div>
+          </div>
+          <div class="reply-list">
+            <button type="button" class="reply-list__view show-mo" data-pop-open="popupReplyViewMobile"><span
+                class="btn-arrow__next">댓글 전체보기</span></button>
+            <ul>
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">하얀마음백범김구</div>
+                    <div class="setting" data-role="visible_wrap">
+                      <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                      <div class="setting__layer" data-role="visible_cont">
+                        <ul>
+                          <li><a href="#">수정하기</a></li>
+                          <li><a href="#">삭제하기</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reply-item__txt">리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다
+                    ~^^리뷰이벤트</div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                      <div class="btn-fav__wrap">
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="reply-item__btn__wrap">
+                      <!-- [D] mobile의 경우 버튼에 popup 연결: data-pop-open="popupReplyWriter" 추가 -->
+                      <button type="button" class="btn show-pc">답글 달기</button>
+                      <button type="button" class="btn show-mo" data-pop-open="popupReplyWriter">답글 달기</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">하얀마음백범김구</div>
+                    <div class="setting" data-role="visible_wrap">
+                      <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                      <div class="setting__layer" data-role="visible_cont">
+                        <ul>
+                          <li><a href="#">신고하기</a></li>
+                          <li><a href="#">차단하기</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reply-item__txt">리뷰이벤트 재밌네요</div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                      <div class="btn-fav__wrap">
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="reply-item__btn__wrap">
+                      <!-- [D] mobile의 경우 버튼에 popup 연결: data-pop-open="popupReplyWriter" 추가 -->
+                      <button type="button" class="btn show-pc">답글 달기</button>
+                      <button type="button" class="btn show-mo" data-pop-open="popupReplyWriter">답글 달기</button>
+                    </div>
+                  </div>
+                  <!-- S: 답글달기 영역 -->
+                  <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+                  <div class="reply-input input__color-gray is-active">
+                    <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                    <!-- S: [D] 로그인 전 인풋 -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="답글을 쓰시려면 로그인을 먼저 해주세요."></textarea> -->
+                    <!-- E: [D] 로그인 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후 인풋 -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea> -->
+                    <!-- E: [D] 로그인 후 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+                    <textarea minlength="5" maxlength="1000"
+                      placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea>
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+                    <!-- <strong class="reply-input__writer">하얀마음백범김구</strong> -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                    <button type="button" class="btn-text" disabled>등록</button>
+                  </div>
+                  <!-- E: 답글달기 영역 -->
+                </div>
+                <!-- [D] 답글 리스트 영역 -->
+                <ul class="reply-depth2">
+                  <li>
+                    <div class="reply-item">
+                      <div class="reply-item__top">
+                        <div class="reply-item__name">간만에카페인</div>
+                        <div class="setting" data-role="visible_wrap">
+                          <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                            data-role="visible_btn"></button>
+                          <div class="setting__layer" data-role="visible_cont">
+                            <ul>
+                              <li><a href="#">차단해제</a></li>
+                            </ul>
+                            <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- [D] 수정하기 버튼 클릭 시 노출-->
+                      <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+                      <!-- <div class="reply-input reply-modify reply-input__line">
+                <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea>
+                <button type="button" class="btn-text">수정</button>
+              </div> -->
+                      <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</div>
+                      <div class="reply-item__util">
+                        <div class="reply-item__info">
+                          <span class="reply-item__date">2022.10.20 <span
+                              class="reply-item__time">10:20:21</span></span>
+                          <div class="btn-fav__wrap">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">하얀마음백범김구</div>
+                    <div class="setting" data-role="visible_wrap">
+                      <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                      <div class="setting__layer" data-role="visible_cont">
+                        <ul>
+                          <li><a href="#">수정하기</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reply-item__txt">리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다
+                    ~^^리뷰이벤트
+                    재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!!
+                    응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다
+                    ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^</div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                      <div class="btn-fav__wrap">
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="reply-item__btn__wrap">
+                      <!-- [D] mobile의 경우 버튼에 popup 연결: data-pop-open="popupReplyWriter" 추가 -->
+                      <button type="button" class="btn show-pc">답글 달기</button>
+                      <button type="button" class="btn show-mo" data-pop-open="popupReplyWriter">답글 달기</button>
+                    </div>
+                  </div>
+                  <!-- S: 답글달기 영역 -->
+                  <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+                  <div class="reply-input input__color-gray is-active">
+                    <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                    <!-- S: [D] 로그인 전 인풋 -->
+                    <!-- <textarea minlength="5" maxlength="1000" readonly placeholder="답글을 쓰시려면 로그인을 먼저 해주세요."></textarea> -->
+                    <!-- E: [D] 로그인 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후 인풋 -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea> -->
+                    <!-- E: [D] 로그인 후 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+                    <strong class="reply-input__writer">하얀마음백범김구</strong>
+                    <textarea minlength="5" maxlength="1000"
+                      placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea>
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                    <button type="button" class="btn-text">등록</button>
+                  </div>
+                  <!-- E: 답글달기 영역 -->
+                </div>
+                <ul class="reply-depth2">
+                  <li>
+                    <div class="reply-item">
+                      <div class="reply-item__top">
+                        <div class="reply-item__name">간만에카페인2</div>
+                        <div class="setting" data-role="visible_wrap">
+                          <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                            data-role="visible_btn"></button>
+                          <div class="setting__layer" data-role="visible_cont">
+                            <ul>
+                              <li><a href="#">수정하기</a></li>
+                              <li><a href="#">삭제하기</a></li>
+                            </ul>
+                            <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- S: [D] 수정하기 버튼 클릭 시 노출-->
+                      <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+                      <div class="reply-input reply-modify reply-input__line">
+                        <textarea minlength="5" maxlength="1000"
+                          placeholder="답글을 입력해주세요.">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</textarea>
+                        <button type="button" class="btn-text">수정</button>
+                      </div>
+                      <!-- E: [D] 수정하기 버튼 클릭 시 노출-->
+
+                      <!-- <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</div> -->
+                      <div class="reply-item__util">
+                        <div class="reply-item__info">
+                          <span class="reply-item__date">2022.10.20 <span
+                              class="reply-item__time">10:20:21</span></span>
+                          <div class="btn-fav__wrap">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="reply-item">
+                      <div class="reply-item__top">
+                        <div class="reply-item__name">간만에카페인</div>
+                        <div class="setting" data-role="visible_wrap">
+                          <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                            data-role="visible_btn"></button>
+                          <div class="setting__layer" data-role="visible_cont">
+                            <ul>
+                              <li><a href="#">수정하기</a></li>
+                              <li><a href="#">삭제하기</a></li>
+                            </ul>
+                            <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의 희망이자
+                        미래인
+                        고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의
+                        희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로
+                        응원합니다.</div>
+                      <div class="reply-item__util">
+                        <div class="reply-item__info">
+                          <span class="reply-item__date">2022.10.20 <span
+                              class="reply-item__time">10:20:21</span></span>
+                          <div class="btn-fav__wrap">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">하얀마음백범김구</div>
+                    <div class="setting" data-role="visible_wrap">
+                      <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                      <div class="setting__layer" data-role="visible_cont">
+                        <ul>
+                          <li><a href="#">수정하기</a></li>
+                          <li><a href="#">삭제하기</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reply-item__txt">리뷰이벤트 재밌네요</div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                      <div class="btn-fav__wrap">
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="reply-item__btn__wrap">
+                      <!-- [D] mobile의 경우 버튼에 popup 연결: data-pop-open="popupReplyWriter" 추가 -->
+                      <button type="button" class="btn show-pc">답글 달기</button>
+                      <button type="button" class="btn show-mo" data-pop-open="popupReplyWriter">답글 달기</button>
+                    </div>
+                  </div>
+                  <!-- S: 답글달기 영역 -->
+                  <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+                  <div class="reply-input input__color-gray reply-input__line is-active">
+                    <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                    <!-- S: [D] 로그인 전 인풋 -->
+                    <textarea minlength="5" maxlength="1000" readonly placeholder="답글을 쓰시려면 로그인을 먼저 해주세요."></textarea>
+                    <!-- E: [D] 로그인 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후 인풋 -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea> -->
+                    <!-- E: [D] 로그인 후 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+                    <!-- <strong class="reply-input__writer">하얀마음백범김구</strong> -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                    <button type="button" class="btn-text" disabled>등록</button>
+                  </div>
+                  <!-- E: 답글달기 영역 -->
+                </div>
+                <ul class="reply-depth2">
+                  <li>
+                    <div class="reply-item">
+                      <div class="reply-item__top">
+                        <div class="reply-item__name">간만에카페인</div>
+                        <div class="setting" data-role="visible_wrap">
+                          <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                            data-role="visible_btn"></button>
+                          <div class="setting__layer" data-role="visible_cont">
+                            <ul>
+                              <li><a href="#">수정하기</a></li>
+                              <li><a href="#">삭제하기</a></li>
+                            </ul>
+                            <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</div>
+                      <div class="reply-item__util">
+                        <div class="reply-item__info">
+                          <span class="reply-item__date">2022.10.20 <span
+                              class="reply-item__time">10:20:21</span></span>
+                          <div class="btn-fav__wrap">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- [D] 삭제 댓글 유형-->
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">삭제 댓글 유형</div>
+                  </div>
+
+                  <div class="reply-item__txt text-disabled">삭제된 댓글이에요.</div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- [D] 신고 댓글 유형-->
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">신고 댓글 유형</div>
+                  </div>
+
+                  <div class="reply-item__txt text-disabled">내가 신고한 댓글이에요.</div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- [D] 차단 댓글 유형-->
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">차단 댓글 유형</div>
+                    <div class="setting" data-role="visible_wrap">
+                      <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                      <div class="setting__layer" data-role="visible_cont">
+                        <ul>
+                          <li><a href="#">차단해제</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reply-item__txt text-disabled"><i class="ico-info"></i> 내가 차단한 회원의 댓글입니다.</div>
+                </div>
+              </li>
+
+              <!-- 로그인 후 인풋 -->
+              <li>
+                <div class="reply-item">
+                  <div class="reply-item__top">
+                    <div class="reply-item__name">하얀마음백범김구</div>
+                    <div class="setting" data-role="visible_wrap">
+                      <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                      <div class="setting__layer" data-role="visible_cont">
+                        <ul>
+                          <li><a href="#">수정하기</a></li>
+                          <li><a href="#">삭제하기</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reply-item__txt">
+                    <div class="reply-item__txt">리뷰이벤트 재밌네요!! 응원합니다 ~^^</div>
+                  </div>
+                  <div class="reply-item__util">
+                    <div class="reply-item__info">
+                      <span class="reply-item__date">2022.10.20 <span class="reply-item__time">10:20:21</span></span>
+                      <div class="btn-fav__wrap">
+                        <span class="acc-num acc-num--like"><em>120k</em></span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="reply-item__btn__wrap">
+                      <!-- [D] mobile의 경우 버튼에 popup 연결: data-pop-open="popupReplyWriter" 추가 -->
+                      <button type="button" class="btn show-pc">답글 달기</button>
+                      <button type="button" class="btn show-mo" data-pop-open="popupReplyWriter">답글 달기</button>
+                    </div>
+                  </div>
+                  <!-- S: 답글달기 영역 -->
+                  <!-- [D] textarea 영역 한줄일 경우, .reply-input__line 클래스 추가 -->
+                  <div class="reply-input input__color-gray reply-input__line is-active">
+                    <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                    <!-- S: [D] 로그인 전 인풋 -->
+                    <!-- <textarea minlength="5" maxlength="1000" readonly placeholder="답글을 쓰시려면 로그인을 먼저 해주세요."></textarea> -->
+                    <!-- E: [D] 로그인 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후 인풋 -->
+                    <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea>
+                    <!-- E: [D] 로그인 후 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+            <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+
+                    <!-- S: [D] 로그인 후, 닉네임 설정 후 인풋 -->
+                    <!-- <strong class="reply-input__writer">하얀마음백범김구</strong> -->
+                    <!-- <textarea minlength="5" maxlength="1000" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea> -->
+                    <!-- E: [D] 로그인 후, 닉네임 설정 전 인풋 -->
+                    <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                    <button type="button" class="btn-text">등록</button>
+                  </div>
+                  <!-- E: 답글달기 영역 -->
+                </div>
+              </li>
+            </ul>
+            <div class="reply-add">
+              <button type="button" class="reply-add__btn" data-pop-open="popupCommentWriter">댓글 쓰기</button>
+            </div>
+
+            <!-- [D] 답글 없을 시 영역 화면 -->
+            <div class="reply-area__none">
+              <span>작성된 댓글이 없습니다.</span>
+            </div>
+
+            <!-- Paging -->
+            <div class="paging">
+              <!-- PC -->
+              <a href="#" class="paging__btn paging__btn--first">처음</a>
+              <a href="#" class="paging__btn paging__btn--prev">이전</a>
+              <div class="paging__num-wrap paging-pc">
+                <a href="#" class="paging__num paging__num--active">1</a>
+                <a href="#" class="paging__num">2</a>
+                <a href="#" class="paging__num">3</a>
+                <a href="#" class="paging__num">4</a>
+                <a href="#" class="paging__num">5</a>
+                <a href="#" class="paging__num">6</a>
+                <a href="#" class="paging__num">7</a>
+                <a href="#" class="paging__num">8</a>
+                <a href="#" class="paging__num">9</a>
+                <a href="#" class="paging__num">10</a>
+              </div>
+              <a href="#" class="paging__btn paging__btn--next">다음</a>
+              <a href="#" class="paging__btn paging__btn--last">마지막</a>
+            </div>
+            <!-- Paging -->
+          </div>
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer" id="footer"></footer> -->
+    <!--// Footer -->
+
+    <!-- (확인용)댓글 관련 팝업 : 각 파일에서 코드 확인 필요-->
+    <div class="pop1">댓글 운영 정책 : PW_I_ON_CP_10_00.html</div>
+    <!--// (확인용)댓글 관련 팝업 -->
+    <!-- (확인용)댓글 전체보기 팝업 : 각 파일에서 코드 확인 필요-->
+    <div class="pop3">댓글 전체보기 : PW_I_ON_CP_06_00.html</div>
+    <!--// (확인용)댓글 전체보기 팝업 -->
+    <!-- (확인용)댓글 달기 팝업 : 각 파일에서 코드 확인 필요-->
+    <div class="pop4">댓글 달기 : PW_I_ON_CP_07_00.html</div>
+    <!--// (확인용)댓글 달기 팝업 -->
+    <!-- (확인용)댓글 달기 팝업 : 각 파일에서 코드 확인 필요-->
+    <div class="pop5">답글 달기 : PW_I_ON_CP_08_00.html</div>
+    <!--// (확인용)댓글 달기 팝업 -->
+
+    <!-- Script -->
+    <script src="../assets/js/libs/jquery.min.js"></script>
+    <script src="../assets/js/libs/swiper.min.js"></script>
+    <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+    <script src="../assets/js/ui.js"></script>
+    <!--// Script -->
+    <script>
+      $(document).ready(function () {
+        $(".pop1").load("PW_I_ON_CP_10_00.html .pop-wrap");
+        $(".pop2").load("PW_I_ON_CP_01_00.html .pop-wrap");
+        $(".pop3").load("PW_I_ON_CP_06_00.html .popup-wrap");
+        $(".pop4").load("PW_I_ON_CP_07_00.html .pop-wrap");
+        $(".pop5").load("PW_I_ON_CP_08_00.html .pop-wrap");
+      });
+    </script>
+
+  </div>
+
+</body>
+
+</html>

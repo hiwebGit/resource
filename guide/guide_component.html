@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Button 가이드</title>
+  <script src="js/guide_layout.js"></script>
+  <script>
+    include.meta()
+  </script>
+  <script>
+    include.head()
+  </script>
+</head>
+
+<body>
+  <div class="g-wrapper" id="g-convention-wrap">
+    <script>
+      include.header()
+    </script>
+    <div class="g-container">
+      <script>
+        include.aside.init()
+      </script>
+
+      <!-- Content -->
+      <article class="g-content">
+        <div class="g-content-header">
+          <h1 class="g-h1">component</h1>
+          <!-- <p class="g-explain-h1">버튼</p> -->
+        </div>
+        <div class="g-content-body">
+          <!-- section1 -->
+          <section id="g-section1" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">태그</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">타입 1</h3>
+
+              <span class="tag">진행중</span>
+              <span class="tag tag--end">진행종료</span>
+              <span class="tag tag--line">공연예정</span>
+
+              <br>
+
+              <!-- <span class="tag tag--sm">진행중</span>
+              <span class="tag tag--end tag--sm">진행종료</span>
+              <span class="tag tag--line tag--sm">공연예정</span> -->
+
+              <h3 class="g-h3">타입 2</h3>
+
+              <div style="padding:10px; background:#000">
+                <span class="tag-gen">연극</span>
+                <span class="tag-gen">뮤지컬</span>
+                <span class="tag-gen">무용</span>
+                <span class="tag-gen">클래식</span>
+                <span class="tag-gen">오페라</span>
+                <span class="tag-gen">국악</span>
+                <span class="tag-gen">복합</span>
+                <span class="tag-gen">전시</span>
+                <span class="tag-gen">책</span>
+              </div>
+
+              <div style="padding:10px;">
+                <span class="tag-gen tag-gen--dark">연극</span>
+                <span class="tag-gen tag-gen--dark">뮤지컬</span>
+                <span class="tag-gen tag-gen--dark">무용</span>
+                <span class="tag-gen tag-gen--dark">클래식</span>
+                <span class="tag-gen tag-gen--dark">오페라</span>
+                <span class="tag-gen tag-gen--dark">국악</span>
+                <span class="tag-gen tag-gen--dark">복합</span>
+                <span class="tag-gen tag-gen--dark">전시</span>
+                <span class="tag-gen tag-gen--dark">책</span>
+              </div>
+
+              <div style="padding:10px;">
+                <span class="tag-gen tag-gen--gy">연극</span>
+                <span class="tag-gen tag-gen--gy">뮤지컬</span>
+                <span class="tag-gen tag-gen--gy">무용</span>
+                <span class="tag-gen tag-gen--gy">클래식</span>
+                <span class="tag-gen tag-gen--gy">오페라</span>
+                <span class="tag-gen tag-gen--gy">국악</span>
+                <span class="tag-gen tag-gen--gy">복합</span>
+                <span class="tag-gen tag-gen--gy">전시</span>
+                <span class="tag-gen tag-gen--gy">책</span>
+              </div>
+
+              <h3 class="g-h3">타입 3</h3>
+
+              <div style="padding:10px;">
+                <span class="tag-gen-s">연극</span>
+                <span class="tag-gen-s w-auto">뮤지컬</span>
+                <span class="tag-gen-s w-auto">무용</span>
+                <span class="tag-gen-s w-auto">클래식</span>
+                <span class="tag-gen-s w-auto">오페라</span>
+                <span class="tag-gen-s w-auto">국악</span>
+                <span class="tag-gen-s w-auto">복합</span>
+                <span class="tag-gen-s w-auto">전시</span>
+                <span class="tag-gen-s w-auto">책</span>
+              </div>
+
+            </div>
+          </section>
+          <!-- //section1 -->
+
+          <!-- section2 -->
+          <section id="g-section2" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">별점</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">별 + 점수</h3>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p1"></i></span>
+                <em class="grade__num">1.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p2"></i></span>
+                <em class="grade__num">2.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p3"></i></span>
+                <em class="grade__num">3.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p4"></i></span>
+                <em class="grade__num">4.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p5"></i></span>
+                <em class="grade__num">5.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p6"></i></span>
+                <em class="grade__num">6.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p7"></i></span>
+                <em class="grade__num">7.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p8"></i></span>
+                <em class="grade__num">8.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p9"></i></span>
+                <em class="grade__num">9.0</em>
+              </span>
+
+              <span class="grade">
+                <span class="star"><i class="star__point p10"></i></span>
+                <em class="grade__num">10.0</em>
+              </span>
+
+            </div>
+          </section>
+          <!-- //section2 -->
+
+          <!-- section3 -->
+          <section id="g-section3" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">페이지네이션</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">페이지네이션</h3>
+
+              <div>
+
+                <!-- Paging -->
+                <div class="paging">
+                  <!-- PC -->
+                  <a href="#" class="paging__btn paging__btn--first">처음</a>
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap paging-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                    <a href="#" class="paging__num">6</a>
+                    <a href="#" class="paging__num">7</a>
+                    <a href="#" class="paging__num">8</a>
+                    <a href="#" class="paging__num">9</a>
+                    <a href="#" class="paging__num">10</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                  <!-- Mobile -->
+                  <div class="paging__num-wrap paging-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+                <!-- Paging -->
+
+              </div>
+
+            </div>
+          </section>
+          <!-- //section3 -->
+
+          <!-- section4 -->
+          <section id="g-section4" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">해시태그</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">해시태그</h3>
+              <ul class="g-desc">
+                <li>링크 여부에 따라 태그를 변경한다.</li>
+              </ul>
+
+              <div class="hashtag-block">
+                <a href="#" class="hashtag"># 브로드웨이42번가</a>
+                <a href="#" class="hashtag"># 태양의 서커스</a>
+                <a href="#" class="hashtag"># 마틸다</a>
+                <a href="#" class="hashtag"># 온 더 비트</a>
+                <a href="#" class="hashtag"># 멕베스 레퀴엠</a>
+              </div>
+
+            </div>
+          </section>
+          <!-- //section4 -->
+
+          <!-- section5 -->
+          <section id="g-section5" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">검색 태그</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">검색 결과에 따른 tag</h3>
+              <ul class="g-desc">
+                <li>삭제 기능</li>
+              </ul>
+
+              <!-- selected options -->
+              <div class="search-tags">
+                <p class="search-tags__result">‘브로드웨이’에 대한 검색 결과 총5개</p>
+                <span class="select-tag">
+                  <span>연극</span>
+                  <button type="button" class="btn-del" aria-label="delete"></button>
+                </span>
+                <span class="select-tag">
+                  <span>복합</span>
+                  <button type="button" class="btn-del" aria-label="delete"></button>
+                </span>
+                <span class="select-tag">
+                  <span>충청도</span>
+                  <button type="button" class="btn-del" aria-label="delete"></button>
+                </span>
+                <span class="select-tag">
+                  <span>경상도</span>
+                  <button type="button" class="btn-del" aria-label="delete"></button>
+                </span>
+                <span class="select-tag">
+                  <span>진행중</span>
+                  <button type="button" class="btn-del" aria-label="delete"></button>
+                </span>
+                <span class="select-tag">
+                  <span>그럭 저럭</span>
+                  <button type="button" class="btn-del" aria-label="delete"></button>
+                </span>
+              </div>
+              <!-- //selected options -->
+
+            </div>
+          </section>
+          <!-- //section5 -->
+
+          <!-- section6 -->
+          <section id="g-section6" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">아이콘</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">아이콘</h3>
+              <ul class="g-desc">
+                <li>링크 여부에 따라 태그를 변경한다.</li>
+                <li>그 외 추가 예정</li>
+              </ul>
+
+              <div class="access-nums">
+                <span class="acc-num acc-num--view"><em>25</em></span>
+                <span class="acc-num acc-num--like"><em>120k</em></span>
+                <span class="acc-num acc-num--comment"><em>25</em></span>
+              </div>
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+          </section>
+          <!-- //section6 -->
+
+          <!-- section7 -->
+          <section id="g-section7" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">날짜 + 숫자들</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">아이콘</h3>
+              <ul class="g-desc">
+                <li>링크 여부에 따라 태그를 변경한다.</li>
+              </ul>
+
+              <div class="art-info-sub">
+                <span class="text-date">2022.10.20</span>
+                <div class="access-nums">
+                  <span class="acc-num acc-num--view"><em>25</em></span>
+                  <span class="acc-num acc-num--like"><em>120k</em></span>
+                  <span class="acc-num acc-num--comment"><em>25</em></span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!-- //section7 -->
+
+          <!-- section8 -->
+          <section id="g-section8" class="g-section">
+            <div class="g-section-header">
+              <h2 class="g-h2">목록</h2>
+            </div>
+            <div class="g-section-body">
+
+              <h3 class="g-h3">정보</h3>
+              <ul class="g-desc">
+                <li>공연 정보 아이콘</li>
+              </ul>
+
+              <ul class="art-info">
+                <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                <li class="ico-location">잠실종합운동장 내 빅탑</li>
+              </ul>
+
+              <h3 class="g-h3">정렬 목록</h3>
+              <ul class="g-desc">
+                <li>보기 정렬 목록</li>
+                <li>Moblie 은 드롭타운 타입으로 변경</li>
+              </ul>
+
+              <!-- sort list -->
+              <div class="view-sort">
+                <button type="button" class="view-sort__cur">최신순</button>
+                <ul class="view-sort__list">
+                  <li class="sort-on"><button type="button" class="view-sort__btn">최신순</button></li>
+                  <li><button type="button" class="view-sort__btn">조회순</button></li>
+                  <li><button type="button" class="view-sort__btn">좋아요순</button></li>
+                  <li><button type="button" class="view-sort__btn">댓글순</button></li>
+                </ul>
+              </div>
+              <!--// sort list -->
+
+            </div>
+          </section>
+          <!-- //section8 -->
+
+        </div>
+      </article>
+      <!-- //Content -->
+    </div>
+    <script>
+      include.footer()
+    </script>
+  </div>
+</body>
+
+</html>

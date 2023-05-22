@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : arte TALK</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+        <section class="view-section">
+          <div class="view-wrap">
+            <!-- 리뷰작성 -->
+            <div class="review-area">
+              <div class="review-header">
+                <span class="classic-logo">Classic</span>
+                <h2 class="review-header__tit">arte TALK TALK 글쓰기</h2>
+              </div>
+              <div class="review-cont">
+                <div class="review-input">
+                  <input type="text" class="input__element" title="제목을 입력해 주세요." placeholder="제목을 입력해 주세요.">
+                </div>
+                <!-- s: 에디터등록영역 -->
+                <div class="editor-section">
+                  <div class="review-editor">
+                    Editor 영역
+                  </div>
+                </div>
+                <!-- e: 에디터등록영역 -->
+              </div>
+              <div class="review-bottom">
+                <div class="review-tag">
+                  <h3 class="review-bottom__tit">태그 등록</h3>
+                  <div class="review-input">
+                    <input type="text" class="input__element" title="# 태그를 입력해주세요." placeholder="# 태그를 입력해주세요.">
+                    <button type="button" class="tag-add-btn" aria-label="태그입력추가">추가</button>
+                  </div>
+                  <div class="review-tag__wrap">
+                    <div class="review-tag__box">
+                      <span class="select-tag">
+                        <span># 김아미</span>
+                        <button type="button" class="btn-del"></button>
+                      </span>
+                      <span class="select-tag">
+                        <span># 버기</span>
+                        <button type="button" class="btn-del"></button>
+                      </span>
+                      <span class="select-tag">
+                        <span># NKSIN</span>
+                        <button type="button" class="btn-del"></button>
+                      </span>
+                      <span class="select-tag">
+                        <span># 엔케이신</span>
+                        <button type="button" class="btn-del"></button>
+                      </span>
+                      <span class="select-tag">
+                        <span># 엔케이신</span>
+                        <button type="button" class="btn-del"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-photo">
+                  <h3 class="review-bottom__tit">사진등록<span class="review-photo__num">(<em>0</em>/<em>1</em>)</span></h3>
+                  <div class="review-photo__wrap">
+                    <label class="btn-file">
+                      <input type="file" class="btn-file__input"> <em>파일선택</em>
+                    </label>                  
+                    <!-- s: 비활성화시 버튼 -->
+                    <!-- <label class="btn-file disabled">
+                      <input type="file" class="btn-file__input" disabled> <em>파일선택</em>
+                    </label> -->
+                    <!-- e: 비활성화시 버튼 -->
+                    <div class="review-photo__box">
+                      <span class="photo-add__select">
+                        <button type="button" class="file-name">attach_filename_20221225-1.jpg</button>
+                        <button type="button" class="btn-del" aria-label="delete"></button>
+                      </span>
+                    </div>
+                    <p class="text-guide sm">※ 5M 이하의 파일만 1개까지 첨부 가능합니다.</p>
+                    <p class="text-guide sm">※ 첨부가능 파일확장자 : gif, png, jpg, jpeg</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review-sumit">
+                <!--  버튼 비활성화 disabled 속성 추가 -->
+                <button type="button" class="btn c-gray">임시저장</button>
+                <button type="button" class="btn c-gray">취소</button>
+                <button type="button" class="btn">확인</button>
+              </div>
+            </div>
+            <!-- //리뷰작성 -->
+          </div>
+        </section>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type:3,
+      menu1:5,
+      menu2:2, 
+    });
+</script>
+</body>
+
+</html>

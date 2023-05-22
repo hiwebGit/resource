@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>(팝업) 신고하기 | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupReport">신고하기</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 신고하기 팝업 -->
+    <section class="pop-wrap pop-report" data-pop="popupReport">
+      <div class="pop mo-btm">
+        <div class="pop__inner">
+          <div class="pop__head">
+            <h2 class="pop__head-title">신고하기</h2>
+            <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+          </div>
+          <div class="pop__body">
+            <!-- <div class="pop-report__contents">
+              <strong class="user-name">피자최고존엄</strong>
+              <textarea class="text-area">통닭 튀김은 먹을때는 맛있을지 몰라도 몸에 아주 해로운 음식이다. 통닭 튀김할때 쓰는 기름을 한번보면 다시는 통닭튀김을 먹고싶은 생각이 없을 것이다. 통닭
+                튀김할때 쓰는 기름을 한번보면 다시는 통닭튀김을 먹고싶은 생각이 없을 것이다.</textarea>
+            </div> -->
+            <div class="pop-report__reason">
+              <strong class="pop-report__reason-title">신고사유 선택 [필수]</strong>
+              <ul class="acco-wrap" data-accordion="wrapper">
+                <!-- 'acco-btn' 클릭 시 : 'acco-box' 영역에 'is-on' 추가 -->
+                <li class="acco-box is-on" data-accordion="group">
+                  <div class="acco-btn">
+                    <label class="o-rdo"><input type="radio" class="o-input" name="rdo"><span
+                        class="o-rdo__label">스팸홈보/도배글입니다.</span></label>
+                    <button type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button>
+                  </div>
+                  <div class="acco-cont">
+                    <ul class="list-dash">
+                      <li>사행성 오락이나 도박을 홍보하거나 권장하는 내용 등의 부적절 한 스팸 홍보 행위</li>
+                      <li>동일하거나 유사한 내용 반복 게시</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="acco-box" data-accordion="group">
+                  <div class="acco-btn">
+                    <label class="o-rdo"><input type="radio" class="o-input" name="rdo"><span class="o-rdo__label">불법정보를
+                        포함하고 있습니다.</span></label>
+                    <button type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button>
+                  </div>
+                  <div class="acco-cont">
+                    <ul class="list-dash">
+                      <li>사행성 오락이나 도박을 홍보하거나 권장하는 내용 등의 부적절 한 스팸 홍보 행위</li>
+                      <li>동일하거나 유사한 내용 반복 게시</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="acco-box" data-accordion="group">
+                  <div class="acco-btn">
+                    <label class="o-rdo"><input type="radio" class="o-input" name="rdo"><span class="o-rdo__label">청소년에게
+                        유해한 내용입니다.</span></label>
+                    <button type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button>
+                  </div>
+                  <div class="acco-cont">
+                    <ul class="list-dash">
+                      <li>사행성 오락이나 도박을 홍보하거나 권장하는 내용 등의 부적절 한 스팸 홍보 행위</li>
+                      <li>동일하거나 유사한 내용 반복 게시</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="acco-box" data-accordion="group">
+                  <div class="acco-btn">
+                    <label class="o-rdo"><input type="radio" class="o-input" name="rdo"><span
+                        class="o-rdo__label">스팸홈보/도배글입니다.</span></label>
+                    <button type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button>
+                  </div>
+                  <div class="acco-cont">
+                    <ul class="list-dash">
+                      <li>사행성 오락이나 도박을 홍보하거나 권장하는 내용 등의 부적절 한 스팸 홍보 행위</li>
+                      <li>동일하거나 유사한 내용 반복 게시</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="acco-box" data-accordion="group">
+                  <div class="acco-btn">
+                    <label class="o-rdo"><input type="radio" class="o-input" name="rdo"><span
+                        class="o-rdo__label">스팸홈보/도배글입니다.</span></label>
+                    <button type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button>
+                  </div>
+                  <div class="acco-cont">
+                    <ul class="list-dash">
+                      <li>사행성 오락이나 도박을 홍보하거나 권장하는 내용 등의 부적절 한 스팸 홍보 행위</li>
+                      <li>동일하거나 유사한 내용 반복 게시</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="acco-box" data-accordion="group">
+                  <div class="acco-btn">
+                    <label class="o-rdo"><input type="radio" class="o-input" name="rdo"><span
+                        class="o-rdo__label">기타</span></label>
+                    <button type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button>
+                  </div>
+                  <div class="acco-cont">
+                    <textarea class="text-area" placeholder="신고사유를 입력해주세요. (0/500)" maxlength="500"></textarea>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pop-report__btn-wrap">
+              <button type="button" class="btns" disabled>신고하기</button>
+              <p class="text"><span class="ico">※</span> 허위신고일 경우 신고자의 서비스 활동이 제한될 수 있으니
+                유의하시어 신중하게 신고해 주세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// 신고하기 팝업 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    $(function () {
+      //popup test
+      $('[data-pop-open=popupReport]').trigger('click');
+
+      //신고하기 버튼 활성화
+      $('.pop-report__reason input:radio').on('change', function () {
+        if ($(this).prop('checked')) {
+          $('.pop-report__btn-wrap .btns').removeAttr('disabled');
+        }
+      });
+
+      $('.pop-report__reason input:radio').on('change', function () {
+        if($(this).next().text() === '기타') {
+          $(this).closest('.acco-box').addClass('is-on');
+        }
+        else {
+          $('.pop-report__reason .acco-box').removeClass('is-on');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

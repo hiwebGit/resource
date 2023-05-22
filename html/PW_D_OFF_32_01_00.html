@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : artist DB</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+
+      <div class="artist-intro-wrapper">
+        <div class="artist-intro">
+          <div class="artist-intro__img-box">
+            <div class="artist-intro__img">
+              <img src="../assets/images/@temp/@artist_db_img.png" alt="ARTIST">
+              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+            </div>
+            <div class="artist-intro__summary">
+              <h2 class="artist-intro__name">임윤찬</h2>
+
+              <p class="artist-intro__text">
+                반 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게 한 차세대 스타 피아니스트
+              </p>
+              <div class="art-info-sub">
+                <div class="access-nums bar-r">
+                  <span class="acc-num acc-num--view"><em>25</em></span>
+                  <span class="acc-num acc-num--like"><em>120k</em></span>
+                  <span class="acc-num acc-num--comment"><em>25</em></span>
+                </div>
+                <button type="button" class="btn-share" aria-label="Share"></button>
+              </div>
+              <hr class="hr-line">
+              <div class="hashtag-block">
+                <a href="#" class="hashtag"># 시베리아</a>
+                <a href="#" class="hashtag"># 김아미</a>
+                <a href="#" class="hashtag"># 갤러리애프터눈</a>
+                <a href="#" class="hashtag"># NKSIN</a>
+                <a href="#" class="hashtag"># 버기</a>
+                <a href="#" class="hashtag"># 엔케이신</a>
+                <a href="#" class="hashtag"># 바로크 시대</a>
+                <!-- <a href="#" class="hashtag"># 시베리아</a>
+                <a href="#" class="hashtag"># 김아미</a>
+                <a href="#" class="hashtag"># 갤러리애프터눈</a>
+                <a href="#" class="hashtag"># NKSIN</a>
+                <a href="#" class="hashtag"># 버기</a>
+                <a href="#" class="hashtag"># 엔케이신</a>
+                <a href="#" class="hashtag"># 바로크 시대</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="artist-intro__data-box">
+            <ul class="offer-summ__list">
+              <li class="offer-summ__item">
+                <div class="offer-summ__item__box">
+                  <span class="tit">이름</span>
+                  <span class="txt">임윤찬</span>
+                </div>
+              </li>
+              <li class="offer-summ__item">
+                <div class="offer-summ__item__box">
+                  <span class="tit">국적</span>
+                  <span class="txt">대한민국</span>
+                </div>
+              </li>
+              <li class="offer-summ__item">
+                <div class="offer-summ__item__box">
+                  <span class="tit">직업</span>
+                  <span class="txt">피아노연주자</span>
+                </div>
+              </li>
+              <li class="offer-summ__item">
+                <div class="offer-summ__item__box">
+                  <span class="tit">나이</span>
+                  <span class="txt">만 18세 (2004)</span>
+                </div>
+              </li>
+              <li class="offer-summ__item">
+                <div class="offer-summ__item__box">
+                  <span class="tit">학력</span>
+                  <span class="txt">한국예술종합학교 재학중</span>
+                </div>
+              </li>
+              <li class="offer-summ__item">
+                <div class="offer-summ__item__box">
+                  <span class="tit">경력</span>
+                  <span class="txt">
+                    <div class="list">
+                      <p>
+                        제16회 반클라이번 국제 피아노 콩쿠르 우승 (2022년)<br />
+                        윤이상 국제음악콩쿠르 1위 (2019년)<br />
+                        쿠퍼 국제 콩쿠르 3위 (2018년)<br />
+                        클리블랜드 국제청소년 피아노 콩쿠르 주니어 부문 2위 (2018년)
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- START -->
+      <div class="content">
+
+        <!-- artist DB -->
+        <section class="artist-db" data-tab="tab-wrap">
+          <!-- tabs -->
+          <!-- <div class="tab-block">
+            <div class="tab only-tab">
+              tab  : button 활성화 'is-active'
+              <ul class="tab__list" data-tab="tab-list">
+                <li class="tab__item"><a href="#tab-content1" class="tab__btn is-active">소개</a></li>
+                <li class="tab__item"><a href="#" class="tab__btn">작품</a></li>
+                <li class="tab__item"><a href="#tab-content2" class="tab__btn">영상</a></li>
+                <li class="tab__item"><a href="#tab-content3" class="tab__btn">댓글</a></li>
+              </ul>
+            </div>
+          </div> -->
+          <!--// tabs -->
+
+          <div class="tab-content" data-tab="tab-content">
+            <!-- top news -->
+            <div class="artist-db__detail">
+              <h3 id="tab-content1" class="artist-db__title">아티스트 소개</h3>
+              <p class="artist-db__text">임윤찬은 2022년 제16회 반 클라이번 국제 피아노 콩쿠르에서 만 18세의 나이로 역대 최연소 우승 기록을 세웠다.<br>
+                신작 최고연주상, 청중상 등을 수상하며 세계무대에 돌풍을 일으켰다.<br>
+                그가 대회 결선에서 라흐마니노프 피아노 협주곡 3번을 연주하는 영상은 유튜브에서 해당 곡 기준 최다 조회수를 기록하기도 했다. 임윤찬의 우승을 계기로 ‘K클래식’열품이 다시금
+                주목받았다. 조성진을 잇는 차세대 스타 피아니스트란 평가를 받는다.<br>
+                <br>
+                7살에 피아노를 시작한 임윤찬은 2020년 2월 예원학교를 전체수석으로 졸업한 후 이듬해 한국예술종합학교에 영재입학했다.<br>
+                2017년부터 한국예술영재교육원에서 피아니스트 손민수를 사사했고, 2015년 만 11세의 나이로 금호문화재단 금호영재콘서트로 데뷔했다.<br>
+                2019년 주스페인한국문화원 초청으로 스페인 마드리드 산페르난도 왕립미술원 콘서트홀에서 첫 해외 독주회를 마쳐다.<br>
+                2015년 만 11세의 나이로 금호문화재단 금호영재콘서트로 데뷔했다.2019년 주스페인한국문화원 초청으로 스페인 마드리드 산페르난도 왕립미술원 콘서트홀에서 첫 해외 독주회를
+                마쳐다.<br>
+                <br>
+                임윤찬은 반 클라이번 콩쿠르 기간 내내 압도적은 기량을 과시했다. 그는 콩쿠르 출천 제한 연령의 하한선인 만 18세로 대회에 참가했다<br>
+                연주 직후 올솝은 감격에 겨운 듯 눈물을 글썽이는 모습까지 보였다.</p>
+            </div>
+            <!-- 도서작가의 경우(중단 책 소개영역 추가) -->
+            <!-- <div class="artist-db__content">
+              <h3 class="artist-db__title">아티스트 작품</h3>
+
+              <div class="pdt-grid-wrap type2 swiper">
+                <div class="pdt-grid swiper-wrapper">
+                  <div class="pdt-grid__item swiper-slide">
+                    <div class="pdt pdt--sm">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉</a>
+                          <ul class="art-info">
+                            <li>김연수</li>
+                            <li>문학동네</li>
+                          </ul>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pdt-grid__item swiper-slide">
+                    <div class="pdt pdt--sm">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉</a>
+                          <ul class="art-info">
+                            <li>김연수</li>
+                            <li>문학동네</li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pdt-grid__item swiper-slide">
+                    <div class="pdt pdt--sm">
+                      <div class="pdt__card">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder">
+                            <img src="../assets/images/@temp/@temp_thumb01.jpg" alt="">
+                          </span>
+                        </a>
+                        <div class="pdt__inbox">
+                          <a href="#" class="pdt__title">유니버설발레단 〈호두까기인형〉</a>
+                          <ul class="art-info">
+                            <li>김연수</li>
+                            <li>문학동네</li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div> -->
+            <!-- // 도서작가의 경우(중단 책 소개영역 추가) -->
+
+            <div class="artist-db__content swiper-content">
+              <h3 id="tab-content2" class="artist-db__title">아티스트 관련 최신 영상</h3>
+              <div class="artist-db__wrapper swiper">
+                <ul class="swiper-wrapper artist-db__list">
+                  <li class="swiper-slide artist-db__list__item">
+                    <div class="artist-db__list__img">
+                      <a href="#none">
+                        <img src="../assets/images/@temp/@temp_thumb07.png" alt="artist db content img"
+                          data-pop-open="popupVideo">
+                      </a>
+                    </div>
+                    <div class="artist-db__list__info">
+                      <a href="#none" class="artist-db__list__summary">1어린 왕자의 순수한 영혼을 연주하고 싶다</a>
+                    </div>
+                  </li>
+                  <!--
+                  <li class="swiper-slide artist-db__list__item">
+                    <div class="artist-db__list__img">
+                      <a href="#none">
+                        <img src="../assets/images/@temp/@temp_thumb10.png" alt="artist db content img"
+                          data-pop-open="popupVideo">
+                      </a>
+                    </div>
+                    <div class="artist-db__list__info">
+                      <a href="#none" class="artist-db__list__summary">2어린 왕자의 순수한 영혼을 연주하고 싶다</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide artist-db__list__item">
+                    <div class="artist-db__list__img">
+                      <a href="#none">
+                        <img src="../assets/images/@temp/@temp_thumb09.png" alt="artist db content img"
+                          data-pop-open="popupVideo">
+                      </a>
+                    </div>
+                    <div class="artist-db__list__info">
+                      <a href="#none" class="artist-db__list__summary">3어린 왕자의 순수한 영혼을 연주하고 싶다</a>
+                    </div>
+                  </li>
+                  -->
+                </ul>
+              </div>
+              <div class="swiper-controls">
+                <div class="swiper-pagination"></div>
+                <button type="button" class="swiper--btn swiper-prev"><span class="blind">이전</span></button>
+                <button type="button" class="swiper--btn swiper-next"><span class="blind">다음</span></button>
+              </div>
+            </div>
+
+            <!-- s: 댓글영역 -->
+            <div id="tab-content3" class="reply-wrap">
+              <div class="reply-commit">
+                <div class="reply-input">
+                  <!-- [D] 닉네임 영역 미노출인 경우, strong.reply-input__writer 마크업 삭제 -->
+                  <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+                  <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                  <textarea minlength="5" maxlength="1000" placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요."></textarea>
+                </div>
+
+                <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+                <button type="button" class="btn-rect__brown">등록</button>
+              </div>
+              <div class="reply-list-wrap">
+                <div class="reply-list-top">
+                  <strong>댓글 <span class="reply-num">(25)</span>
+                    <button type="button" class="btn-info" aria-label="정보더보기"></button>
+                  </strong>
+                  <div class="sort-area">
+                    <button type="button" class="btn-recent"><span class="btn-txt">등록순</span></button>
+                    <button type="button" class="btn-like"><span class="btn-txt num">좋아요순</span></button>
+                  </div>
+                </div>
+                <div class="reply-list">
+                  <button type="button" class="reply-list__view show-mo"><span class="btn-arrow__next">댓글
+                      전체보기</span></button>
+                  <ul>
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">하얀마음백범김구</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">수정하기</a></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reply-item__txt">리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다
+                          ~^^리뷰이벤트</div>
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">하얀마음백범김구</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">신고하기</a></li>
+                                <li><a href="#">차단하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reply-item__txt">리뷰이벤트 재밌네요</div>
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                        <!-- [D] 답글달기 영역 -->
+                        <div class="reply-input input__color-gray">
+                          <!-- [D] 비활성화인 경우, readonly 속성 추가-->
+                          <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea>
+                          <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                          <button type="button" class="btn-text">등록</button>
+                        </div>
+                      </div>
+                      <!-- [D] 답글 리스트 영역 -->
+                      <ul class="reply-depth2">
+                        <li>
+                          <div class="reply-item">
+                            <div class="reply-item__top">
+                              <div class="reply-item__name">간만에카페인</div>
+                              <div class="setting" data-role="visible_wrap">
+                                <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                                  data-role="visible_btn"></button>
+                                <div class="setting__layer" data-role="visible_cont">
+                                  <ul>
+                                    <li><a href="#">차단해제</a></li>
+                                  </ul>
+                                  <button type="button" class="btn-close" data-role="hide_btn"
+                                    aria-label="레이어 닫기"></button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</div>
+                            <div class="reply-item__util">
+                              <div class="reply-item__info">
+                                <span class="reply-item__date">2022.10.20 <span
+                                    class="reply-item__time">10:20:21</span></span>
+                                <div class="btn-fav__wrap">
+                                  <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                      class="num">좋아요</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">하얀마음백범김구</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">수정하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- [D] 수정하기 버튼 클릭 시 노출-->
+                        <div class="reply-input reply-modify">
+                          <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea>
+                          <button type="button" class="btn-text">수정</button>
+                        </div>
+
+                        <!-- <div class="reply-item__txt">리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다
+                            ~^^리뷰이벤트
+                            재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!!
+                            응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다
+                            ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^리뷰이벤트 재밌네요!! 응원합니다 ~^^</div> -->
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                        <div class="reply-input input__color-gray">
+                          <strong class="reply-input__writer">하얀마음백범김구</strong>
+                          <!-- [D] 비활성화인 경우, readonly 속성 추가-->
+                          <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea>
+                          <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                          <button type="button" class="btn-text">등록</button>
+                        </div>
+                      </div>
+                      <ul class="reply-depth2">
+                        <li>
+                          <div class="reply-item">
+                            <div class="reply-item__top">
+                              <div class="reply-item__name">간만에카페인2</div>
+                              <div class="setting" data-role="visible_wrap">
+                                <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                                  data-role="visible_btn"></button>
+                                <div class="setting__layer" data-role="visible_cont">
+                                  <ul>
+                                    <li><a href="#">수정하기</a></li>
+                                    <li><a href="#">삭제하기</a></li>
+                                  </ul>
+                                  <button type="button" class="btn-close" data-role="hide_btn"
+                                    aria-label="레이어 닫기"></button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- [D] 수정하기 버튼 클릭 시 노출-->
+                            <div class="reply-input reply-modify">
+                              <textarea minlength="5" maxlength="1000" placeholder="답글을 입력해주세요."></textarea>
+                              <button type="button" class="btn-text">수정</button>
+                            </div>
+
+                            <!-- <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</div> -->
+                            <div class="reply-item__util">
+                              <div class="reply-item__info">
+                                <span class="reply-item__date">2022.10.20 <span
+                                    class="reply-item__time">10:20:21</span></span>
+                                <div class="btn-fav__wrap">
+                                  <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                      class="num">좋아요</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="reply-item">
+                            <div class="reply-item__top">
+                              <div class="reply-item__name">간만에카페인</div>
+                              <div class="setting" data-role="visible_wrap">
+                                <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                                  data-role="visible_btn"></button>
+                                <div class="setting__layer" data-role="visible_cont">
+                                  <ul>
+                                    <li><a href="#">수정하기</a></li>
+                                    <li><a href="#">삭제하기</a></li>
+                                  </ul>
+                                  <button type="button" class="btn-close" data-role="hide_btn"
+                                    aria-label="레이어 닫기"></button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의 희망이자
+                              미래인
+                              고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로
+                              응원합니다.대한민국의
+                              희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로
+                              응원합니다.</div>
+                            <div class="reply-item__util">
+                              <div class="reply-item__info">
+                                <span class="reply-item__date">2022.10.20 <span
+                                    class="reply-item__time">10:20:21</span></span>
+                                <div class="btn-fav__wrap">
+                                  <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                      class="num">좋아요</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">하얀마음백범김구</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">수정하기</a></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reply-item__txt">리뷰이벤트 재밌네요</div>
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                        <div class="reply-input input__color-gray">
+                          <!-- [D] 비활성화인 경우, readonly 속성 추가-->
+                          <textarea minlength="5" maxlength="1000"
+                            placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."
+                            readonly=""></textarea>
+                          <!-- [D] 비활성화인 경우, disabled 속성 추가-->
+                          <button type="button" class="btn-text" disabled="">등록</button>
+                        </div>
+                      </div>
+                      <ul class="reply-depth2">
+                        <li>
+                          <div class="reply-item">
+                            <div class="reply-item__top">
+                              <div class="reply-item__name">간만에카페인</div>
+                              <div class="setting" data-role="visible_wrap">
+                                <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                                  data-role="visible_btn"></button>
+                                <div class="setting__layer" data-role="visible_cont">
+                                  <ul>
+                                    <li><a href="#">수정하기</a></li>
+                                    <li><a href="#">삭제하기</a></li>
+                                  </ul>
+                                  <button type="button" class="btn-close" data-role="hide_btn"
+                                    aria-label="레이어 닫기"></button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reply-item__txt">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</div>
+                            <div class="reply-item__util">
+                              <div class="reply-item__info">
+                                <span class="reply-item__date">2022.10.20 <span
+                                    class="reply-item__time">10:20:21</span></span>
+                                <div class="btn-fav__wrap">
+                                  <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                      class="num">좋아요</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- [D] 삭제 댓글 유형-->
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">삭제 댓글 유형</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">수정하기</a></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="reply-item__txt text-disabled">삭제된 댓글이에요.</div>
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- [D] 신고 댓글 유형-->
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">신고 댓글 유형</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">수정하기</a></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="reply-item__txt text-disabled">내가 신고한 댓글이에요.</div>
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- [D] 차단 댓글 유형-->
+                    <li>
+                      <div class="reply-item">
+                        <div class="reply-item__top">
+                          <div class="reply-item__name">차단 댓글 유형</div>
+                          <div class="setting" data-role="visible_wrap">
+                            <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                              data-role="visible_btn"></button>
+                            <div class="setting__layer" data-role="visible_cont">
+                              <ul>
+                                <li><a href="#">수정하기</a></li>
+                                <li><a href="#">삭제하기</a></li>
+                              </ul>
+                              <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="reply-item__txt text-disabled">차단된 댓글이에요.</div>
+                        <div class="reply-item__util">
+                          <div class="reply-item__info">
+                            <span class="reply-item__date">2022.10.20 <span
+                                class="reply-item__time">10:20:21</span></span>
+                            <div class="btn-fav__wrap">
+                              <button type="button" class="btn-fav btn-fav--num" aria-label="Like"><span
+                                  class="num">120k</span></button>
+                            </div>
+                          </div>
+                          <div class="reply-item__btn__wrap">
+                            <button type="button" class="btn">답글 달기</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="reply-add">
+                    <button type="button" class="reply-add__btn"><span>댓글 쓰기</span></button>
+                  </div>
+
+                  <!-- [D] 답글 없을 시 영역 화면 -->
+                  <!-- <div class="reply-area__none">
+                    <span>해당 공연에 대한 댓글이 아직 없습니다!</span>
+                  </div> -->
+
+                  <!-- Paging -->
+                  <div class="paging">
+                    <!-- PC -->
+                    <a href="#" class="paging__btn paging__btn--first">처음</a>
+                    <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                    <div class="paging__num-wrap paging-pc">
+                      <a href="#" class="paging__num paging__num--active">1</a>
+                      <a href="#" class="paging__num">2</a>
+                      <a href="#" class="paging__num">3</a>
+                      <a href="#" class="paging__num">4</a>
+                      <a href="#" class="paging__num">5</a>
+                      <a href="#" class="paging__num">6</a>
+                      <a href="#" class="paging__num">7</a>
+                      <a href="#" class="paging__num">8</a>
+                      <a href="#" class="paging__num">9</a>
+                      <a href="#" class="paging__num">10</a>
+                    </div>
+                    <a href="#" class="paging__btn paging__btn--next">다음</a>
+                    <a href="#" class="paging__btn paging__btn--last">마지막</a>
+                  </div>
+                  <!-- Paging -->
+                </div>
+
+                <!-- [D] 댓글 쓰기 / 답글 쓰기 / 수정 하기 클릭 시 노출 -->
+                <div class="reply-writer">
+                  <div class="reply-writer__tit">댓글 작성</div>
+                  <div class="reply-writer__commit">
+                    <div class="reply-input">
+                      <!-- [D] 닉네임 영역 미노출인 경우, strong.reply-input__writer 마크업 삭제 -->
+                      <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+                      <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                      <textarea minlength="5" maxlength="1000" placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요."></textarea>
+                    </div>
+
+                    <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+                    <button type="button" class="btn-rect__brown">등록</button>
+                  </div>
+                  <button type="button" class="btn-close"></button>
+                </div>
+              </div>
+            </div>
+            <div class="editor-paging">
+              <a href="#" class="paging__list">
+                <span class="paging__list__text">LIST</span>
+              </a>
+            </div>
+            <!-- e: 댓글영역 -->
+          </div>
+
+          <!-- 관련 아티스트 영역 -->
+          <div class="pdt-vt-wrap">
+            <div class="art-vt__titbox">
+              <h2 class="art-vt__title">관련 아티스트</h2>
+            </div>
+            <div class="pdt-vt-slider swiper pdt-vt-three">
+              <ul class="swiper-wrapper">
+                <li class="pdt-vt__item  swiper-slide">
+                  <div class="pdt-vt-block">
+                    <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    <a href="#" class="pdt-vt__link">
+                      <div class="thumb-img">
+                        <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                      </div>
+                      <div class="pdt-vt__titbox">
+                        <p class="pdt-vt__title">김종규</p>
+                      </div>
+                    </a>
+                    <div class="pdt-vt__inbox">
+                      <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                        독보적인
+                        존재감을
+                        보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                        G단조,
+                        바흐의 두 대의 바이올린을 위한~~~
+                      </p>
+                      <div class="pdt-vt__tags">
+                        <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                        <span class="tag tag--line type2 tag--line--year">1980</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--
+                <li class="pdt-vt__item  swiper-slide">
+                  <div class="pdt-vt-block">
+                    <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    <a href="#" class="pdt-vt__link">
+                      <div class="thumb-img">
+                        <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                      </div>
+                      <div class="pdt-vt__titbox">
+                        <p class="pdt-vt__title">김종규</p>
+                      </div>
+                    </a>
+                    <div class="pdt-vt__inbox">
+                      <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                        독보적인
+                        존재감을
+                        보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                        G단조,
+                        바흐의 두 대의 바이올린을 위한~~~
+                      </p>
+                      <div class="pdt-vt__tags">
+                        <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                        <span class="tag tag--line type2 tag--line--year">1980</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pdt-vt__item  swiper-slide">
+                  <div class="pdt-vt-block">
+                    <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    <a href="#" class="pdt-vt__link">
+                      <div class="thumb-img">
+                        <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                      </div>
+                      <div class="pdt-vt__titbox">
+                        <p class="pdt-vt__title">김종규</p>
+                      </div>
+                    </a>
+                    <div class="pdt-vt__inbox">
+                      <p class="pdt-vt__description">바이올린 여제, 사라 장이 2022년 12월 내한공연을 갖는다. 3년 전 리사이틀 전국 공연을 매진시키며
+                        독보적인
+                        존재감을
+                        보였던 사라 장은 이번에는 한국의 후배 연주가들과 함께 다양한 연주곡 협주를 선보인다. 사라 장이 이번 공연을 위해 선택한 프로그램은 비탈리의 샤콘느
+                        G단조,
+                        바흐의 두 대의 바이올린을 위한~~~
+                      </p>
+                      <div class="pdt-vt__tags">
+                        <span class="tag tag--line type2 tag--line--job">피아니스트</span>
+                        <span class="tag tag--line type2 tag--line--year">1980</span>
+                      </div>
+                      <div class="art-info-sub">
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              -->
+              </ul>
+            </div>
+            <div class="pdt-vt-slide__pagination"></div>
+          </div>
+          <!-- // 관련 아티스트 영역 -->
+
+
+
+
+        </section>
+        <!--// artist DB -->
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- (확인용)아티스트 관련 최신 영상 비디오 팝업 : 각 파일에서 코드 확인 필요-->
+    <div class="pop11">비디오 팝업 : PW_I_ON_CP_11_00.html</div>
+    <!--// (확인용)아티스트 관련 최신 영상 비디오 팝업 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+  <script>
+    $(document).ready(function () {
+      //팝업 확인용 load
+      $(".pop11").load("PW_I_ON_CP_11_00.html .pop-wrap");
+    });
+  </script>
+  <script>
+    layoutHeader({
+      type: 3,
+      menu1: 7,
+      menu2: 3,
+    });
+  </script>
+
+  <script>
+    $(function () {
+      // $('[data-pop-open=popupVideo]').trigger('click');
+    })
+  </script>
+
+  <script>
+    // $(function () {
+    //   $('[data-pop-open=popupVideo]').trigger('click');
+    // })
+    let ww = $(window).width();
+    let mySwiper = undefined;
+
+    function initSwiper() {
+
+      if (ww < 1024 && mySwiper == undefined) {
+        mySwiper = new Swiper(".artist-db__content.type2 .artist-db__wrapper", {
+          slidesPerView: 1,
+          spaceBetween: 32,
+          loop: false,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+        mySwiper = new Swiper(".artist-db__content .pdt-grid-wrap", {
+          slidesPerView: "auto",
+          spaceBetween: 16,
+          loop: false,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      } else if (ww >= 1024 && mySwiper != undefined) {
+        mySwiper.destroy();
+        mySwiper = undefined;
+      }
+    }
+
+    initSwiper();
+
+    $(window).on('resize', function () {
+      ww = $(window).width();
+      initSwiper();
+    });
+  </script>
+</body>
+
+</html>

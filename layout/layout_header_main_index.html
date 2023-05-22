@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>1 Depth | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<body id="wrap" class="wrap">
+  <div id="header" class="header">
+    <div class="header__inner header-main">
+      <!-- block -->
+      <!-- 커튼배너영역 -->
+      <div class="cotton-banner is-active">
+        <div class="cotton-banner__wrap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            </div>
+          </div>
+          <div class="cotton-banner__close">
+            <label class="o-rdo">
+              <input type="checkbox" class="o-input" name="chk-status"><span class="o-rdo__label">오늘 하루 보지 않기</span>
+            </label>
+            <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn" aria-label="레이어 닫기"></button>
+          </div>
+          <div class="cotton-banner__control">
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper--play btn-autoplay disabled"><span>시작</span></button>
+            <button type="button" class="swiper--pause btn-autoplay"><span>멈춤</span></button>
+          </div>
+        </div>
+      </div>
+      <!-- 커튼배너영역 -->
+      <div class="header__main-block">
+        <div class="header__left">
+          <h1 class="header-logo">
+            <a href="#" class="arte-logo">
+              <em class="logo-a">A</em><span>RTE</span>
+            </a>
+          </h1>
+
+          <ul class="gnb">
+            <li><a href="#" data-gnb="music">MUSIC <span class="text">듣다</span></a></li>
+            <li><a href="#" data-gnb="stage">STAGE&middot;CINE <span class="text">즐기다</span></a></li>
+            <li><a href="#" data-gnb="art">ART <span class="text">보다</span></a></li>
+            <li><a href="#" data-gnb="book">BOOK <span class="text">읽다</span></a></li>
+          </ul>
+        </div>
+
+        <div class="header-utils">
+          <ul class="gnb-utils">
+            <li><a href="#" class="util-btn ico-talk" data-gnb="talk" data-dir="right">
+                <em class="text">arte TALK</em></a></li>
+            <li><a href="#" class="util-btn ico-video" data-gnb="video" data-dir="right">
+                <em class="text">arteTV 유튜브</em></a></li>
+            <li><a href="#" class="util-btn ico-finder" data-gnb="finder" data-dir="right">
+                <em class="text">ART FINDER</em></a></li>
+            <li><a href="#" class="util-btn ico-search" aria-label="Search" data-menu="search"></a></li>
+            <li><a href="#" class="util-btn ico-person" aria-label="Person" data-menu="mypage"></a></li>
+          </ul>
+          <button type="button" class="all-menu-btn" aria-label="Menu" data-allmenu="open"><i></i></button>
+        </div>
+      </div>
+      <!--// block -->
+
+      <!-- header Layer section  -->
+      <section class="header__box">
+        <div class="header-global-menu" data-header-box="gnb">
+          <!-- nav section -->
+          <div class="header__nav">
+            <div class="gnb-nav-group">
+              <div class="gnb-nav" data-lnb="music">
+                <h3 class="header-tit">MUSIC 듣다</h3>
+                <ul class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">리뷰</a></li>
+                  <li><a href="#" class="gnb-nav__btn">공연 정보</a></li>
+                  <li><a href="#" class="gnb-nav__btn">칼럼·연재</a></li>
+                  <li><a href="#" class="gnb-nav__btn">뉴스·인터뷰</a></li>
+                </ul>
+              </div>
+              <div class="gnb-nav" data-lnb="stage">
+                <h3 class="header-tit">STAGE CINE 즐기다</h3>
+                <ul class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">리뷰</a></li>
+                  <li><a href="#" class="gnb-nav__btn">공연 정보</a></li>
+                  <li><a href="#" class="gnb-nav__btn">칼럼·연재</a></li>
+                  <li><a href="#" class="gnb-nav__btn">뉴스·인터뷰</a></li>
+                </ul>
+              </div>
+              <div class="gnb-nav" data-lnb="art">
+                <h3 class="header-tit">ART 보다</h3>
+                <ul class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">리뷰</a></li>
+                  <li><a href="#" class="gnb-nav__btn">전시 정보</a></li>
+                  <li><a href="#" class="gnb-nav__btn">칼럼·연재</a></li>
+                  <li><a href="#" class="gnb-nav__btn">글로벌 아트</a></li>
+                  <li><a href="#" class="gnb-nav__btn">뉴스·인터뷰</a></li>
+                  <!-- <li><a href="#" class="gnb-nav__btn">미술시장 분석</a></li> -->
+                </ul>
+              </div>
+              <div class="gnb-nav" data-lnb="book">
+                <h3 class="header-tit">BOOK 읽다</h3>
+                <ul class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">리뷰</a></li>
+                  <!-- <li><a href="#" class="gnb-nav__btn">탐나는 책</a></li> -->
+                  <li><a href="#" class="gnb-nav__btn">도서 정보</a></li>
+                  <li><a href="#" class="gnb-nav__btn">칼럼·연재</a></li>
+                  <li><a href="#" class="gnb-nav__btn">뉴스·인터뷰</a></li>
+                </ul>
+              </div>
+              <div class="gnb-nav" data-lnb="talk">
+                <h3 class="header-tit">arte TALK</h3>
+                <div class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">문화예술계 소식</a></li>
+                  <li><a href="#" class="gnb-nav__btn">arte TALK TALK</a></li>
+                  <li><a href="#" class="gnb-nav__btn">공지사항</a></li>
+                  <!-- <li><a href="#" class="gnb-nav__btn">arte Poll</a></li> -->
+                </div>
+              </div>
+              <div class="gnb-nav" data-lnb="finder">
+                <h3 class="header-tit">ART FINDER</h3>
+                <div class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">arte Map</a></li>
+                  <li><a href="#" class="gnb-nav__btn">arte Calendar</a></li>
+                  <li><a href="#" class="gnb-nav__btn">artist DB</a></li>
+                </div>
+              </div>
+              <div class="gnb-nav" data-lnb="video">
+                <h3 class="header-tit">arteTV 유튜브</h3>
+                <div class="gnb-nav__list">
+                  <li><a href="#" class="gnb-nav__btn">arteTV 유튜브</a></li>
+                  <!-- <li><a href="#" class="gnb-nav__btn">arte 영상</a></li> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="nav-links">
+            <h3 class="header-tit">art FINDER</h3>
+            <div class="nav-links__list">
+              <a href="#" class="nav-links__btn">arte Map</a>
+              <a href="#" class="nav-links__btn">arte Calendar</a>
+              <a href="#" class="nav-links__btn">artist DB</a>
+            </div>
+          </div> -->
+          </div>
+          <!--// nav section -->
+
+          <!-- banner section -->
+          <div class="header__banners">
+            <!-- buddy banner -->
+            <div class="buddy-banner">
+              <h3 class="header-tit">아르떼와 친구들</h3>
+              <ul class="buddy-banner__list">
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_01.png" alt=""></span>
+                    <em class="buddy-banner__text">유니버설뮤직 클래식</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_02.png" alt=""></span>
+                    <em class="buddy-banner__text">민음사TV</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_03.png" alt=""></span>
+                    <em class="buddy-banner__text">금호아트홀</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_04.png" alt=""></span>
+                    <em class="buddy-banner__text">첼로댁</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_05.png" alt=""></span>
+                    <em class="buddy-banner__text">하우스콘서트</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_06.png" alt=""></span>
+                    <em class="buddy-banner__text">예술의 이유</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_07.png" alt=""></span>
+                    <em class="buddy-banner__text">워너클래식 코리아</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_08.png" alt=""></span>
+                    <em class="buddy-banner__text">공셸TV</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_01.png" alt=""></span>
+                    <em class="buddy-banner__text">유니버설뮤직 클래식</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_02.png" alt=""></span>
+                    <em class="buddy-banner__text">민음사TV</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_03.png" alt=""></span>
+                    <em class="buddy-banner__text">금호아트홀</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_04.png" alt=""></span>
+                    <em class="buddy-banner__text">첼로댁</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_05.png" alt=""></span>
+                    <em class="buddy-banner__text">하우스콘서트</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_06.png" alt=""></span>
+                    <em class="buddy-banner__text">예술의 이유</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_07.png" alt=""></span>
+                    <em class="buddy-banner__text">워너클래식 코리아</em></a>
+                </li>
+                <li><a href="#" class="buddy-banner__item">
+                    <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_08.png" alt=""></span>
+                    <em class="buddy-banner__text">공셸TV</em></a>
+                </li>
+              </ul>
+              <a href="#" class="buddy-banner__more" aria-lable="more"></a>
+            </div>
+            <!--// buddy banner -->
+            <!-- slider banner -->
+            <div class="buddy-card swiper">
+              <ul class="buddy-card__list swiper-wrapper">
+                <li class="buddy-card__item swiper-slide">
+                  <a href="#" class="buddy-card__box">
+                    <span class="buddy-card__img">
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                      <img src="../assets/images/@temp/@temp_gnb_banner01.jpg" alt="" />
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                    </span>
+                    <p class="buddy-card__text">아르떼 개편 및 집콕집밖 설특별전 감상이벤트 1</p>
+                  </a>
+                </li>
+                <li class="buddy-card__item swiper-slide">
+                  <a href="#" class="buddy-card__box">
+                    <span class="buddy-card__img">
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                      <img src="../assets/images/@temp/@temp_gnb_banner01.jpg" alt="" />
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                    </span>
+                    <p class="buddy-card__text">아르떼 개편 및 집콕집밖 설특별전 감상이벤트 2</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!--// slider banner -->
+          </div>
+          <!--// banner section -->
+        </div>
+
+        <!-- 검색 -->
+        <div class="header-global-search type-right" data-header-box="search">
+          <div class="header__nav">
+            <div class="header-search">
+              <input type="text" class="o-input" placeholder="arte.co.kr검색하기">
+            </div>
+            <div class="nav-links">
+              <h3 class="header-tit">Quick Links</h3>
+              <div class="nav-links__list">
+                <a href="#" class="nav-links__btn">arte Map</a>
+                <a href="#" class="nav-links__btn">arte Calendar</a>
+                <a href="#" class="nav-links__btn">artist DB</a>
+                <a href="#" class="nav-links__btn">arte Poll </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// 검색 -->
+
+        <!-- 마이페이지 -->
+        <div class="header-global-mypage type-right" data-header-box="mypage">
+          <div class="header__nav">
+            <!-- <div class="header-info">
+            <p class="header-info__name">간만에카페인가가가가</p>
+            <p class="header-info__email">guest01@hankung.com</p>
+            <div class="header-info__btns">
+              <button type="button" class="btn size-sm c-primary">로그아웃</button>
+            </div>
+          </div> -->
+            <div class="header-info">
+              <p class="header-info__name">로그인을 해주세요</p>
+              <p class="header-info__email"></p>
+              <div class="header-info__btns">
+                <button type="button" class="btn size-sm c-primaryy">로그인 &frasl; 회원가입<i
+                    class="ico ico-arrow"></i></button>
+              </div>
+            </div>
+            <div class="nav-links">
+              <h3 class="header-tit">마이페이지</h3>
+              <div class="nav-links__list">
+                <!-- <a href="#" class="nav-links__btn">좋아한 콘텐츠</a> -->
+                <!-- <a href="#" class="nav-links__btn">나의 활동</a> -->
+                <a href="#" class="nav-links__btn">나의 정보</a>
+                <a href="#" class="nav-links__btn">1:1문의</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// 마이페이지 -->
+      </section>
+      <!--// header Layer section -->
+
+      <!-- all menu : 활성화 'is-active'-->
+      <section class="all-section" data-accordion="wrapper" data-menu-box="allmenu">
+        <div class="all-section-wrap">
+          <div class="all-section-header">
+            <div class="all-section-header__left">
+              <h2 class="header-logo show-pc">
+                <a href="#" class="arte-logo">
+                  <em class="logo-a">A</em><span>RTE</span>
+                </a>
+              </h2>
+              <!-- [CASE] 로그인 전 'before' , 로그인 후 'after' 추가 -->
+              <div class="log-btn-wrap show-mo before">
+                <button type="button" class="login-btn before">
+                  <span class="login-tit">로그인 &frasl; 회원가입</span>
+                </button>
+                <button type="button" class="login-btn after">
+                  <span class="login-tit">간만에카페인먹었어요</span>
+                </button>
+                <button type="button" class="logout-btn after">
+                  <span class="logout-tit">로그아웃</span>
+                </button>
+              </div>
+              <!-- <div class="log-btn-wrap show-mo after">
+              <button type="button" class="login-btn before">
+                <span class="login-tit">로그인 &frasl; 회원가입</span>
+              </button>
+              <button type="button" class="login-btn after">
+                <span class="login-tit">간만에카페인먹었어요</span>
+              </button>
+              <button type="button" class="logout-btn after">
+                <span class="logout-tit">로그아웃</span>
+              </button>
+            </div> -->
+            </div>
+            <div class="header-utils">
+              <!-- home -->
+              <button type="button" class="app-home" aria-label="Home"></button>
+              <!-- //home -->
+              <ul class="gnb-utils">
+                <li>
+                  <a href="#" class="util-btn ico-search" aria-label="Search" data-menu="search"></a>
+                </li>
+                <li class="hide-mo">
+                  <a href="#" class="util-btn ico-person" aria-label="Person" data-menu="mypage"></a>
+                </li>
+              </ul>
+              <button type="button" class="all-menu-btn hide-mo" aria-label="Menu"><i></i></button>
+              <button type="button" class="all-menu-close" aria-label="닫기" data-allmenu="close"></button>
+            </div>
+          </div>
+          <div class="all-section__inner">
+            <!-- search bar : 활성화 'is-active' -->
+            <div class="header-search-bar__wrap">
+              <div class="header-search-bar">
+                <input type="text" class="s-input" placeholder="검색하기" title="검색하기">
+              </div>
+            </div>
+            <!-- //search bar -->
+            <!-- slider banner : mobile -->
+            <div class="buddy-card swiper show-mo">
+              <ul class="buddy-card__list swiper-wrapper">
+                <li class="buddy-card__item swiper-slide">
+                  <a href="#" class="buddy-card__box">
+                    <span class="buddy-card__img">
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                      <img src="../assets/images/@temp/@temp_gnb_banner01.jpg" alt="" />
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                    </span>
+                    <p class="buddy-card__text">아르떼 개편 및 집콕집밖 설특별전 감상이벤트 1</p>
+                  </a>
+                </li>
+                <li class="buddy-card__item swiper-slide">
+                  <a href="#" class="buddy-card__box">
+                    <span class="buddy-card__img">
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                      <img src="../assets/images/@temp/@temp_gnb_banner01.jpg" alt="" />
+                      <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                    </span>
+                    <p class="buddy-card__text">아르떼 개편 및 집콕집밖 설특별전 감상이벤트 2</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!--// slider banner : mobile -->
+            <!-- menu list -->
+            <div class="all-menu">
+              <ul class="all-menu-list">
+                <li class="gnb-nav" data-accordion="group">
+                  <span class="header-tit show-pc">MUSIC 듣다</span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-music"></i>
+                    <em>MUSIC</em> <span>듣다</span>
+                  </button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">리뷰</a></li>
+                    <li><a href="#">공연 정보</a></li>
+                    <li><a href="#">칼럼&middot;연재</a></li>
+                    <li><a href="#">뉴스&middot;인터뷰</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-nav" data-accordion="group">
+                  <span class="header-tit show-pc">STAGE·CINE 즐기다</span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-stage"></i>
+                    <em>STAGE·CINE</em> <span>즐기다</span></button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">리뷰</a></li>
+                    <li><a href="#">공연 정보</a></li>
+                    <li><a href="#">칼럼&middot;연재</a></li>
+                    <li><a href="#">뉴스&middot;인터뷰</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-nav" data-accordion="group">
+                  <span class="header-tit show-pc">ART 보다</span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-art"></i>
+                    <em>ART</em> <span>보다</span></button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">리뷰</a></li>
+                    <li><a href="#">전시 정보</a></li>
+                    <li><a href="#">칼럼&middot;연재</a></li>
+                    <li><a href="#">글로벌 아트</a></li>
+                    <li><a href="#">뉴스&middot;인터뷰</a></li>
+                    <!-- <li><a href="#">미술시장 분석</a></li> -->
+                  </ul>
+                </li>
+                <li class="gnb-nav" data-accordion="group">
+                  <span class="header-tit show-pc">BOOK 읽다 </span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-book"></i>
+                    <em>BOOK</em> <span>읽다</span></button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">리뷰</a></li>
+                    <!-- <li><a href="#">탐나는 책</a></li> -->
+                    <li><a href="#">도서 정보</a></li>
+                    <li><a href="#">칼럼&middot;연재</a></li>
+                    <li><a href="#">뉴스&middot;인터뷰</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-nav dep--2" data-accordion="group">
+                  <span class="header-tit show-pc">arte TALK</span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-talk"></i>
+                    <em>arte TALK</em></button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">문화예술계 소식</a></li>
+                    <li><a href="#">arte TALK TALK</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <!-- <li><a href="#">arte Poll</a></li> -->
+                  </ul>
+                </li>
+                <li class="gnb-nav dep--2" data-accordion="group">
+                  <span class="header-tit show-pc">arteTV 유튜브</span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-video"></i>
+                    <em>arteTV 유튜브</em></button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">arteTV 유튜브</a></li>
+                    <!-- <li><a href="#">arte 영상</a></li> -->
+                  </ul>
+                </li>
+                <li class="gnb-nav dep--2" data-accordion="group">
+                  <span class="header-tit show-pc">ART FINDER</span>
+                  <button type="button" class="accor-btn show-mo" data-accordion="btn">
+                    <i class="gnb-ico ico-finder"></i>
+                    <em>ART FINDER</em></button>
+                  <ul class="gnb-menu__depbox">
+                    <li><a href="#">arte Map</a></li>
+                    <li><a href="#">arte Calendar</a></li>
+                    <li><a href="#">artist DB</a></li>
+                  </ul>
+                </li>
+                <!-- all-menu-side__wrap 사이드 영역으로 li 추가 시 위에 마크업 추가 -->
+                <li class="all-menu-side__wrap">
+                  <div class="all-menu-side">
+                    <!-- slider banner : pc -->
+                    <div class="buddy-card swiper show-pc">
+                      <ul class="buddy-card__list swiper-wrapper">
+                        <li class="buddy-card__item swiper-slide">
+                          <a href="#" class="buddy-card__box">
+                            <span class="buddy-card__img">
+                              <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                              <img src="../assets/images/@temp/@temp_gnb_banner01.jpg" alt="" />
+                              <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                            </span>
+                            <p class="buddy-card__text">아르떼 개편 및 집콕집밖 설특별전 감상이벤트 1</p>
+                          </a>
+                        </li>
+                        <li class="buddy-card__item swiper-slide">
+                          <a href="#" class="buddy-card__box">
+                            <span class="buddy-card__img">
+                              <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                              <img src="../assets/images/@temp/@temp_gnb_banner01.jpg" alt="" />
+                              <!-- MO BG 이미지 width: 314px; height: 229px;-->
+                            </span>
+                            <p class="buddy-card__text">아르떼 개편 및 집콕집밖 설특별전 감상이벤트 2</p>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <!--// slider banner : pc -->
+                    <!-- buddy banner -->
+                    <div class="buddy-banner">
+                      <h3 class="header-tit">아르떼와 친구들</h3>
+                      <ul class="buddy-banner__list">
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_01.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">유니버설뮤직 클래식</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_02.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">민음사TV</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_03.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">금호아트홀</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_04.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">첼로댁</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_05.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">하우스콘서트</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_06.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">예술의 이유</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_07.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">워너클래식 코리아</em></a>
+                        </li>
+                        <li><a href="#" class="buddy-banner__item">
+                            <span class="buddy-banner__img"><img src="../assets/images/@temp/@friends_08.png"
+                                alt=""></span>
+                            <em class="buddy-banner__text">공셸TV</em></a>
+                        </li>
+                      </ul>
+                      <a href="#" class="buddy-banner__more" aria-lable="more"></a>
+                    </div>
+                    <!-- //buddy banner -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //menu list -->
+            <!-- sns -->
+            <div class="all-sns_wrap show-mo">
+              <hr class="devider" aria-hidden="true">
+              <ul class="all-sns-list">
+                <li class="all-sns-list__item">
+                  <a href="https://www.facebook.com/profile.php?id=100091992696235&mibextid=LQQJ4d
+" class="all-sns-list__link facebook-item" target="_blank">
+                    <span class="name">페이스북</span>
+                  </a>
+                </li>
+                <li class="all-sns-list__item">
+                  <a href="https://instagram.com/arte_co_kr?igshid=YmMyMTA2M2Y=
+" class="all-sns-list__link insta-item" target="_blank">
+                    <span class="name">인스타그램</span>
+                  </a>
+                </li>
+                <li class="all-sns-list__item">
+                  <a href="https://twitter.com/arte_co_kr
+" class="all-sns-list__link twitter-item" target="_blank">
+                    <span class="name">트위터</span>
+                  </a>
+                </li>
+                <li class="all-sns-list__item">
+                  <a href="https://www.youtube.com/channel/UCPglj7zGwmOlH8_31Tpgh8Q
+" class="all-sns-list__link youtube-item" target="_blank">
+                    <span class="name">유튜브</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- //sns -->
+            <!-- all-section-bottom -->
+            <div class="all-section-bottom show-mo">
+              <div class="all-section-bottom__inner">
+                <a type="button" class="inquiry-btn" href='https://test.arte.co.kr/mypage/qna/list'
+                  target="_blank">1:1문의</a>
+                <a type="button" class="inquiry-btn" href='https://test.arte.co.kr/faq' target="_blank">FAQ</a>
+              </div>
+            </div>
+            <!-- //all-section-bottom -->
+          </div>
+        </div>
+      </section>
+      <!--// all menu -->
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../layout/js/layout.js"></script> -->
+  <script src="../assets/js/ui.js"></script>
+  <!-- <script src="../assets/js/main.js"></script> -->
+  <script>
+    // 아르떼와 친구들 더보기 버튼 동작
+    $('.buddy-banner__more').click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('is-on');
+      $(this).siblings('.buddy-banner__list').toggleClass('is-on');
+    });
+
+    // 커튼배너 영역 스와이퍼 & 오토플레이 s
+    function cottonBannerSwiper() {
+      if (typeof (cotton_banner_swiper) == 'object') swiper.destroy();
+      return cotton_banner_swiper = new Swiper(".cotton-banner__wrap",{
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.cotton-banner__control .swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        autoplay: {  
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true
+      });
+    }
+
+    $(window).on("load",function(){
+      cottonBannerSwiper();
+    });
+
+    function playShow() {
+      $('.cotton-banner__control .btn-autoplay.swiper--play').removeClass('disabled');
+      $('.cotton-banner__control .btn-autoplay.swiper--pause').addClass('disabled');
+    }
+
+    function pauseShow() {
+      $('.cotton-banner__control .btn-autoplay.swiper--play').addClass('disabled');
+      $('.cotton-banner__control .btn-autoplay.swiper--pause').removeClass('disabled');
+    }
+
+    $(document).off('click','.cotton-banner__control .btn-autoplay').on('click','.cotton-banner__control .btn-autoplay', function (e) {
+      const btn = $(e.currentTarget);
+
+      if (btn.hasClass('swiper--play')) {
+        cotton_banner_swiper.autoplay.start();
+        pauseShow();
+      } else{
+        cotton_banner_swiper.autoplay.stop();
+        playShow();
+      }
+    });
+    // 커튼배너 영역 스와이퍼 & 오토플레이 e
+  </script>
+  <!-- 커튼배너 닫기버튼 -->
+  <script>
+    function closeBtn() {
+      const cottonBn = document.querySelector('.cotton-banner');
+      this.addEventListener('click', function () {
+        cottonBn.classList.remove('is-active');
+      })
+    }
+  </script>
+  <!--// Script -->
+
+
+
+</body>

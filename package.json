@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf assets/{css/*,js/*,images/*}",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers \"&gt; 1% in KO, ie 9\" -r assets/css/* --no-map",
+    "scss": "node-sass --source-map false --output-style compact -o assets/css src/scss",
+    "build:css": "run-s scss",
+    "build": "run-s build:*",
+    "watch:css": "onchange \"src/scss\" -- run-s build:css",
+    "watch": "run-p watch:*",
+    "dev": "run-s build watch"
+  }
+}

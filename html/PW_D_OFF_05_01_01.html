@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : arteTV 유튜브</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body class="dark-mode">
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupSchedule">ARTE 케이블 채널 편성표</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 채널 편성표 팝업 -->
+    <section class="pop-wrap pop-schedule" data-pop="popupSchedule">
+      <div class="pop mo-btm">
+        <div class="pop__inner">
+          <div class="pop__head">
+            <h2 class="pop__head-title size-md">arte 케이블 채널 편성표</h2>
+            <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+          </div>
+          <div class="pop__body">
+            <div class="schedule-box">
+              <div class="schedule-box__contents-top">
+                <div class="schedule-box__date-view">
+                  <button type="button" class="date-btn date-btn--prev" aria-label="prev"></button>
+                  <span class="current-date">2023.02<span class="pc">.14</span><span class="mo">.08 (수)</span></span>
+                  <a href="#" class="date-btn date-btn--next" aria-label="next"></a>
+                </div>
+                <ul class="schedule-box__calendar">
+                  <li class="schedule-box__calendar-item">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">SAT</span>
+                      <span class="date">11</span>
+                    </button>
+                  </li>
+                  <!-- 일요일인 경우 'is-holiday' 추가 -->
+                  <li class="schedule-box__calendar-item is-holiday">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">SUN</span>
+                      <span class="date">12</span>
+                    </button>
+                  </li>
+                  <li class="schedule-box__calendar-item">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">MON</span>
+                      <span class="date">13</span>
+                    </button>
+                  </li>
+                  <!-- 오늘인 경우 'is-today' 추가 -->
+                  <li class="schedule-box__calendar-item is-today">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">TUE</span>
+                      <span class="date">14</span>
+                    </button>
+                  </li>
+                  <li class="schedule-box__calendar-item">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">WED</span>
+                      <span class="date">15</span>
+                    </button>
+                  </li>
+                  <li class="schedule-box__calendar-item">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">THU</span>
+                      <span class="date">16</span>
+                    </button>
+                  </li>
+                  <li class="schedule-box__calendar-item">
+                    <button type="button" class="schedule-box__sel-btn">
+                      <span class="day">FRI</span>
+                      <span class="date">17</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="schedule-box__contents-bottom">
+                <ul class="schedule-box__table">
+                  <li class="block-item thead">
+                    <span class="cell time">시간</span>
+                    <span class="cell program">프로그램<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">회차</span>
+                    <span class="cell title">제목</span>
+                    <span class="cell division">구분</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">08:30</span>
+                    <span class="cell program">아침을 여는 클래식 아침을 여는 클래식 아침을 여는 클래식 아침을 여는 클래식<span
+                        class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">858회</span>
+                    <span class="cell title">2020 전주비바체실내악 축제 III</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">10:30</span>
+                    <span class="cell program">전원경의 예술, 도시를 만나다 &lt;4회&gt; 파리 : 카페의 예술가들 전원경의 예술, 도시를 만나다 &lt;4회&gt; 파리
+                      : 카페의
+                      예술가들 전원경의 예술, 도시를 만나다 &lt;4회&gt; 파리 : 카페의 예술가들<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <!-- 진행중인 프로그램 'is-ing' 추가 -->
+                  <li class="block-item is-ing">
+                    <span class="cell time">11:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">12:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">13:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">14:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">08:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">08:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                  <li class="block-item">
+                    <span class="cell time">08:30</span>
+                    <span class="cell program">전원경의 예술,도시를 만나다<span class="episode mo">(2341회)</span></span>
+                    <span class="cell episode pc">3회</span>
+                    <span class="cell title">노르망디: 가득한 햇빛과 바람과 빗방울</span>
+                    <span class="cell division">5.1 / HD</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// 채널 편성표 팝업 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <!-- <script src="../layout/js/layout.js"></script> layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 2,
+      menu1: 6,
+      menu2: 2,
+    });
+  </script>
+
+  <script>
+    $(function () {
+      //popup test
+      $('[data-pop-open=popupSchedule]').trigger('click');
+    })
+  </script>
+</body>
+
+</html>

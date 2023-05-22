@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>(팝업) 개인정보 수정 안내 | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupInfoModify">개인정보 수정</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 개인정보 수정 팝업 -->
+    <section class="pop-wrap pop-inform-profile" data-pop="popupInfoModify">
+      <div class="pop">
+        <div class="pop__head">
+          <h2 class="pop__head-title">회원님 반갑습니다.</h2>
+          <button type="button" class="pop__close pc" data-label="닫기" data-pop-btn="close"></button>
+        </div>
+        <div class="pop__body">
+          <div class="pop-cont">
+            <strong class="cont-tit">닉네임, 관심분야, 관심지역을 설정해주세요. 이런 것들이 좋아집니다.</strong>
+            <ul class="cont-list">
+              <li>1. arte TALK 활동에 필요한 나만의 닉네임 부여하여 활동</li>
+              <li>2. 관심지역에 따른 공연, 전시, 도서 맞춤형 추천 서비스 제공!</li>
+              <li>3. 관심분야에 따른 맞춤형 콘텐츠 추천 서비스 제공!</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="btn-wrap">
+          <span class="text">내 정보수정 바로가기</span>
+        </a>
+        <button type="button" class="pop__close is-top mo" data-label="닫기" data-pop-btn="close"></button>
+      </div>
+    </section>
+    <!--// 개인정보 수정 팝업 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    $(function () {
+      //popup test
+      $('[data-pop-open=popupInfoModify]').trigger('click');
+    });
+  </script>
+
+</body>
+
+</html>

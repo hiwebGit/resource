@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : STAGE·CINE 즐기다</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+
+      <!-- Full KV -->
+      <div class="page-kv kv-news-stage-wrapper">
+        <div class="kv-title">
+          <h2 class="kv-title__title">STAGE&middot;CINE 뉴스</h2>
+          <!-- <p class="kv-title__desc">공연&middot;영화계 핫이슈, 트렌드 및 생생한 소식들</p> -->
+        </div>
+        <!-- swiper 실행 필수 속성 data-slider="curation", data-swiper(속성 값 객체 depth의 마지막 속성 값은 반드시 콤마 삭제)-->
+        <div class="swiper kv-swiper kv-news-stage" data-slider="curation" data-swiper='{
+          "slidesPerView": 1,
+          "spaceBetween": 0,
+          "pagination": {
+          "type": "fraction"
+          },
+          "breakpoints": {
+            "768": {
+              "spaceBetween": 16
+            }
+          },
+          "navigation": true,
+          "loop":true,
+          "autoplay": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="kv-swiper__img">
+                <a href="#none">
+                  <img src="../assets/images/@temp/@kv_swiper_thumb.png" alt="kv swiper thumbnail">
+                </a>
+                <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+              </div>
+              <div class="kv-swiper__text">
+                <a href="#none">
+                  <h3 class="kv-swiper__title">'오페라의 유령'은 오페라 아닌 뮤지컬?…무엇이 다를까</h3>
+                  <p class="kv-swiper__title--sub">피아니스트 임윤찬 콘서트<br> ‘세계 공연의 중심’ 뉴욕 카네기홀에서 연주하다.</p>
+                  <!-- <p class="kv-swiper__description">빈 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게한 차세대 피아니스트 연주자와 음악, 그리고 관객이 공통된
+                    하나의 통찰을 완성해가는 인사이트 시리즈에서 임윤찬이 전하는 음악, 빈 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게한 차세대 피아니스트 연주자와 음악, 그리고 관객이
+                    공통된 하나의 통찰을 완성해가는 인사이트 시리즈에서 임윤찬이 전하는 음악,</p> -->
+                </a>
+                <!-- <div class="art-info-sub">
+                  <span class="text-date">2022.11.24</span>
+                  <div class="access-nums">
+                    <span class="acc-num acc-num--view"><em>25</em></span>
+                    <span class="acc-num acc-num--like"><em>120k</em></span>
+                    <span class="acc-num acc-num--comment"><em>25</em></span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="kv-swiper__img">
+                <a href="#none">
+                  <img src="../assets/images/@temp/@kv_swiper_thumb.png" alt="kv swiper thumbnail">
+                </a>
+                <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+              </div>
+              <div class="kv-swiper__text">
+                <a href="#none">
+                  <h3 class="kv-swiper__title">YUNCHAN LIM <i>concert 2</i></h3>
+                  <p class="kv-swiper__title--sub">사라장 &amp; 비르투오지</p>
+                  <!-- <p class="kv-swiper__description">빈 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게한 차세대 피아니스트 연주자와 음악, 그리고 관객이 공통된
+                    하나의 통찰을 완성해가는 인사이트 시리즈에서 임윤찬이 전하는 음악, 빈 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게한 차세대 피아니스트 연주자와 음악, 그리고 관객이
+                    공통된 하나의 통찰을 완성해가는 인사이트 시리즈에서 임윤찬이 전하는 음악,</p> -->
+                </a>
+                <!-- <div class="art-info-sub">
+                  <span class="text-date">2022.11.24</span>
+                  <div class="access-nums">
+                    <span class="acc-num acc-num--view"><em>25</em></span>
+                    <span class="acc-num acc-num--like"><em>120k</em></span>
+                    <span class="acc-num acc-num--comment"><em>25</em></span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="kv-swiper__img">
+                <a href="#none">
+                  <img src="../assets/images/@temp/@kv_swiper_thumb.png" alt="kv swiper thumbnail">
+                </a>
+                <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+              </div>
+              <div class="kv-swiper__text">
+                <a href="#none">
+                  <h3 class="kv-swiper__title">YUNCHAN LIM <i>concert 3</i></h3>
+                  <p class="kv-swiper__title--sub">사라장 &amp; 비르투오지</p>
+                  <!-- <p class="kv-swiper__description">빈 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게한 차세대 피아니스트 연주자와 음악, 그리고 관객이 공통된
+                    하나의 통찰을 완성해가는 인사이트 시리즈에서 임윤찬이 전하는 음악, 빈 클라이번 콩쿠르에서 역대 최연소로 우승하며 세계를 놀라게한 차세대 피아니스트 연주자와 음악, 그리고 관객이
+                    공통된 하나의 통찰을 완성해가는 인사이트 시리즈에서 임윤찬이 전하는 음악,</p> -->
+                </a>
+                <!-- <div class="art-info-sub">
+                  <span class="text-date">2022.11.24</span>
+                  <div class="access-nums">
+                    <span class="acc-num acc-num--view"><em>25</em></span>
+                    <span class="acc-num acc-num--like"><em>120k</em></span>
+                    <span class="acc-num acc-num--comment"><em>25</em></span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls size-lg">
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper--btn swiper-prev">이전</button>
+            <button type="button" class="swiper--btn swiper-next">다음</button>
+          </div>
+        </div>
+      </div>
+      <!--// Full KV --->
+
+      <!-- START -->
+      <div class="content">
+
+        <!-- ad-banner -->
+        <div class="ad-banner-wrap">
+          <div class="ad-banner swiper">
+            <div class="ad-banner__list swiper-wrapper">
+              <a href="#" class="ad-banner__item swiper-slide">
+                <!-- Img PC -->
+                <!-- 띠 배너  pc :  1824 * 300 mobile :  656 * 256 -->
+                <img src="../assets/images/@temp/@ad_banner_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                <!-- Img PC 2 -->
+                <!-- <img src="../assets/images/@temp/@ad_banner_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                <!-- Img Tablet -->
+                <!-- <img src="../assets/images/@temp/@ad_banner_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                <!-- Img Tablet 2 -->
+                <!-- <img src="../assets/images/@temp/@ad_banner_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                <!-- Img Mobile -->
+                <img src="../assets/images/@temp/@ad_banner_mobile@2x.png" alt="banner"
+                  class="ad-banner__img img--mo" />
+              </a>
+              <a href="#" class="ad-banner__item swiper-slide">
+                <img src="../assets/images/@temp/@ad_banner02_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                <!-- <img src="../assets/images/@temp/@ad_banner02_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                <!-- <img src="../assets/images/@temp/@ad_banner02_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                <!-- <img src="../assets/images/@temp/@ad_banner02_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                <img src="../assets/images/@temp/@ad_banner02_mobile@2x.png" alt="banner"
+                  class="ad-banner__img img--mo" />
+              </a>
+            </div>
+          </div>
+          <div class="ad-banner__pagination"></div>
+        </div>
+        <!--// ad-banner -->
+
+        <section class="ex-section" data-tab="tab-wrap">
+          <!-- tabs -->
+          <div class="tab-block tab-swiper">
+            <div class="tab swiper">
+              <button type="button" class="tab__cur">뮤지컬</button>
+              <ul class="tab__list swiper-wrapper" data-tab="tab-list">
+                <!-- tab  : button 활성화 'is-active' -->
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn is-active">전체</a></li>
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn">뮤지컬</a></li>
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn">오페라</a></li>
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn">연극</a></li>
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn">무용</a></li>
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn">발레</a></li>
+                <li class="tab__item swiper-slide"><a href="#" class="tab__btn">영화</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--// tabs -->
+
+          <div class="tab-content" data-tab="tab-content">
+
+            <!-- top news -->
+            <!-- <div class="top-news-section">
+              <div class="top-news-wrapper swiper">
+                <div class="top-news-list swiper-wrapper">
+                  <div class="top-news-list__item top-news-list__item--big swiper-slide">
+                    <div class="top-news">
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                      <a href="#" class="top-news__block">
+                        <span class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_news01.jpg" alt=""></span>
+                        </span>
+                        <div class="top-news__cont">
+                          <p class="top-news__title">잔혹하지만 사랑할 수 밖에 없는 마성의 뮤지컬 '드라큘라'</p>
+                          <div class="top-news__detail">
+                            뮤지컬 '드라큘라'가 잔혹하지만 거부할 수 없는 유혹으로 찾아온다. 세상 어디서도 볼 수 없던 매혹적인 드라큘라의 로맨스를 무대에서 만난다.
+                            현재 샤롯데씨어터에서 뮤지컬 '드라큘라'가 공연 중이다. 초연의 김준수, 류정한, 조정은, 임혜영을 필두로 뉴캐스트로 전동석, 린지 등이 합류했다. 강태을, 손준호,
+                            이충주, 진태화, 이예은, 김수연 등 조연
+                          </div>
+                        </div>
+                      </a>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.10.20</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top-news-list__item swiper-slide">
+                    <div class="top-news">
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                      <a href="#" class="top-news__block">
+                        <span class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_news02.jpg" alt=""></span>
+                        </span>
+                        <div class="top-news__cont">
+                          <p class="top-news__title">잔혹하지만 사랑할 수 밖에 없는 마성의 뮤지컬 '드라큘라'</p>
+                          <div class="top-news__detail">
+                            뮤지컬 '드라큘라'가 잔혹하지만 거부할 수 없는 유혹으로 찾아온다. 세상 어디서도 볼 수 없던 매혹적인 드라큘라의 로맨스를 무대에서 만난다.
+                            현재 샤롯데씨어터에서 뮤지컬 '드라큘라'가 공연 중이다. 초연의 김준수, 류정한, 조정은, 임혜영을 필두로 뉴캐스트로 전동석, 린지 등이 합류했다. 강태을, 손준호,
+                            이충주,
+                            진태화, 이예은, 김수연 등 조연
+                          </div>
+                        </div>
+                      </a>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.10.20</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top-news-list__item swiper-slide">
+                    <div class="top-news">
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                      <a href="#" class="top-news__block">
+                        <span class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_news01.jpg" alt=""></span>
+                        </span>
+                        <div class="top-news__cont">
+                          <p class="top-news__title">잔혹하지만 사랑할 수 밖에 없는 마성의 뮤지컬 '드라큘라' 한줄 말줄임입니다.</p>
+                          <div class="top-news__detail">
+                            뮤지컬 '드라큘라'가 잔혹하지만 거부할 수 없는 유혹으로 찾아온다. 세상 어디서도 볼 수 없던 매혹적인 드라큘라의 로맨스를 무대에서 만난다.
+                            현재 샤롯데씨어터에서 뮤지컬 '드라큘라'가 공연 중이다. 초연의 김준수, 류정한, 조정은, 임혜영을 필두로 뉴캐스트로 전동석, 린지 등이 합류했다. 강태을, 손준호,
+                            이충주,
+                            진태화, 이예은, 김수연 등 조연
+                          </div>
+                        </div>
+                      </a>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.10.20</span>
+                        <div class="access-nums">
+                          <span class="acc-num acc-num--view"><em>25</em></span>
+                          <span class="acc-num acc-num--like"><em>120k</em></span>
+                          <span class="acc-num acc-num--comment"><em>25</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!--// top news -->
+
+            <!-- hashtags -->
+            <div class="hashtag-block">
+              <h4 class="hashtag-block__title">금주의 인기 검색어</h4>
+              <a href="#" class="hashtag"># 브로드웨이42번가</a>
+              <a href="#" class="hashtag"># 태양의 서커스</a>
+              <a href="#" class="hashtag"># 마틸다</a>
+              <a href="#" class="hashtag"># 온 더 비트</a>
+              <a href="#" class="hashtag"># 멕베스 레퀴엠</a>
+            </div>
+            <!--// hashtags -->
+
+            <div class="ex-container">
+              <!-- SNB -->
+              <div class="snb-section snb-section--right">
+                <!-- NEWS -->
+                <article class="ex-snb">
+                  <div class="ex-snb__head">
+                    <h4 class="ex-snb__title">공연&middot;영화계 주요 뉴스</h4>
+                  </div>
+                  <div class="ex-snb__filter">
+                    <ul class="form-group form-group--col2">
+                      <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-cate" checked />
+                          <span class="label-text">HOT</span></label></li>
+                      <li><label class="chkbox-rnd"><input type="radio" class="o-input" name="chk-cate" />
+                          <span class="label-text">NEW</span></label></li>
+                    </ul>
+                  </div>
+                  <div class="ex-snb__body">
+                    <ul class="sbox-list">
+                      <li class="sbox-item no-item">
+                        <a href="#" class="thumb-img">
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">등록된 뉴스가 없습니다.</a>
+                        </div>
+                      </li>
+                      <li class="sbox-item">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">야심차게 리뉴얼 오픈한 롯데시네마 ‘수퍼플렉스’ 가보니</a>
+                        </div>
+                      </li>
+                      <li class="sbox-item">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb01.jpg" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">〈오페라의 유령〉 - 부산</a>
+                        </div>
+                      </li>
+                      <li class="sbox-item">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb04.jpg" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">〈오페라의 유령〉 - 부산 제목 두줄 말줄임 두줄 말줄임 두줄 두줄말줄임두줄말줄임</a>
+                        </div>
+                      </li>
+                      <li class="sbox-item">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb06.jpg" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">87세 신구의 묵묵한 열연 … 변치 않는 아름다움 찾는 연극 두줄말줄임</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <!--//  NEWS -->
+
+                <!-- 이번 주 추천 테마 칼럼 -->
+                <article class="ex-snb">
+                  <div class="ex-snb__head">
+                    <h4 class="ex-snb__title">이번 주 추천 테마 칼럼</h4>
+                  </div>
+                  <div class="ex-snb__body">
+                    <ul class="sbox-list sbox-list--cards">
+                      <li class="sbox-item sbox-item--e no-item">
+                        <a href="#" class="thumb-img">
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">등록된 추천 테마 칼럼이 없습니다.</a>
+                        </div>
+                      </li>
+                      <li class="sbox-item sbox-item--e">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">[성수영] 그때 그사람들</a>
+                          <p class="sbox-item__desc">이 할머니의 ‘기괴한 그림’ 왜 수십억 주고도 못살까​?</p>
+                        </div>
+                      </li>
+                      <li class="sbox-item sbox-item--e">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb07.png" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">원작을 읽고 가면 친절한 극</a>
+                          <ul class="sbox-item__info">
+                            <li>김동욱</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="sbox-item sbox-item--e">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb09.png" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">[성수영] 그때 그사람들</a>
+                          <p class="sbox-item__desc">이 할머니의 ‘기괴한 그림’ 왜 수십억 주고도 못살까​?</p>
+                        </div>
+                      </li>
+                      <li class="sbox-item sbox-item--e">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb08.png" alt=""></span>
+                        </a>
+                        <div class="sbox-item__texts">
+                          <a href="#" class="sbox-item__title">[성수영] 그때 그사람들</a>
+                          <p class="sbox-item__desc">이 할머니의 ‘기괴한 그림’ 왜 수십억 주고도 못살까​?</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <!--// 이번 주 추천 테마 칼럼 -->
+              </div>
+              <!--// SNB -->
+
+              <article class="ex-content">
+
+                <!-- sort section -->
+                <div class="sort-section">
+                  <div class="sort-section__block">
+                    <p class="result-text">총 204개의 뉴스가 있습니다</p>
+
+                    <div class="sort-section__side">
+                      <!-- sort list -->
+                      <div class="view-sort">
+                        <button type="button" class="view-sort__cur">최신순</button>
+                        <ul class="view-sort__list">
+                          <li class="sort-on"><button type="button" class="view-sort__btn">최신순</button></li>
+                          <li><button type="button" class="view-sort__btn">조회순</button></li>
+                          <li><button type="button" class="view-sort__btn">좋아요순</button></li>
+                          <li><button type="button" class="view-sort__btn">댓글순</button></li>
+                        </ul>
+                      </div>
+                      <!--// sort list -->
+
+                      <div class="rbox-block">
+                        <span class="search-box">
+                          <input type="text" class="o-input" placeholder="검색어를 입력해주세요">
+                          <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--// sort section -->
+
+                <!-- 검색결과 없음 -->
+                <div class="search-result__nodata">
+                  <p>검색결과가 없습니다.</p>
+                </div>
+                <!--// 검색결과 없음 -->
+
+                <!-- List -->
+                <div class="art-list-wrap">
+                  <ul class="art-list type-basic">
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <!-- thumbnail 없는 경우 -->
+                        <!-- <a href="#" class="thumb-img">
+                        <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                      </a> -->
+                        <!-- thumbnail 없는 경우 -->
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                              매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                            드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                            역시 믿고 듣는 보이스 입니다 !!
+                            그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                            모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">슬픈사랑과 매력적인 무대연출</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">역시 믿고 듣는 보이스 입니다 !!</a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">박찬욱 '헤어질 결심' 새해 상복 터질까</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">영화 '헤어질 결심'이 또 한 번의 레이스를 시작했다. 칸국제영화제 감독상을 수상하며 돌풍을 일으킨 '헤결'이 미국의 굵직한 영화상 후보에
+                            올라섰기
+                            때문이다. '헤결'이 오는 3월 아카데미상(오스카) 트로피까지 거머쥘지 관심을 모은다. 먼저 '헤결'은 이달에만 3차례의 유의미한 호명을 기다리는 중이다.
+                            10일(현지시간)
+                            제80회 골든글로브 시상식, 15일 제28회 크리스틱초이스어워즈(CCA) 후보에 올라 쟁쟁한 세계 영화와 겨룬다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                              매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                            드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                            역시 믿고 듣는 보이스 입니다 !!
+                            그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                            모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">박찬욱 '헤어질 결심' 새해 상복 터질까</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">영화 '헤어질 결심'이 또 한 번의 레이스를 시작했다. 칸국제영화제 감독상을 수상하며 돌풍을 일으킨 '헤결'이 미국의 굵직한 영화상 후보에
+                            올라섰기
+                            때문이다. '헤결'이 오는 3월 아카데미상(오스카) 트로피까지 거머쥘지 관심을 모은다. 먼저 '헤결'은 이달에만 3차례의 유의미한 호명을 기다리는 중이다.
+                            10일(현지시간)
+                            제80회 골든글로브 시상식, 15일 제28회 크리스틱초이스어워즈(CCA) 후보에 올라 쟁쟁한 세계 영화와 겨룬다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                              매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                            드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                            역시 믿고 듣는 보이스 입니다 !!
+                            그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                            모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img01.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">박찬욱 '헤어질 결심' 새해 상복 터질까</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">영화 '헤어질 결심'이 또 한 번의 레이스를 시작했다. 칸국제영화제 감독상을 수상하며 돌풍을 일으킨 '헤결'이 미국의 굵직한 영화상 후보에
+                            올라섰기
+                            때문이다. '헤결'이 오는 3월 아카데미상(오스카) 트로피까지 거머쥘지 관심을 모은다. 먼저 '헤결'은 이달에만 3차례의 유의미한 호명을 기다리는 중이다.
+                            10일(현지시간)
+                            제80회 골든글로브 시상식, 15일 제28회 크리스틱초이스어워즈(CCA) 후보에 올라 쟁쟁한 세계 영화와 겨룬다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="art-list__item">
+                      <div class="artbox">
+                        <a href="#" class="thumb-img">
+                          <span class="img-holder"><img src="../assets/images/@temp/@thumg_img03.jpg" alt=""></span>
+                        </a>
+                        <div class="artbox__summary">
+                          <p class="artbox__title">
+                            <a href="#">슬픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과 매력적인 무대연출픈사랑과
+                              매력적인 무대연출픈사랑과 매력적인 무대연출</a>
+                          </p>
+                        </div>
+                        <div class="artbox__detail">
+                          <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                            드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                            역시 믿고 듣는 보이스 입니다 !!
+                            그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                            모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                          </a>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.10.20</span>
+                            <div class="access-nums">
+                              <span class="acc-num acc-num--view"><em>25</em></span>
+                              <span class="acc-num acc-num--like"><em>120k</em></span>
+                              <span class="acc-num acc-num--comment"><em>25</em></span>
+                            </div>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- Paging -->
+                  <div class="paging">
+                    <!-- PC -->
+                    <a href="#" class="paging__btn paging__btn--first">처음</a>
+                    <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                    <div class="paging__num-wrap paging-pc">
+                      <a href="#" class="paging__num paging__num--active">1</a>
+                      <a href="#" class="paging__num">2</a>
+                      <a href="#" class="paging__num">3</a>
+                      <a href="#" class="paging__num">4</a>
+                      <a href="#" class="paging__num">5</a>
+                      <a href="#" class="paging__num">6</a>
+                      <a href="#" class="paging__num">7</a>
+                      <a href="#" class="paging__num">8</a>
+                      <a href="#" class="paging__num">9</a>
+                      <a href="#" class="paging__num">10</a>
+                    </div>
+                    <a href="#" class="paging__btn paging__btn--next">다음</a>
+                    <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                    <!-- Mobile -->
+                    <div class="paging__num-wrap paging-mo">
+                      <a href="#" class="paging__more">더보기</a>
+                    </div>
+                  </div>
+                  <!-- Paging -->
+                </div>
+                <!--// List -->
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Poll -->
+        <!-- <div class="poll">
+          컨텐츠 추가예정<br />
+          아르떼 폴
+        </div> -->
+        <!--// Poll -->
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/curation.js"></script> <!-- curation slider -->
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 2,
+      menu1: 2,
+      menu2: 4,
+    });
+  </script>
+
+</body>
+
+</html>

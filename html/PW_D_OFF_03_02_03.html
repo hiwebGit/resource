@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : BOOK 읽다</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- KV -->
+      <div class="viewcard-kv viewcard-kv__gradient">
+        <div class="viewcard-kv__inbox">
+          <div class="viewcard-kv__box">
+            <div class="viewcard-kv__top">
+              <!-- <span class="viewcard-top">review</span> -->
+
+            </div>
+            <div class="viewcard-kv__img">
+              <div class="card-img">
+                <div class="thumb-img">
+                  <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb02.jpg" alt=""></span>
+                  <span class="tag-gen">연극</span>
+                </div>
+                <div class="card-img__titlebox">
+                  <p class="card-img__title">브로드웨이 42번가</p>
+                </div>
+              </div>
+            </div>
+            <div class="viewcard-kv__text">
+              <div class="viewcard-kv__titbox">
+                <p class="viewcard-kv__title">'브로드웨이 42번가', 여전히 '돈값' 하는 뮤지컬</p>
+              </div>
+              <div class="viewcard-kv__tags">
+                <span class="id">내 귀에 캔디</span>
+                <span class="tag tag--line">회원</span>
+                <span class="grade">
+                  <!-- <span class="grade__stars">
+                    <span class="grade__stars-over">
+                      <em>★</em><em>★</em><em>★</em><em>★</em><em>★</em>
+                    </span>
+                  </span> -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <em class="grade__num">10.0</em>
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+              </div>
+              <div class="viewcard-kv__info">
+                <div class="art-info-sub">
+                  <span class="text-date">2022.10.20</span>
+                  <div class="access-nums">
+                    <span class="acc-num acc-num--view"><em>25</em></span>
+                    <span class="acc-num acc-num--like"><em>120k</em></span>
+                    <span class="acc-num acc-num--comment"><em>25</em></span>
+                  </div>
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <button type="button" class="btn-share" aria-label="Share"></button>
+                  <div class="setting" data-role="visible_wrap">
+                    <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                    <div class="setting__layer" data-role="visible_cont">
+                      <ul>
+                        <li><a href="#">신고하기</a></li>
+                      </ul>
+                      <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// KV -->
+
+      <!-- KV 이미지없는 케이스 -->
+      <div class="viewcard-kv viewcard-kv__gradient">
+        <div class="viewcard-kv__inbox">
+          <div class="viewcard-kv__box">
+            <div class="viewcard-kv__top">
+              <!-- <span class="viewcard-top">review</span> -->
+
+            </div>
+            <div class="viewcard-kv__img">
+              <div class="card-img">
+                <!-- <div class="thumb-img">
+                  <span class="img-holder"><img src="../assets/images/@temp/@temp_thumb02.jpg" alt=""></span>
+                  <span class="tag-gen">연극</span>
+                </div>
+                <div class="card-img__titlebox">
+                  <p class="card-img__title">브로드웨이 42번가</p>
+                </div> -->
+              </div>
+            </div>
+            <div class="viewcard-kv__text">
+              <div class="viewcard-kv__titbox">
+                <p class="viewcard-kv__title">'브로드웨이 42번가', 여전히 '돈값' 하는 뮤지컬</p>
+              </div>
+              <div class="viewcard-kv__tags">
+                <span class="id">내 귀에 캔디</span>
+                <span class="tag tag--line">회원</span>
+                <span class="grade">
+                  <!-- <span class="grade__stars">
+                    <span class="grade__stars-over">
+                      <em>★</em><em>★</em><em>★</em><em>★</em><em>★</em>
+                    </span>
+                  </span> -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <em class="grade__num">10.0</em>
+                  <!-- ! 추가 -->
+                  <button type="button" class="btn-info btn-notice" aria-label="정보더보기" data-pop-open="popupReplyPolicy"></button>
+                </span>
+              </div>
+              <div class="viewcard-kv__info">
+                <div class="art-info-sub">
+                  <span class="text-date">2022.10.20</span>
+                  <div class="access-nums">
+                    <span class="acc-num acc-num--view"><em>25</em></span>
+                    <span class="acc-num acc-num--like"><em>120k</em></span>
+                    <span class="acc-num acc-num--comment"><em>25</em></span>
+                  </div>
+                  <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                  <button type="button" class="btn-share" aria-label="Share"></button>
+                  <div class="setting" data-role="visible_wrap">
+                    <button type="button" class="setting__btn" aria-label="레이어 더보기" data-role="visible_btn"></button>
+                    <div class="setting__layer" data-role="visible_cont">
+                      <ul>
+                        <li><a href="#">신고하기</a></li>
+                      </ul>
+                      <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// KV 이미지없는 케이스 -->
+      <!-- START -->
+      <div class="content">
+        <section class="view-section">
+          <div class="view-wrap">
+            <div class="editor-section">
+              <!-- <div class="editor-info-section">
+          <h2 class="editor-info__title">'소련의 게임' 테트리스는 어떻게 자유 세계로 침투했나 [영화 리뷰]</h2>
+          <div class="editor-info__util">
+            <div class="art-info-sub"><span class="text-title">김희경 기자</span><span
+                class="text-date">2023.04.12</span>
+              <div class="access-nums"><span class="acc-num acc-num--view"><em>24</em></span><span
+                  class="acc-num acc-num--like"><em>1</em></span><span
+                  class="acc-num acc-num--comment"><em>0</em></span></div><button type="button"
+                class="btn-fav false" aria-label="Like"></button>
+            </div><button type="button" class="btn-share" aria-label="Share" data-pop-open="popupShare"></button>
+          </div>
+        </div> -->
+              <!-- subTitle 구역 -->
+              <div class="summary">
+                <p>대한민국 최고의 스타 캐스팅!
+                  송일국, 이종혁, 정영주, 배해선, 전수경, 홍지민 총출동</p>
+              </div>
+              <!-- subTitle 구역 -->
+              <div class="view-editor">
+                <div class="article-body-wrap">
+                  <div>
+                    <!-- youtube 구역 -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VLcwSLD3dpI"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                    <!-- youtube 구역 -->
+                    <img src="https://img.hankyung.com/photo/202304/01.33146677.1.jpg" width="630"
+                      height="419"><br><br>숫자 ‘4’를 뜻하는 그리스어 접두사(테트라)와 인기 스포츠 ‘테니스’를 더해서 만든 이름. 네 개의 정사각형으로 만들어진 조각들을 끼워
+                    맞추는 게임. 세계에서 가장 많은 아류작을 낳았고, 가장 많이 팔린 게임 2위에 오른 전설의 히트작.<br><br> 바로 테트리스다. 밋밋하기 이를 데 없는 규칙 하나로 수십년간
+                    지구촌 전자오락 시장을 군림한 테트리스가 영화로 나왔다. 지난달 31일 공개된 온라인동영상서비스(OTT) 애플TV플러스의 영화 ‘테트리스’다.<br><br>영화는 테트리스 게임이
+                    어떻게 세계적으로 확산됐는지의 과정을 그린다. 연출은 영화 ‘카스’ ‘필스’ ‘스탠&amp;올리’ 등을 만든 존 S.베어드 감독이 맡았다. 태런 에저튼이 테트리스를 유통시키려는
+                    게임 판매담당 로저스 역할을 연기했다. <br><br><img src="https://img.hankyung.com/photo/202304/01.33146688.1.jpg"
+                      width="630" height="262"><br><br> 영화는 1988년 로저스가 테트리스 게임을 우연히 접하게 되는 장면으로 시작된다. 게임의 매력에 빠진 로저스는
+                    판권을 확보하기 위해 소련으로 간다. 게임 발명자 알렉세이 파지트노프의 뜻과 무관하게 국가 소유가 됐기 때문이다.\<br><br> 냉전시대에 소련의 제품을 자유세계에 판다는 게
+                    어디 쉬운 일이었을까. 영화는 게임의 탄생 과정을 조명하지 않는다. 전세계 유통망을 확보하는 과정에 오롯이 집중한다. 테트리스의 가치를 알아본 사람은 로저스뿐만 아니었다. 여러
+                    사업자들이 소련 정부에 물밑 작업을 하면서 경쟁은 달아오른다. <br><br> 영화는 누구나 다 아는 세계적 게임을 소재로 했다는 점에서 초반부터 친근하고 흥미롭게 다가온다.
+                    그러면서도 잘 알려지지 않은 유통 이야기를 담아내 호기심을 자극한다. 게임 이미지와 장면을 영화 곳곳에 배치해 적극 활용하기도 한다. 다양한 인물들을 게임 이미지로 소개하는 부분이
+                    인상적이다.<br><br> 단순히 흥미를 자극하는 데 그치지 않고 냉전 시대의 그늘을 다룬 점에서도 의미가 깊다. 좋은 창작물을 만들어도 국가에 소유권을 빼앗기는 등 창작자에 대한
+                    보호가 제대로 이뤄지지 못했다는 사실에도 영화의 시선이 머문다. <br><br> 다만 주의해야할 점은 게임을 소재로 했지만 가족 영화는 아니라는 것이다. 냉전 시대를 배경으로 한
+                    만큼 영화의 분위기는 다소 어둡다. 초반엔 많은 인물이 등장하고, 판권에 얽힌 다양한 이야기들이 나오다보니 복잡하게 느껴지기도 한다. <br><br>김희경 기자
+                    hkkim@hankyung.com<br><br><br></div>
+                </div>
+              </div>
+              <div class="view-detail">
+                <div class="detail__txt">
+                  1. 미드나잇 뮤지엄 (5월)<br>
+                  -5월 둘째주~셋째주 사이에 '울리 지그 컬렉션 전' 가능. 날짜는 내부 협의 후 몇 개 전달해줄 예정.<br>
+                  -정규 운영시간 끝난 후 문 닫고 오후 8~9시쯤 10~20명을 대상으로 프라이빗 도슨트. 전시가 여러 개 층에 걸쳐서 진행돼서 엘레베이터<br>
+                  타고 한 번에 같이 이동하려면 최대 20명이어야 한다고 함.<br>
+                  -전시 자체는 괜찮음. 중국 현대미술 작가들 작품인데, 하루 300~500명 정도 온다고 함. 정규 도슨트는 이달 주말은 모두 예약 마감.<br>
+                  (평일이랑 5월은 아직 빈 자리 있음)<br><br>
+
+                  2. 아티스트 토크 (6월)<br>
+                  -6월 8일부터 제19회 송은미술대상 대상 수상자인 권혜원 작가 개인전 진행. '작가가 직접 설명해주는 전시' 가능.<br>
+                  -자연과 기계를 주제로 한 전시인데, '행성극장'이라는 제목에 맞게 전시공간 자체를 우주처럼 꾸밀 예정.<br>
+                  -이번엔 이름값 있는 작가는 아니지만, 이후 전시들도 아티스트 토크 추진해볼 수 있을 듯.<br><br>
+
+                  3. 프리즈 기간 별도 프로그램 & 파티 (9월)<br>
+                  -작년 프리즈 기간에 이건용+신진 작가들 전시에 맞춰서 작가랑 컬렉터들 대상으로 파티를 열었는데,<br>
+                  이번에 아르떼랑 협력할 의향 있다고 함.<br>
+                  -송은이 워낙 공간이 넓은데 1층에 작은 정원에서 스탠딩 파티를 열거나, 주변 갤러리들이랑 얘기해서 '아르떼 투어'처럼 회원들 데리고<br>
+                  다니면서 청담동 전시들 쭉 보여주는 것도 얘기해볼 수 있을 듯.
+                </div>
+              </div>
+              <div class="hashtag-block">
+                <a href="#" class="hashtag"># 김아미</a>
+                <a href="#" class="hashtag"># 버키</a>
+                <a href="#" class="hashtag"># NKSIN</a>
+                <a href="#" class="hashtag"># 엔케이신</a>
+                <a href="#" class="hashtag"># 시베리아</a>
+                <a href="#" class="hashtag"># 갤러리애프터눈</a>
+                <a href="#" class="hashtag"># 바로크 시대</a>
+              </div>
+            </div>
+            <div class="btn-area pt-none border-line">
+              <button type="button" class="btn size-sm c-gray">수정</button>
+              <button type="button" class="btn size-sm">삭제</button>
+            </div>
+            <div class="ad-banner-wrap">
+              <div class="ad-banner swiper">
+                <div class="ad-banner__list swiper-wrapper">
+                  <a href="#" class="ad-banner__item swiper-slide">
+                    <!-- Img PC -->
+                    <!-- 띠 배너  pc :  1824 * 300 mobile :  656 * 256 -->
+                    <img src="../assets/images/@temp/@ad_banner_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                    <!-- Img PC 2 -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                    <!-- Img Tablet -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                    <!-- Img Tablet 2 -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                    <!-- Img Mobile -->
+                    <img src="../assets/images/@temp/@ad_banner_mobile@2x.png" alt="banner"
+                      class="ad-banner__img img--mo" />
+                  </a>
+                  <a href="#" class="ad-banner__item swiper-slide">
+                    <img src="../assets/images/@temp/@ad_banner02_lg.png" alt="banner" class="ad-banner__img img--lg" />
+                    <!-- <img src="../assets/images/@temp/@ad_banner02_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner02_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                    <!-- <img src="../assets/images/@temp/@ad_banner02_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
+                    <img src="../assets/images/@temp/@ad_banner02_mobile@2x.png" alt="banner"
+                      class="ad-banner__img img--mo" />
+                  </a>
+                </div>
+              </div>
+              <div class="ad-banner__pagination"></div>
+            </div>
+            <div class="reply-wrap">
+              <div class="reply-commit">
+                <div class="reply-input"><textarea minlength="5" maxlength="1000"
+                    placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요."></textarea></div><button type="button"
+                  class="btn-rect__brown">등록</button>
+              </div>
+              <div class="reply-list-wrap">
+                <div class="reply-list-top"><strong>댓글 <span class="reply-num">(
+                      <!-- -->0
+                      <!-- -->)</span><button type="button" class="btn-info" aria-label="정보더보기"
+                      data-pop-open="popupReplyPolicy"></button></strong>
+                  <div class="sort-area"><button type="button" class="btn-recent"><span
+                        class="btn-txt">등록순</span></button><button type="button" class="btn-like"><span
+                        class="btn-txt num">좋아요순</span></button></div>
+                </div>
+                <div class="reply-list"><button type="button" class="reply-list__view show-mo"
+                    data-pop-open="popupReplyViewMobile"><span class="btn-arrow__next"
+                      data-pop-open="popupReplyViewMobile">댓글 전체보기</span></button>
+                  <ul></ul>
+                  <div class="reply-add"><button type="button" class="reply-add__btn btn"
+                      data-pop-open="popupCommentWriter">댓글 쓰기</button></div>
+                  <div class="reply-area__none"><span>해당 공연에 대한 댓글이 아직 없습니다!</span></div>
+                </div>
+                <div class="reply-writer">
+                  <div class="reply-writer__tit">댓글 작성</div>
+                  <div class="reply-writer__commit">
+                    <div class="reply-input"><strong class="reply-input__writer">jypk@v-w.co.kr</strong><textarea
+                        minlength="5" maxlength="1000" placeholder="댓글을 쓰시려면 로그인을 먼저 해주세요."></textarea></div><button
+                      type="button" class="btn-rect__brown">등록</button>
+                  </div><button type="button" class="btn-close"></button>
+                </div>
+              </div>
+              <div id="wrap" class="wrap">
+                <section class="pop-wrap pop-report" data-pop="replyReporPopup">
+                  <div class="pop mo-btm">
+                    <div class="pop__inner">
+                      <div class="pop__head">
+                        <h2 class="pop__head-title">신고하기</h2><button type="button" class="pop__close" id="pop__close"
+                          data-label="닫기" data-pop-btn="close"></button>
+                      </div>
+                      <div class="pop__body">
+                        <div class="pop-report__reason"><strong class="pop-report__reason-title">신고사유 선택 [필수]</strong>
+                          <ul class="acco-wrap" data-accordion="wrapper">
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">스팸홍보/도배글입니다.</span></label><button
+                                  type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">음란물입니다.</span></label><button type="button"
+                                  class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">불법정보를 포함하고 있습니다.</span></label><button
+                                  type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">청소년에게 유해한 내용입니다.</span></label><button
+                                  type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">욕설/생명경시/혐오/차별적 표현입니다.</span></label><button
+                                  type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">개인정보 노출 게시물입니다.</span></label><button
+                                  type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">불쾌한 표현이 있습니다.</span></label><button
+                                  type="button" class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont">
+                                <ul class="list-dash"></ul>
+                              </div>
+                            </li>
+                            <li class="acco-box" data-accordion="group">
+                              <div class="acco-btn"><label class="o-rdo"><input type="radio" class="o-input"
+                                    name="rdo"><span class="o-rdo__label">기타</span></label><button type="button"
+                                  class="acco-ico" aria-label="열기" data-accordion="btn"></button></div>
+                              <div class="acco-cont"><textarea class="text-area" placeholder="신고사유를 입력해주세요. (0/500)"
+                                  maxlength="500"></textarea></div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="pop-report__btn-wrap"><button type="button" class="btns" disabled="">신고하기</button>
+                          <p class="text"><span class="ico">※</span> 허위신고일 경우 신고자의 서비스 활동이 제한될 수 있으니 유의하시어 신중하게 신고해 주세요.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div><button id="openPopupCommentMobile" data-pop-open="popupCommentWriter"></button>
+              <section class="popup-wrap mobile-only popup-reply" data-pop="popupReplyViewMobile">
+                <div class="popup">
+                  <div class="popup__header">
+                    <h3 class="popup__header-title">댓글 (
+                      <!-- -->0
+                      <!-- -->)</h3><button type="button" class="popup__close" aria-label="닫기"
+                      data-pop-btn="close"></button>
+                    <div class="sort-area" data-role="visible_wrap"><button type="button" class="btn-filter_view"
+                        data-role="visible_btn"><span class="blind">필터</span></button>
+                      <div class="sort-area__layer" data-role="visible_cont"><button type="button"
+                          class="btn-recent"><span class="btn-txt">등록순</span></button><button type="button"
+                          class="btn-like"><span class="btn-txt num">좋아요순</span></button></div>
+                    </div>
+                  </div>
+                  <div class="popup__container">
+                    <div class="popup__content">
+                      <div class="reply-list-wrap">
+                        <div class="reply-list">
+                          <ul></ul>
+                          <div class="reply-add"><button type="button" class="reply-add__more">더보기</button><button
+                              type="button" class="reply-add__btn" data-pop-open="popupCommentWriter">댓글 쓰기</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div id="wrap" class="wrap">
+                <section class="pop-wrap pop-writer" data-pop="popupCommentWriter">
+                  <div class="pop">
+                    <div class="pop__head">
+                      <h2 class="pop__head-title">댓글 작성</h2><button type="button" class="pop__close pc" data-label="닫기"
+                        data-pop-btn="close"></button>
+                    </div>
+                    <div class="pop__body">
+                      <div class="pop-cont">
+                        <div class="reply-writer__commit">
+                          <div class="reply-input"><textarea minlength="5" maxlength="1000"
+                              placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea>
+                          </div>
+                          <div class="reply-writer__btn"><button type="button">수정</button><button type="button"
+                              class="btn-rect__brown">등록</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" class="btn-wrap"><span class="text">내 정보수정 바로가기</span></a><button
+                      id="btn_mobile_comments_popup-close" type="button" class="pop__close is-top mo" data-label="닫기"
+                      data-pop-btn="close"></button>
+                  </div>
+                </section>
+              </div>
+              <div id="wrap" class="wrap">
+                <section class="pop-wrap pop-writer" data-pop="popupReplyWriter">
+                  <div class="pop">
+                    <div class="pop__head">
+                      <h2 class="pop__head-title">답글 작성22</h2><button type="button" class="pop__close pc"
+                        data-label="닫기" data-pop-btn="close"></button>
+                    </div>
+                    <div class="pop__body">
+                      <div class="pop-cont">
+                        <div class="reply-writer__commit">
+                          <div class="reply-input"><textarea minlength="5" maxlength="1000"
+                              placeholder="저작권123 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."
+                              name="comment"></textarea></div>
+                          <div class="reply-writer__btn"><button type="button">수정</button><button type="button"
+                              class="btn-rect__brown">등록</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" class="btn-wrap"><span class="text">내 정보수정 바로가기</span></a><button
+                      id="btn_mobile_reply_popup-close" type="button" class="pop__close is-top mo" data-label="닫기"
+                      data-pop-btn="close"></button>
+                  </div>
+                </section>
+              </div>
+              <div id="wrap" class="wrap">
+                <section class="pop-wrap pop-reply-policy" data-pop="popupReplyPolicy">
+                  <div class="pop">
+                    <div class="pop__inner">
+                      <div class="pop__head">
+                        <h2 class="pop__head-title">댓글 운영 정책</h2><button type="button" class="pop__close"
+                          data-label="닫기" data-pop-btn="close"></button>
+                      </div>
+                      <div class="pop__body">
+                        <div class="policy-box">아르떼에서는 다음과 같이 댓글 서비스를 관리 및 운영하고 있습니다.<br>댓글 서비스 이용 중에 이용약관 및 운영정책을 위반할
+                          경우, 사전통지 없이 서비스 이용이 제한될 수 있습니다.<br>댓글 운영정책은 이용약관에 기반하고 있으며 기타 사항은 고객센터 문의를 이용해 주시길
+                          바랍니다.<br><br>1. 서비스 이용 제한 사유<br>- 회사 또는 제3자의 명예를 훼손하는 경우<br>- 회사 또는 제3자의 저작권 등 기타 권리를 침해하는
+                          경우<br>- 외설 또는 폭력적인 메시지, 기타 관계법령 및 공서양속에 반하는 경우<br>- 제3자에게 피해가 발생하였거나 피해가 예상되는 경우<br>- 댓글 도배 등
+                          부정한 용도로 서비스를 이용하는 경우<br>- 범죄행위를 목적으로 하거나 범죄행위를 교사한다고 판단되는 경우<br>- 기타 관계 법령을 위배한다고 판단되는
+                          경우<br><br>2. 회원 댓글 기능<br>가. 댓글 신고<br>- 회원은 다른 회원의 댓글을 신고할 수 있습니다. 신고된 댓글은 신고한 회원에 한해서 숨김 처리되며
+                          이는 복구할 수 없습니다.<br>- 신고된 댓글은 이용약관 및 운영정책에 따라 처리됩니다.<br><br>나. 댓글 삭제<br>- 회원은 본인이 작성한 댓글을 삭제할 수
+                          있습니다.<br>- 삭제된 댓글의 답글은 작성자 또는 회사가 별도로 삭제하기 전까지 삭제되지 않습니다.<br>다. 회원 차단<br>- 회원은 다른 회원을 차단할 수
+                          있습니다. 차단한 회원의 댓글및 답글은 숨김처리되며 차단해제도 가능합니다.<br><br>3. 서비스 이용 제한<br>- 회사는 비방 및 욕설, 광고 등 댓글에 부적합한
+                          단어의 이용을 금지하고 있습니다.<br>- 서비스 이용 제한은 누적 위반 횟수를 우선하여 처리하나 사안의 심각성에 따라 처리 기준이 달라질 수 있습니다.<br>- 회사는
+                          회원의 IP 및 ID를 일시 또는 영구적으로 차단하여 서비스 이용을 제한할 수 있습니다.<br>- 회사는 회원의 댓글을 삭제하여 게재된 댓글의 이용을 제한할 수
+                          있습니다.<br>- 회원은 ‘나의 댓글 관리’에서 누적 위반 횟수를 확인할 수 있습니다.<br></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="editor-paging"><a class="paging__list" href="/stage/news/list"><span
+                  class="paging__list__text">LIST</span></a></div>
+            <div class="art-vt">
+              <div class="art-vt__container">
+                <div class="art-vt__titbox">
+                  <h2 class="art-vt__title">연관 리뷰</h2>
+                </div>
+                <div class="art-vt-slide__wrap art-vt-slide art-vt-grid">
+                  <div class="art-vt-slide__content swiper art-vt-grid__line">
+                    <ul class="art-vt-slide__box swiper-wrapper">
+                      <li class="art-vt-grid__item swiper-slide"><button type="button" class="btn-fav btn-fav--wt false"
+                          aria-label="Like"></button>
+                        <div class="art-vt-block">
+                          <div class="thumb-img"><span class="img-holder"><img
+                                src="https://img.hankyung.com/photo/202304/01.33102126.1.jpg" alt=""></span></div>
+                          <div class="art-vt-block__titbox">
+                            <div class="art-vt-block__stit"><span class="tag-gen-s">클래식</span><span
+                                class="art-vt-block__titdeco">재개관기념 명품시리즈 Ⅺ, 비킹구르 올라프손 피아노 리사이틀</span></div><a href="#"
+                              class="art-vt-block__link">
+                              <p class="art-vt-block__title">불 꺼진 무대 위 '트로이메라이'가 위로의 서막을 열었다 [공연리뷰]</p>
+                              <p class="art-vt-block__txt">지난 5일 오후 8시 서울 롯데콘서트홀. 불이 꺼져 캄캄한 무대에서 슈만의
+                                &amp;#39;트로이메라이&amp;#39;가 들려왔다. 어린이정경 가운데 가장 유명한 7번곡이다. 꿈이나 몽상을 뜻하는 트로이메라이는 2분이 넘도록 어둠
+                                속에서 이어졌다. 어린이의 동심을 표현하는 잔잔한 피아노 노래가 끝날 무렵 마치 꿈에서 깨듯 무대 조명이 켜졌다. 피아니스트 김규연(39) 서울대 기악과
+                                교수가 포근한 슈만으로 이날 공연의 포문을 열었다. 이번 공연은 ‘크레디아 클래식 클럽 2023’의 4월 연주로 &amp;#39;젊은 베르테르의
+                                슬픔&amp;#39;이 메인 테마다. 크레디아 클래식 클럽은 국내 음악 기획사 크레디아가 2020년 론칭한 정기 연주회다. 매달 새로운 연주자와 콘셉트로
+                                대중에게 친숙하게 다가가기 위한 시리즈다. 올해 클래식 클럽은 하루하루가 여행과 같기를 바라는 취지로 ‘본 보야지(Bon Voyage)’를 테마로 진행된다.
+                                곧이어 피아니스트 김규연 옆에 연보라색 드레스를 입은 바이올리니스트 한수진(38)이 등장했다. 브람스 바이올린 소나타 1번 1악장, 세 번의 D음으로 시작하는
+                                선율이 청중을 사로 잡았다. &amp;#39;비의 소나타&amp;#39;로 불리는 이 곡은 브람스 다운 묵직함, 진중함보다는 서정성이 두드러지는 곡으로
+                                고전적인 소나타 형식 내에서 호소력 짙은 선율이 극대화되는 점이 특징이다. 3악장 서두에 브람스의 가곡 &lt;비의 노래&gt; 선율이 등장해 이같은 별칭이
+                                붙었다. 빗방울을 묘사하는 듯한 세 번의 D음은 1악장과 3악장에서 수 차례 되풀이된다. 한수진은 특유의 세밀한 악상 표현과 자연스러운 프레이징(선율을
+                                구성하는 각 구절을 구분해 연주하는 것) 처리로 씁쓸하면서도 감미로운 곡조를 원활하게 소화했다. 중저음 음역이나 6도 화성이 이어지는 부분에서는 소리가 다소
+                                빈약해 전달력이 부족한 감이 있었지만 이러한 아쉬움은 피아니스트 김규연의 풍성하고 따뜻한 음색과 어우러지며 적절한 조화를 찾았다. 피아노 삼중주에서는 첼리스트
+                                강승민의 호소력 짙은 비브라토(현에 진동을 주는 연주기업)로 합주에 울림을 배가했다. 이 작품은 브람스와 클라라 슈만, 로베르트 슈만의 관계가 잘 나타나는
+                                작품으로 꼽힌다. 클라라가 어린 아들을 병으로 잃었을 때, 클라라를 아끼는 브람스가 이 곡의 일부를 들려주며 위로해줬다고 한다. 공연 중간 마이크를 잡은
+                                한수진은 "비도 오고 우중충한데 오늘 공연 주제와 참 어울리는 날씨"라며 "베르테르의 이야기에서 브람스와 클라라, 로베르트의 삼각관계가 생각났다"고 설명했다.
+                                독일 대문호 괴테의 소설 &lt;젊은 베르테르의 슬픔&gt;을 테마로 한 이번 공연은 다소 실험적인 프로그램으로 진행됐다. 소설의 속 남녀 주인공 베르테르와
+                                샤를로뜨의 이야기에 맞춰 적절한 곡을 골라 75분 남짓의 프로그램으로 구성했다. 이를테면 브람스 바이올린 소나타 1번의 1악장과 3악장은 연달아 진행하지 않고
+                                이야기 테마에 맞춰 곡의 중간중간 연주되는 식이다. 베르테르를 소개한 브람스 바이올린 소나타 1번 1악장에 이어, 샤를로뜨의 재기발랄한 면모를 클라라 슈만의
+                                피아노 트리오로 표현했다. 크라이슬러의 바이올린 소나타 &lt;사랑의 슬픔&gt;을 통해 이뤄지지 않은 베르테르의 사랑을 나타내기도 했다. 마지막으로 들려준
+                                브람스 피아노 삼중주 1번 4악장으론는 비통한 감정을 극대화했다. b단조로 어둡고 불안하게 시작하는 이 곡은 베르테르의 비극적인 결말처럼 격정적으로
+                                마무리됐다. 최다은 기자 max@hankyung.com</p>
+                            </a>
+                          </div>
+                          <div class="art-vt-block__inbox">
+                            <div class="art-vt-block__tags"><span class="id">최다은</span><span
+                                class="tag">arte</span><span class="grade"><span class="badge-star p2"></span></span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="art-vt-grid__item swiper-slide"><button type="button" class="btn-fav btn-fav--wt false"
+                          aria-label="Like"></button>
+                        <div class="art-vt-block">
+                          <div class="thumb-img"><span class="img-holder"><img
+                                src="http://211.254.255.166/culture_files/files/c72766a4-de87-11ed-9772-0050568feddb.PNG"
+                                alt=""></span></div>
+                          <div class="art-vt-block__titbox">
+                            <div class="art-vt-block__stit"><span class="tag-gen-s">클래식</span><span
+                                class="art-vt-block__titdeco">재개관기념 명품시리즈 Ⅺ, 비킹구르 올라프손 피아노 리사이틀</span></div><a href="#"
+                              class="art-vt-block__link">
+                              <p class="art-vt-block__title">리뷰쓰기 테스트 전문가 리뷰 회원리뷰</p>
+                              <p class="art-vt-block__txt">
+                                &lt;p&gt;가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하&lt;br&gt;가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하&lt;br&gt;&lt;br&gt;가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;가나다라마바사아자차카타파하&lt;/p&gt;&lt;p&gt;가나다라마바사아자차카타파하&lt;/p&gt;&lt;p&gt;가나다라마바사아자차카타파하&lt;/p&gt;&lt;p&gt;가나다라마바사아자차카타파하&lt;/p&gt;&lt;p&gt;가나다라마바사아자차카타파하&lt;/p&gt;&lt;p&gt;전문가
+                                리뷰 회원리뷰 노출 테스트&amp;nbsp;&lt;/p&gt;</p>
+                            </a>
+                          </div>
+                          <div class="art-vt-block__inbox">
+                            <div class="art-vt-block__tags"><span class="id">가나다라마바사아자차카타파하a</span><span
+                                class="tag">회원</span><span class="grade"><span class="star"><i
+                                    class="star__point p8"></i></span><em class="grade__num">8.0</em></span></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="art-vt-grid__item swiper-slide"><button type="button" class="btn-fav btn-fav--wt false"
+                          aria-label="Like"></button>
+                        <div class="art-vt-block">
+                          <div class="thumb-img"><span class="img-holder"><img
+                                src="http://211.254.255.166/culture_files/files/910514c3-de94-11ed-aaaa-0050568feddb.png"
+                                alt=""></span></div>
+                          <div class="art-vt-block__titbox">
+                            <div class="art-vt-block__stit"><span class="tag-gen-s">클래식</span><span
+                                class="art-vt-block__titdeco">재개관기념 명품시리즈 Ⅺ, 비킹구르 올라프손 피아노 리사이틀</span></div><a href="#"
+                              class="art-vt-block__link">
+                              <p class="art-vt-block__title">리뷰쓰기테스트 중입니다.</p>
+                              <p class="art-vt-block__txt">&lt;figure class="image"&gt;&lt;img
+                                src="http://211.254.255.166/culture_files/files/4452ca66-de94-11ed-b19b-0050568feddb.png"&gt;&lt;/figure&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;본문
+                                ㅇ이미지 ㅂ비율 ㅎ확인할려고 ㅎ했는데&amp;nbsp;&lt;/p&gt;&lt;p&gt;텍스트 ㄸ똥망으로 ㅆ써지고 ㅇ있어요
+                                ㅠㅠ&amp;nbsp;&lt;/p&gt;&lt;p&gt;왜이래요
+                                ㅠㅠㅠㅇ&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;이미지 ㅇ올라가면 ㅇ원래 ㅇ이렇게 ㅆ써지는건지 ㅎ확인 ㅎ한번
+                                ㅎ해봐야겠어요 ㅠ&lt;/p&gt;&lt;p&gt;왜이러냐아아
+                                ㅠㅠ&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;가나다라마바사아자차카타파하&amp;nbsp;&lt;/p&gt;&lt;p&gt;여기는
+                                ㄸ또 ㄱ괜찮은줄 ㅇ알았더니 ㅇ아니었네 ㅠ&lt;/p&gt;&lt;p&gt;가로세율
+                                ㅂ비테스틀율&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                              </p>
+                            </a>
+                          </div>
+                          <div class="art-vt-block__inbox">
+                            <div class="art-vt-block__tags"><span class="id">가나다라마바사아자차카타파하a</span><span
+                                class="tag">회원</span><span class="grade"><span class="star"><i
+                                    class="star__point p4"></i></span><em class="grade__num">4.0</em></span></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="art-vt-slide__pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type: 3,
+      menu1: 4,
+      menu2: 1,
+    });
+  </script>
+</body>
+
+</html>

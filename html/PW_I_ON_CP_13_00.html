@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title> (팝업) 메달 및 별점 운영 정책 | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupReplyPolicy">메달 및 별점 운영 정책</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 메달 및 별점 운영 정책 팝업 -->
+    <section class="pop-wrap pop-reply-policy" data-pop="popupReplyPolicy">
+      <div class="pop">
+        <div class="pop__inner">
+          <div class="pop__head">
+            <h2 class="pop__head-title">메달 및 별점 운영 정책</h2>
+            <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+          </div>
+          <div class="pop__body">
+            <div class="policy-box">
+              아르떼는 공연, 전시, 책 등 문화예술 콘텐츠에 대해 평가 시스템을 운영합니다. 해당 문화 콘텐츠를 직접 체험한 평론가와 담당 기자가 수여하는 ‘아르떼 메달’과 일반 회원들이 직접 평가하는 ‘아르떼 별점’ 두 가지입니다.<br><br>
+              <p class="star-title">1. 메달: 평론가와 기자들이 수여하는 ‘품질 보증서’ </p>
+              아르떼 메달은 미슐랭가이드처럼 좋은 공연·전시·책에 대해서만 1~3개씩 부여합니다. 한 개건, 두 개건 메달을 받았다는 것만으로 훌륭한 콘텐츠였다고 인정하는 시스템입니다. ‘메달 셋’은 말할 것도 없겠죠. 해당 콘텐츠를 직접 체험한 평론가와 기자들이 콘텐츠의 품질·가격·현장 분위기 등을 감안해 매깁니다. 메달 1~3개는 각각 이런 의미를 가집니다.<br>
+              <div class="star-box">
+                <span class="badge-star"></span><span class="badge-star"></span><span class="badge-star"></span> : 절대 놓쳐서는 안 되는 콘텐츠<br>
+                <span class="badge-star"></span><span class="badge-star"></span> : 먼 걸음을 감수할 만한 콘텐츠<br>
+                <span class="badge-star"></span> : 훌륭한 콘텐츠
+              </div>
+              <p class="star-title">2. 별점: 회원들이 직접 참여하는 생생한 평가</p>
+              ‘다른 회원들은 이 전시·공연·도서를 어떻게 봤을까?’ 문화예술 애호가들의 생생한 후기가 궁금하다면 아르떼 별점을 확인하세요. 회원 누구나 간단한 후기와 함께 1~5개의 별을 달 수 있습니다. 아르떼 별점은 자신의 감상평을 다른 애호가들에게 전하고, 남들은 어떻게 느꼈는지를 엿볼 수 있는 창구입니다. 여러분이 남겨주신 평가가 다른 애호가들에게 선택의 기준이 될 수 있습니다. 별 1~5개는 각각 이런 의미를 가집니다.
+              <div class="star-box">
+                <i class="star__point p10"></i><i class="star__point p10"></i><i class="star__point p10"></i><i class="star__point p10"></i><i class="star__point p10"></i> : 죽기 전에 반드시 봐야 할 콘텐츠<br>
+                <i class="star__point p10"></i><i class="star__point p10"></i><i class="star__point p10"></i><i class="star__point p10"></i> : 주변에 추천하고 싶은 콘텐츠<br>
+                <i class="star__point p10"></i><i class="star__point p10"></i><i class="star__point p10"></i> : 호불호가 갈리는 콘텐츠<br>
+                <i class="star__point p10"></i><i class="star__point p10"></i> : 약간 아쉬운 콘텐츠<br>
+                <i class="star__point p10"></i> : 많이 아쉬운 콘텐츠
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// 댓글 운영 정책 팝업 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    $(function () {
+      //popup test
+      $('[data-pop-open=popupReplyPolicy]').trigger('click');
+    })
+  </script>
+
+</body>
+
+</html>

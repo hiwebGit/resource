@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : 오류 페이지</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+
+      <!-- START -->
+      <div class="content">
+        <section class="error-message">
+          <p class="error-message__bg">Bad <br class="show-mo">Request</p>
+          <div class="error-message__area">
+            <div class="error-message__header">
+              <h2 class="error-message__main">요청하신 URL을 <br class="show-mo">서버에서 찾을 수 없습니다.</h2>
+              <p class="error-message__sub">(400 Bad Request)</p>
+            </div>
+            <div class="error-message__cont">
+              <p class="error-message__info">페이지가 작동하지 않습니다.</p>
+              <p class="error-message__info">문제가 계속되면 서비스 운영자에게 문의해주세요.</p>
+            </div>
+            <div class="error-message__footer">
+              <button type="button" class="btn-rect bg-primary">홈으로 가기</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type:1,
+      menu1:1,
+      menu2:1, 
+    });
+  </script>
+
+  <script></script>
+
+</body>
+
+</html>

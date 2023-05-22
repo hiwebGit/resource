@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : arte Map</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container artemap" id="container">
+      <!-- START -->
+      <section class="artemap-section">
+        <!-- side bar -->
+        <aside class="artemap-side">
+          <div class="artemap-search">
+            <!-- 검색창 -->
+            <div class="search-group">
+              <span class="search-box">
+                <input type="text" class="o-input" placeholder="검색어를 입력해주세요">
+                <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
+              </span>
+            </div>
+            <!-- // 검색창 -->
+
+            <!-- address -->
+            <div class="search-location">
+              <ul class="art-info">
+                <li class="ico-location">잠실종합운동장 내 빅탑</li>
+              </ul>
+
+              <!-- options btn -->
+              <div class="search-filter">
+                <button type="button" class="btn c-primary filter">상세옵션</button>
+                <!-- options 목록 -->
+                <div class="filter-options">
+                  <div class="filter-options__top">
+                    <span class="filter-options__tit">상세 옵션</span>
+                    <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button>
+                  </div>
+                  <div class="filter-options__cont">
+                    <div class="filter-options__items">
+                      <p class="filter-options__tit">장르</p>
+                      <div class="filter-options__items-cont">
+                        <ul class="filter-options__items-list">
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"><span
+                                class="o-rdo__label">전체</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"><span
+                                class="o-rdo__label">연극</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"><span
+                                class="o-rdo__label">뮤지컬</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"
+                                checked=""><span class="o-rdo__label">클래식</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"><span
+                                class="o-rdo__label">오페라</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"
+                                checked=""><span class="o-rdo__label">무용</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"
+                                checked=""><span class="o-rdo__label">국악</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"><span
+                                class="o-rdo__label">복합</span></label></li>
+                          <li><label class="o-rdo"><input type="checkbox" class="o-input" name="chk-type"
+                                checked=""><span class="o-rdo__label">전시</span></label></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-options__bottom">
+                    <button type="button" class="btn-reset" aria-label="Reset">초기화</button>
+                    <button type="button" class="btn size-xmd hide-pc">적용하기</button>
+                  </div>
+                  <!-- // options 목록 -->
+                </div>
+              </div>
+              <!-- // options btn -->
+            </div>
+            <!-- // address -->
+
+            <!-- selected options  -->
+            <!-- 선택 된 태그 노출, 노출시 is-selected 클래스 추가 / 미노출시 삭제 -->
+            <div class="search-tags is-selected">
+              <span class="select-tag">
+                <span>연극</span>
+                <button type="button" class="btn-del" aria-label="delete"></button>
+              </span>
+              <span class="select-tag">
+                <span>뮤지컬</span>
+                <button type="button" class="btn-del" aria-label="delete"></button>
+              </span>
+              <span class="select-tag">
+                <span>클래식</span>
+                <button type="button" class="btn-del" aria-label="delete"></button>
+              </span>
+              <span class="select-tag">
+                <span>오페라</span>
+                <button type="button" class="btn-del" aria-label="delete"></button>
+              </span>
+            </div>
+            <!-- selected options  -->
+            <!-- // address & option -->
+
+            <!-- 검색 결과 -->
+            <!-- 장소명으로 검색했을 경우 spot 클래스 추가 -->
+            <div class="search-list">
+              <!-- 검색 결과가 없을 경우 nodata 클래스 추가 -->
+              <div class="search-list-box nodata">
+                <div class="search-list-spot">
+                  <div class="list-spot__top">
+                    <span class="list-spot__tit">종로구립 박노수미술관</span>
+                    <!-- <button type="button" class="pop__close" data-label="닫기" data-pop-btn="close"></button> -->
+                  </div>
+                  <div class="list-spot__cont">
+                    <ul class="art-info">
+                      <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      <!-- <li class="ico-time">오전 10:00~오후 6:00</li> -->
+                      <li class="ico-tell">02-2148-4171</li>
+                      <li class="ico-web">www.jfac.or.kr/</li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="place-card">
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <!-- 선택된 장소인 경우 is-selected 추가 -->
+                      <button type="button" class="btn-place is-selected"></button>
+                    </div>
+                  </li>
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <button type="button" class="btn-place"></button>
+                    </div>
+                  </li>
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <button type="button" class="btn-place"></button>
+                    </div>
+                  </li>
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <button type="button" class="btn-place"></button>
+                    </div>
+                  </li>
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <button type="button" class="btn-place"></button>
+                    </div>
+                  </li>
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <button type="button" class="btn-place"></button>
+                    </div>
+                  </li>
+                  <li class="place-card__item">
+                    <div class="place-card__img">
+                      <a href="#" class="thumb-img">
+                        <span class="img-holder">
+                          <img src="../assets/images/@temp/@thumg_img01.jpg" alt="">
+                        </span>
+                      </a>
+                    </div>
+                    <div class="place-card__info">
+                      <a href="#" class="place-card__info-title">유니버설발레단 〈호두까기인형〉</a>
+                      <ul class="art-info">
+                        <li class="ico-event">2022. 03. 16 ~2022. 11. 27</li>
+                        <li class="ico-location">잠실종합운동장 내 빅탑</li>
+                      </ul>
+                      <div class="art-info-by">
+                        <span class="tag-gen-s">뮤지컬</span>
+                        <!-- <span class="tag">진행중</span> -->
+                        <span class="grade">
+                          <span class="star"><i class="star__point p7"></i></span>
+                          <em class="grade__num">7.0</em>
+                        </span>
+                        <button type="button" class="btn-fav" aria-label="Like"></button>
+                      </div>
+                    </div>
+                    <div class="place-card__btn">
+                      <button type="button" class="btn-place"></button>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- nodata case -->
+                <div class="palce-nodata">
+                  <p>검색결과가 없습니다.</p>
+                </div>
+                <!-- //nodata case -->
+
+                <!-- pagination -->
+                <div class="paging">
+                  <!-- PC -->
+                  <!-- <a href="#" class="paging__btn paging__btn--first">처음</a> -->
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap paging-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <!-- <a href="#" class="paging__btn paging__btn--last">마지막</a> -->
+
+                  <!-- Mobile -->
+                  <div class="paging__num-wrap paging-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+                <!-- // pagination -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 검색영역 open/close 버튼 -->
+          <button type="button" class="btn-side hide-mo"></button>
+          <!-- 검색영역 모바일 핸들 -->
+          <span class="side-handle hide-pc"></span>
+        </aside>
+        <!-- // side bar -->
+
+        <!-- map -->
+        <div class="artemap-map">
+          <!-- 네이버 지도 -->
+          <div id="map" class="map-section"></div>
+          <!-- // 네이버 지도 -->
+
+          <div class="map-btn">
+            <button type="button" class="btn map-search">현 지도에서 검색</button>
+            <button type="button" class="btn-location"></button>
+          </div>
+        </div>
+        <!-- // map -->
+      </section>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer" id="footer"></footer> -->
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=naay4j2t7j"></script>
+  <!-- naverMap API -->
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type:2,
+      menu1:7,
+      menu2:1, 
+    });
+  </script>
+
+  <script>
+    // PC,MO 사이드 열림닫힘 설정      
+    $(document).ready(function(){
+      var windowWidth = $(window).width();
+      function isOpenToggleClass(){
+        if (windowWidth < 768) {
+          //창 가로 크기가 768 미만일 경우
+          $('.artemap-side').removeClass('is-open')
+        } else {
+          //창 가로 크기가 768보다 클 경우
+          $('.artemap-side').addClass('is-open')
+        }
+      }
+      isOpenToggleClass();
+    });
+
+    // 임시
+    var btnFilter = $('.artemap-section .btn.filter');
+    var btnClose = $('.pop__close');
+    var btnSide = $('.btn-side');
+    var btnPlace = $('.btn-place');
+    var sideSection = $('.artemap-side');
+
+    btnFilter.on('click', function () {
+      $(this).siblings('.filter-options').addClass('is-open');
+      sideSection.addClass('is-open');
+      if ($(window).width() < 768) {
+        sideSection.css('top', '16px');
+      }
+    })
+    btnClose.on('click', function () {
+      $(this).closest('.filter-options').removeClass('is-open');
+    })
+    btnClose.on('click', function () {
+      $(this).closest('.search-list').removeClass('spot');
+    })
+    btnSide.on('click', function () {
+      $(this).closest('.artemap-side').toggleClass('is-open');
+    })
+    btnPlace.on('click', function () {
+      var target = $(this).data('target');
+      $(this).toggleClass('is-selected').closest('li').siblings().find('.btn-place').removeClass('is-selected');
+      $(this).closest('body').find('.artemap-side').addClass('is-open');
+    })
+
+    function sideDrag() {
+      var handle = $('.side-handle')
+      var winH = $(window).height();
+
+      handle.bind('touchmove', function (e) {
+        e.stopPropagation();
+        passive: true
+        $(this).closest('body').css('overflow', 'hidden');
+        var moveY = e.originalEvent.touches[0].clientY;
+
+        sideSection.css('top', moveY - 60);
+
+        if (moveY <= 76) {
+          sideSection.css('top', '16px');
+        }
+        if (moveY > winH - 157) {
+          sideSection.css('top', 'calc(var(--vh, 1vh) * 100 - 218px)');
+        }
+
+        if (moveY <= 116) {
+          sideSection.addClass('is-drag');
+        } else {
+          sideSection.removeClass('is-drag');
+          sideSection.removeClass('is-open');
+        }
+
+        // console.log(moveY)
+        // console.log($(window).height())
+      });
+    }
+    sideDrag()
+
+    // naverMap
+    function mapApi() {
+      var HOME_PATH = window.HOME_PATH || '.';
+      var map = new naver.maps.Map('map', {
+        bounds: naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.3585229, 127.1010728),
+          new naver.maps.LatLng(37.3658036, 127.1222656))
+      });
+
+      var defaultMarker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.3606904, 127.1061625),
+        map: map
+      });
+
+      var locationMarker1 = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.3613962, 127.1122487),
+        map: map,
+        title: '접힘',
+        icon: {
+          content: [
+            '<div class="btn-place">',
+            '<i class="ico-locate"></i>',
+            '<span class="locate-name">현대 미술관 서울</span>',
+            '</div>'
+
+            // '<div class="cs_mapbridge">',
+            //     '<div class="map_group _map_group crs">',
+            //         '<div class="map_marker _marker num1 num1_big"> ',
+            //             '<span class="ico _icon"></span>',
+            //             '<span class="shd"></span>',
+            //         '</div>',
+            //     '</div>',
+            // '</div>'
+          ].join(''),
+        },
+        draggable: true
+      });
+
+      var locationMarker2 = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.3653962, 127.1133487),
+        map: map,
+        title: '접힘 선택',
+        icon: {
+          content: [
+            '<div class="btn-place is-selected">',
+            '<i class="ico-locate"></i>',
+            '<span class="locate-name">현대 미술관 서울</span>',
+            '</div>'
+
+            // '<div class="cs_mapbridge">',
+            //     '<div class="map_group _map_group crs">',
+            //         '<div class="map_marker _marker num1 num1_big"> ',
+            //             '<span class="ico _icon"></span>',
+            //             '<span class="shd"></span>',
+            //         '</div>',
+            //     '</div>',
+            // '</div>'
+          ].join(''),
+        },
+        draggable: true
+      });
+
+      // var locationMarker3 = new naver.maps.Marker({
+      //     position: new naver.maps.LatLng(37.3613962, 127.1122487),
+      //     map: map,
+      //     title: '펼침',
+      //     icon: {
+      //         content: [
+      //           '<div class="btn-place is-open">',
+      //             '<i class="ico-locate"></i>',
+      //             '<span class="locate-name">현대 미술관 서울</span>',
+      //           '</div>'
+
+      //                     // '<div class="cs_mapbridge">',
+      //                     //     '<div class="map_group _map_group crs">',
+      //                     //         '<div class="map_marker _marker num1 num1_big"> ',
+      //                     //             '<span class="ico _icon"></span>',
+      //                     //             '<span class="shd"></span>',
+      //                     //         '</div>',
+      //                     //     '</div>',
+      //                     // '</div>'
+      //                 ].join(''),
+      //     },
+      //     draggable: true
+      // });
+
+      // var locationMarker4 = new naver.maps.Marker({
+      //     position: new naver.maps.LatLng(37.3653962, 127.1133487),
+      //     map: map,
+      //     title: '펼침 선택',
+      //     icon: {
+      //         content: [
+      //           '<div class="btn-place is-selected is-open">',
+      //             '<i class="ico-locate"></i>',
+      //             '<span class="locate-name">현대 미술관 서울</span>',
+      //           '</div>'
+
+      //                     // '<div class="cs_mapbridge">',
+      //                     //     '<div class="map_group _map_group crs">',
+      //                     //         '<div class="map_marker _marker num1 num1_big"> ',
+      //                     //             '<span class="ico _icon"></span>',
+      //                     //             '<span class="shd"></span>',
+      //                     //         '</div>',
+      //                     //     '</div>',
+      //                     // '</div>'
+      //                 ].join(''),
+      //     },
+      //     draggable: true
+      // });
+
+
+    }
+    mapApi()
+
+    function setScreenSize() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    setScreenSize();
+    window.addEventListener('resize', setScreenSize);
+  </script>
+</body>
+
+</html>

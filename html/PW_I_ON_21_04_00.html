@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : 마이페이지</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="my-container">
+        <!-- snb : QNA SNB PC만 노출 'show-pc' 추가 -->
+        <div class="my-snb-section show-pc">
+          <div class="my-namebox">
+            <span class="my-namebox__name">간만에카페인간만에카</span>
+          </div>
+
+          <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <div class="my-lnb">
+            <ul class="my-lnb__list">
+              <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
+              <!-- <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">음악·공연·전시·책</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
+              </li>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">작성 글</a></li>
+                  <li><a href="#">작성 댓글·답글</a></li>
+                  <li><a href="#">임시저장 글</a></li>
+                </ul>
+              </li> -->
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep" data-accordion="btn">나의 정보</a>
+              </li>
+              <li class="my-lnb__item">
+                <a href="#" class="my-lnb__1dep is-active">1:1 문의</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!--// snb -->
+
+        <div class="my-content">
+          <div class="my-content__inner">
+
+            <section class="my-qna">
+              <div class="my-head">
+                <span class="my-head__result">총 <span class="num">2</span>건</span>
+                <div class="my-head__side">
+                  <button type="button" class="my-btn">1:1 문의</button>
+                </div>
+              </div>
+
+              <!-- 문의사항 1건 이상 -->
+              <div class="my-list-wrap">
+                <ul class="my-list">
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag tag--line">답변 대기</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag tag--line">답변 대기</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag tag--line">답변 대기</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요? 한줄 말줄임 테스트 한줄 말줄임 테스트</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag tag--line">답변 대기</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag tag--line">답변 대기</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag tag--line">답변 대기</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                  <li class="my-list__item">
+                    <a href="#" class="my-list__link">
+                      <span class="tag">답변 완료</span>
+                      <span class="my-list__title">[아티스트DB] 음악 관련 예술인을 검색하려면 어떻게 하나요?</span>
+                      <span class="my-list__date">2022.10.31</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="paging">
+                  <a href="#" class="paging__btn paging__btn--first">처음</a>
+                  <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                  <div class="paging__num-wrap paging-pc">
+                    <a href="#" class="paging__num paging__num--active">1</a>
+                    <a href="#" class="paging__num">2</a>
+                    <a href="#" class="paging__num">3</a>
+                    <a href="#" class="paging__num">4</a>
+                    <a href="#" class="paging__num">5</a>
+                    <a href="#" class="paging__num">6</a>
+                    <a href="#" class="paging__num">7</a>
+                    <a href="#" class="paging__num">8</a>
+                    <a href="#" class="paging__num">9</a>
+                    <a href="#" class="paging__num">10</a>
+                  </div>
+                  <a href="#" class="paging__btn paging__btn--next">다음</a>
+                  <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                  <div class="paging__num-wrap paging-mo">
+                    <a href="#" class="paging__more">더보기</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 문의사항 1건 이상 -->
+
+              <!-- no data  -->
+              <div class="my-nodata">
+                <p class="my-nodata__text">
+                  1:1 문의한 내역이 아직 없어요.<br />
+                  궁금한 사항이 있으면 언제든 문의해 주세요.
+                </p>
+              </div>
+              <!--// no data -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+<script>
+    layoutHeader({
+      type:2,
+      menu1:8,
+      menu2:1, 
+    });
+</script>
+
+</body>
+
+</html>

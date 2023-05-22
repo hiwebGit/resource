@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : 마이페이지</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="my-container">
+        <!-- snb : QNA SNB PC만 노출 'show-pc' 추가 -->
+        <div class="my-snb-section show-pc">
+          <div class="my-namebox">
+            <span class="my-namebox__name">간만에카페인간만에카</span>
+          </div>
+
+          <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <div class="my-lnb">
+            <ul class="my-lnb__list">
+              <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
+              <!-- <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">음악·공연·전시·책</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
+              </li>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">작성 글</a></li>
+                  <li><a href="#">작성 댓글·답글</a></li>
+                  <li><a href="#">임시저장 글</a></li>
+                </ul>
+              </li> -->
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep" data-accordion="btn">나의 정보</a>
+              </li>
+              <li class="my-lnb__item">
+                <a href="#" class="my-lnb__1dep is-active">1:1 문의</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--// snb -->
+
+        <div class="my-content">
+          <div class="my-content__inner">
+
+            <!-- 1:1 문의 (작성) -->
+            <section class="my-qna">
+              <div class="inform">
+                <div class="inform__block">
+                  <div class="inform__tit">문의 분야<span class="ico-required" aria-label="필수"></span></div>
+                  <div class="inform__cont">
+                    <select class="o-select in-text">
+                      <option>분야를 선택해 주세요.</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="inform__block">
+                  <div class="inform__tit">문의 제목<span class="ico-required" aria-label="필수"></span></div>
+                  <div class="inform__cont">
+                    <input id="" type="text" class="in-text" placeholder="제목을 입력해 주세요.">
+                    <p class="form-sub-text">(0/50)</p>
+                  </div>
+                </div>
+                <div class="inform__block">
+                  <div class="inform__tit">이메일<span class="ico-required" aria-label="필수"></span></div>
+                  <div class="inform__cont">
+                    <div class="form-holder is-check">
+                      <input id="" type="email" class="in-text" placeholder="이메일을 입력해 주세요." readonly>
+                    </div>
+                    <div class="form-block">
+                      <span class="o-chk">
+                        <input type="checkbox" name="mych" id="email-chk" class="o-chk__input" checked>
+                        <label for="email-chk" class="o-chk__label c-dark"><em>메일로 답변받기</em></label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="inform__block">
+                  <div class="inform__tit">문의 내용<span class="ico-required" aria-label="필수"></span></div>
+                  <div class="inform__cont">
+                    <textarea name="" id="" class="text-area in-text" placeholder="내용을 입력해 주세요."></textarea>
+                    <p class="form-sub-text">(0/1000)</p>
+                  </div>
+                </div>
+                <div class="inform__block">
+                  <div class="inform__tit">파일 첨부
+                    <p class="form-sub-text">(2/5)</p>
+                  </div>
+                  <div class="inform__cont">
+                    <div class="inform__attach">
+                      <label class="btn-file">
+                        <input type="file" class="btn-file__input"> <em>파일선택</em>
+                      </label>
+                      <!-- s: 비활성화시 버튼 -->
+                      <!-- <label class="btn-file disabled">
+                        <input type="file" class="btn-file__input" disabled> <em>파일선택</em>
+                      </label> -->
+                      <!-- e: 비활성화시 버튼 -->
+                      <div class="review-photo__box">
+                        <span class="photo-add__select">
+                          <button type="button" class="file-name">attach_filename_20221225-1.jpg</button>
+                          <button type="button" class="btn-del" aria-label="delete"></button>
+                        </span>
+                        <span class="photo-add__select">
+                          <button type="button" class="file-name">attach_filename_20221225-1.jpg</button>
+                          <button type="button" class="btn-del" aria-label="delete"></button>
+                        </span>
+                      </div>
+                      <p class="text-guide sm">※ 5M 이하의 이미지 파일만 5개까지 첨부 가능합니다. </p>
+                      <p class="text-guide sm">※ 첨부가능 파일확장자 : gif, png, jpg, jpeg</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-board-foot">
+                <div class="my-board-foot__side">
+                  <button type="button" class="btn c-gray">취소</button>
+                  <button type="button" class="btn">확인</button>
+                </div>
+              </div>
+            </section>
+            <!--// 1:1 문의 (작성) -->
+
+          </div>
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type:2,
+      menu1:8,
+      menu2:1, 
+    });
+</script>
+</body>
+
+</html>

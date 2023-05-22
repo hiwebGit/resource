@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>(팝업) 댓글 작성 | 한경 ARTE</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="content">
+
+        <button type="button" class="btn" data-pop-open="popupCommentWriter">댓글 작성</button>
+
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+    <!-- 댓글 쓰기 -->
+    <section class="pop-wrap pop-writer" data-pop="popupCommentWriter">
+      <div class="pop">
+        <div class="pop__head">
+          <h2 class="pop__head-title">댓글 작성</h2>
+          <button type="button" class="pop__close pc" data-label="닫기" data-pop-btn="close"></button>
+        </div>
+        <div class="pop__body">
+          <div class="pop-cont">
+            <div class="reply-writer__commit">
+              <div class="reply-input">
+                <!-- [D] 닉네임 영역 미노출인 경우, strong.reply-input__writer 마크업 삭제 -->
+                <strong class="reply-input__writer">jypk@v-w.co.kr</strong>
+                <!-- [D] textarea 비활성화인 경우, 태그에 readonly 속성 추가 -->
+                <textarea minlength="5" maxlength="1000"
+                  placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 토론문화와 양질의 댓글 문화를 위해, 타인에게 불쾌감을 주는 욕설 또는 특정 계층/민족, 종교 등을 비하하는 단어들은 표시가 제한됩니다."></textarea>
+              </div>
+
+              <div class="reply-writer__btn">
+                <button type="button">수정</button>
+                <!-- [D] 버튼 비활성화인 경우, 태그에 disabled 속성 추가 -->
+                <button type="button" class="btn-rect__brown">등록</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-wrap">
+          <span class="text">내 정보수정 바로가기</span>
+        </a>
+        <button type="button" class="pop__close is-top mo" data-label="닫기" data-pop-btn="close"></button>
+      </div>
+    </section>
+    <!--// 댓글 쓰기 -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <!-- <script src="../assets/js/libs/jquery-ui.min.js"></script> -->
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    $(function () {
+      //popup test
+      // $('[data-pop-open=popupCommentWriter]').trigger('click');
+    });
+  </script>
+
+</body>
+
+</html>

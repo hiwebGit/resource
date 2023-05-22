@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : 마이페이지</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="my-container">
+        <!-- snb -->
+        <div class="my-snb-section">
+          <div class="my-namebox">
+            <span class="my-namebox__name">간만에카페인간만에카</span>
+          </div>
+          <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <div class="my-lnb">
+            <ul class="my-lnb__list">
+              <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
+              <!-- <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">음악·공연·전시·책</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
+              </li>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">작성 글</a></li>
+                  <li><a href="#">작성 댓글·답글</a></li>
+                  <li><a href="#">임시저장 글</a></li>
+                </ul>
+              </li> -->
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep is-active" data-accordion="btn">나의 정보</a>
+              </li>
+              <li class="my-lnb__item">
+                <a href="#" class="my-lnb__1dep">1:1 문의</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--// snb -->
+        <div class="my-content">
+          <!-- summary box -->
+          <div class="my-summary">
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">작성글</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">작성댓글</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">좋아요</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+          </div>
+          <!--// summary box -->
+
+          <!-- mypage : 나의 정보 -->
+          <h2 class="my-sect__title show-mo">나의 정보</h2>
+          <!-- 수정버튼 추가 -->
+          <div class="btn-area-top">
+            <button type="button" class="btn" onclick="location.href='https://member.hankyung.com/apps.frame/common.mypage?site=www.arte.co.kr&user_agent=web&token='">통합회원 계정관리</button>
+          </div>
+            
+          <form action="" name="" metod="">
+            <fieldset class="inform">
+              <legend>나의 정보</legend>
+              <div class="inform__block">
+                <label for="" class="inform__tit">닉네임<span class="ico-required" aria-label="필수"></span></label>
+                <div class="inform__cont">
+                  <div class="form-holder">
+                    <input id="" type="text" class="in-text" placeholder="닉네임을 입력해주세요.">
+                    <button type="button" class="btn-form size-md">중복확인</button>
+                  </div>
+                  <p class="form-sub-text">&#8251; 2자~15자, 영문, 한글, 숫자만 가능. <span>(특수문자, 문장기호, 이모티콘 등 사용불가)</span></p>
+                </div>
+              </div>
+              <div class="inform__block">
+                <label for="" class="inform__tit">휴대폰 번호</label>
+                <div class="inform__cont">
+                  <div class="form-holder">
+                   <ul class="inform__phone">
+                    <li>
+                      <div class="dropdown h-md">
+                        <button type="button" class="dropdown__cur" id="phone_first"><em>010</em></button>
+                        <ul class="dropdown__list">
+                          <li class="is-on"><button type="button" class="dropdown__btn">010</button></li>
+                          <li><button type="button" class="dropdown__btn">011</button></li>
+                          <li><button type="button" class="dropdown__btn">016</button></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li >
+                      <input id="phone_mid" type="text" class="in-number" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    </li>
+                    <li >
+                      <input id="phone_last" type="text" class="in-number" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    </li>                  
+                  </ul>
+                  </div>
+                  <p class="form-sub-text">&#8251; arte에서 진행하는 이벤트 당첨 시 휴대폰으로 관련 정보가 전달됩니다.</span></p>
+                </div>
+              </div>
+              <div class="inform__block">
+                <label for="" class="inform__tit">생년월일</label>
+                <!-- <div class="inform__cont">
+                  <input id="" type="text" class="in-text" placeholder="입력예시) 2000-01-01">
+                </div> -->
+                <ul class="inform__birth">
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>1991년</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">1991년</button></li>
+                        <li><button type="button" class="dropdown__btn">1992년</button></li>
+                        <li><button type="button" class="dropdown__btn">1993년</button></li>
+                        <li><button type="button" class="dropdown__btn">1994년</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>01월</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">01월</button></li>
+                        <li><button type="button" class="dropdown__btn">02월</button></li>
+                        <li><button type="button" class="dropdown__btn">03월</button></li>
+                        <li><button type="button" class="dropdown__btn">04월</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>01일</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">01일</button></li>
+                        <li><button type="button" class="dropdown__btn">02일</button></li>
+                        <li><button type="button" class="dropdown__btn">03일</button></li>
+                        <li><button type="button" class="dropdown__btn">04일</button></li>
+                        <li><button type="button" class="dropdown__btn">05일</button></li>
+                        <li><button type="button" class="dropdown__btn">06일</button></li>
+                        <li><button type="button" class="dropdown__btn">07일</button></li>
+                        <li><button type="button" class="dropdown__btn">08일</button></li>
+                        <li><button type="button" class="dropdown__btn">09일</button></li>
+                        <li><button type="button" class="dropdown__btn">10일</button></li>
+                        <li><button type="button" class="dropdown__btn">11일</button></li>
+                        <li><button type="button" class="dropdown__btn">12일</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="inform__block">
+                <label for="" class="inform__tit">생년월일</label>
+                <ul class="inform__birth">
+                  <li>
+                    <select class="o-select" name="" id="">
+                      <option value="">1991년</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="o-select" name="" id="">
+                      <option value="">05월</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="o-select" name="" id="">
+                      <option value="">02일</option>
+                    </select>
+                  </li>
+                </ul>
+              </div> -->
+              <div class="inform__block">
+                <label for="" class="inform__tit">관심지역</label>
+                <ul class="inform__place">
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>서울시</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">서울시</button></li>
+                        <li><button type="button" class="dropdown__btn">부산시</button></li>
+                        <li><button type="button" class="dropdown__btn">인천광역시</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>강남구</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">강남구</button></li>
+                        <li><button type="button" class="dropdown__btn">영등포구</button></li>
+                        <li><button type="button" class="dropdown__btn">성동구</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>서울시</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">서울시</button></li>
+                        <li><button type="button" class="dropdown__btn">부산시</button></li>
+                        <li><button type="button" class="dropdown__btn">인천광역시</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown h-md">
+                      <button type="button" class="dropdown__cur"><em>강남구</em></button>
+                      <ul class="dropdown__list">
+                        <li class="is-on"><button type="button" class="dropdown__btn">강남구</button></li>
+                        <li><button type="button" class="dropdown__btn">영등포구</button></li>
+                        <li><button type="button" class="dropdown__btn">성동구</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="inform__block">
+                <label for="" class="inform__tit">관심지역</label>
+                <ul class="inform__place">
+                  <li>
+                    <select class="o-select">
+                      <option value="">서울시</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="o-select">
+                      <option value="">강남구</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="o-select">
+                      <option value="">서울시</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="o-select">
+                      <option value="">은평구</option>
+                    </select>
+                  </li>
+                </ul>
+              </div> -->
+
+            </fieldset>
+            <ul class="form-sub-text">
+              <li>&#8251; 아르떼에서는 추후 공연·전시·책에 대한 개인 맞춤형 서비스를 제공할 예정입니다.</li>
+              <li>&#8251; 아래의 관심분야를 선택하시면 추후 더욱 최적화된 맞춤형 큐레이션 서비스를 제공받으실 수 있습니다.</li>
+            </ul>
+          </form>
+          <!--// mypage : 나의 정보 -->
+
+          <!-- 관심 분야 -->
+          <div class="my-interest">
+            <h2 class="my-sect__title line-btm">관심분야</h2>
+            <div class="my-interest__cont">
+              <div class="my-group">
+                <h3 class="my-group__title">음악<span class="sub-text">(최대 3개 선택)</span></h3>
+                <ul class="chksel len-6">
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0101">
+                    <label class="chksel__label" for="chk0101">클래식</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0102">
+                    <label class="chksel__label" for="chk0102">재즈</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0103">
+                    <label class="chksel__label" for="chk0103">국악</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0104">
+                    <label class="chksel__label" for="chk0104">가곡</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0105">
+                    <label class="chksel__label" for="chk0105">음악</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0106">
+                    <label class="chksel__label" for="chk0106">대중음악</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="my-group">
+                <h3 class="my-group__title">공연<span class="sub-text">(최대 3개 선택)</span></h3>
+                <ul class="chksel len-7">
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0201">
+                    <label class="chksel__label" for="chk0201">뮤지컬</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0202">
+                    <label class="chksel__label" for="chk0202">오페라</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0203">
+                    <label class="chksel__label" for="chk0203">연극</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0204">
+                    <label class="chksel__label" for="chk0204">무용</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0205">
+                    <label class="chksel__label" for="chk0205">발레</label></li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0206">
+                    <label class="chksel__label" for="chk0206">영화</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0207">
+                    <label class="chksel__label" for="chk0207">OTT</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="my-group">
+                <h3 class="my-group__title">전시<span class="sub-text">(최대 3개 선택)</span></h3>
+                <ul class="chksel len-8">
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0301">
+                    <label class="chksel__label" for="chk0301">회화</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0302">
+                    <label class="chksel__label" for="chk0302">조각</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0303">
+                    <label class="chksel__label" for="chk0303">설치미술</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0304">
+                    <label class="chksel__label" for="chk0304">사진</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0305">
+                    <label class="chksel__label" for="chk0305">일러스트</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0306">
+                    <label class="chksel__label" for="chk0306">건축</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0307">
+                    <label class="chksel__label" for="chk0307">디자인</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0308">
+                    <label class="chksel__label" for="chk0308">미술투자</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="my-group">
+                <h3 class="my-group__title">도서<span class="sub-text">(최대 3개 선택)</span></h3>
+                <ul class="chksel len-4">
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0401">
+                    <label class="chksel__label" for="chk0401">문학</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0402">
+                    <label class="chksel__label" for="chk0402">경제경영</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0403">
+                    <label class="chksel__label" for="chk0403">인문교양</label>
+                  </li>
+                  <li class="chksel__item">
+                    <input class="chksel__input" type="checkbox" id="chk0404">
+                    <label class="chksel__label" for="chk0404">예술</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--// 관심 분야 -->
+          <!-- 페이지 하단 버튼  -->
+          <div class="btn-area">
+            
+            <button type="button" class="btn">저장</button>
+          </div>
+          <!--// 페이지 하단 버튼  -->
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  
+<script>
+    layoutHeader({
+      type:2,
+      menu1:8,
+      menu2:1, 
+    });
+
+    const phoneMid = document.querySelector("#phone_mid");
+    const phoneLast = document.querySelector("#phone_last");
+
+    let middleNum = '';
+    let lastNum = '';
+
+    phoneMid.addEventListener('keyup',function(){
+
+      let midResult = phoneMid.value.length;
+
+      if(midResult === 4){
+          phoneLast.focus();
+      }   
+    });
+</script>
+
+</body>
+
+</html>

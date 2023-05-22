@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>arte : 마이페이지</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-Medium.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Pretendard-SemiBold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/PPEditorialNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Faktum-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!--// font -->
+</head>
+
+<!-- dark mode 일 경우 body 'dark-mode' 추가 -->
+
+<body>
+  <div id="wrap" class="wrap">
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <!--// Header -->
+
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- START -->
+      <div class="my-container">
+        <!-- snb -->
+        <div class="my-snb-section">
+          <div class="my-namebox">
+            <span class="my-namebox__name">간만에카페인간만에카</span>
+          </div>
+          <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <div class="my-lnb">
+            <ul class="my-lnb__list">
+              <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
+              <!-- <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">음악·공연·전시·책</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
+              </li>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">작성 글</a></li>
+                  <li><a href="#" class="is-active">작성 댓글·답글</a></li>
+                  <li><a href="#">임시저장 글</a></li>
+                </ul>
+              </li> -->
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep" data-accordion="btn">나의 정보</a>
+              </li>
+              <li class="my-lnb__item">
+                <a href="#" class="my-lnb__1dep">1:1 문의</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!--// snb -->
+        <div class="my-content">
+          <!-- summary box -->
+          <div class="my-summary">
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">작성글</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">작성댓글</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+            <div class="my-summary__item">
+              <div class="my-summary__inbox">
+                <span class="my-summary__tit">좋아요</span>
+                <span class="my-summary__num">99,999</span>
+              </div>
+            </div>
+          </div>
+          <!--// summary box -->
+
+          <!-- no data -->
+          <!-- <div class="artbox-nodata">
+            <p class="artbox-nodata__text">회원님, 아직 좋아한 콘텐츠가 없네요.<br />한 번 찾으러 가 볼까요?</p>
+            <div class="artbox-nodata__links">
+              <a href="#" class="artbox-nodata__btn">MUSIC NEWS</a>
+              <a href="#" class="artbox-nodata__btn">STAGE·CINE NEWS</a>
+              <a href="#" class="artbox-nodata__btn">ART NEWS</a>
+              <a href="#" class="artbox-nodata__btn">BOOK NEWS</a>
+            </div>
+          </div> -->
+          <!--// no data -->
+
+          <!-- List -->
+          <h2 class="sec-tit show-mo">작성 댓글·답글</h2>
+          <!-- table-style-list -->
+          <div class="my-table">
+            <div class="art-list type-basic spacing8">
+              <!-- 상단 -->
+              <div class="my-table__all">
+                <div class="my-table__items">
+                  <span class="o-chk">
+                    <input type="checkbox" name="mych" id="my-check00" class="o-chk__input" data-check="allCheck">
+                    <label for="my-check00" class="o-chk__label"><em>전체선택</em></label>
+                  </span>
+                </div>
+                <div class="my-table__items">
+                  <button type="button" class="btn-form">삭제</button>
+                </div>
+              </div>
+              <!-- //상단 -->
+              <div class="my-table-style__list s-col_pd">
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check01" class="o-chk__input">
+                      <label for="my-check01" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check02" class="o-chk__input">
+                      <label for="my-check02" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check03" class="o-chk__input">
+                      <label for="my-check03" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check04" class="o-chk__input">
+                      <label for="my-check04" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <!-- 삭제 Case : 'is-deleted'  추가 -->
+                    <div class="art-list__item is-deleted">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <span>무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</span>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail one-block no-opacity">
+                          <div class="artbox__deleted">삭제된 게시물입니다.</div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--// 삭제 Case -->
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check05" class="o-chk__input">
+                      <label for="my-check05" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check06" class="o-chk__input">
+                      <label for="my-check06" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check07" class="o-chk__input">
+                      <label for="my-check07" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check08" class="o-chk__input">
+                      <label for="my-check08" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check09" class="o-chk__input">
+                      <label for="my-check09" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check10" class="o-chk__input">
+                      <label for="my-check10" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check11" class="o-chk__input">
+                      <label for="my-check11" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check12" class="o-chk__input">
+                      <label for="my-check12" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check13" class="o-chk__input">
+                      <label for="my-check13" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check14" class="o-chk__input">
+                      <label for="my-check14" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check15" class="o-chk__input">
+                      <label for="my-check15" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check16" class="o-chk__input">
+                      <label for="my-check16" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check17" class="o-chk__input">
+                      <label for="my-check17" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check18" class="o-chk__input">
+                      <label for="my-check18" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check19" class="o-chk__input">
+                      <label for="my-check19" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title ellpsis-none">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?무엇이 높은 성벽으로부터 사람들에게
+                              자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-table-style-col">
+                  <div class="my-table-style-col__items show-pc">
+                    <span class="o-chk">
+                      <input type="checkbox" name="mych" id="my-check20" class="o-chk__input">
+                      <label for="my-check20" class="o-chk__label"></label>
+                    </span>
+                  </div>
+                  <div class="my-table-style-col__items">
+                    <div class="art-list__item">
+                      <div class="artbox">
+                        <div class="artbox__summary h-auto">
+                          <p class="artbox__title">
+                            <a href="#">무엇이 높은 성벽으로부터 사람들에게 자유를 부여했을까?</a>
+                          </p>
+                        </div>
+                        <div class="artbox__info">
+                          <div class="art-info-sub">
+                            <span class="text-date">2022.11.24</span>
+                          </div>
+                        </div>
+                        <div class="artbox__detail c-gray one-block">
+                          <a href="#">대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리 수험생 여러분들 진심으로 응원합니다. 대한민국의 희망이자 미래인 고3뿐만 아니라 모든 우리
+                            수험생 여러분들 진심으로 응원합니다.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- table-style-list -->
+          <!-- Paging -->
+          <div class="paging">
+            <!-- PC -->
+            <a href="#" class="paging__btn paging__btn--first">처음</a>
+            <a href="#" class="paging__btn paging__btn--prev">이전</a>
+            <div class="paging__num-wrap paging-pc">
+              <a href="#" class="paging__num paging__num--active">1</a>
+              <a href="#" class="paging__num">2</a>
+              <a href="#" class="paging__num">3</a>
+              <a href="#" class="paging__num">4</a>
+              <a href="#" class="paging__num">5</a>
+              <a href="#" class="paging__num">6</a>
+              <a href="#" class="paging__num">7</a>
+              <a href="#" class="paging__num">8</a>
+              <a href="#" class="paging__num">9</a>
+              <a href="#" class="paging__num">10</a>
+            </div>
+            <a href="#" class="paging__btn paging__btn--next">다음</a>
+            <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+            <!-- Mobile -->
+            <div class="paging__num-wrap paging-mo">
+              <a href="#" class="paging__more">더보기</a>
+            </div>
+          </div>
+          <!-- Paging -->
+
+        </div>
+      </div>
+      <!--// END -->
+    </div>
+    <!--// Container -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <!--// Footer -->
+
+  </div>
+
+  <!-- Script -->
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/swiper.min.js"></script>
+  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+  <script src="../assets/js/ui.js"></script>
+  <!--// Script -->
+
+  <script>
+    layoutHeader({
+      type:2,
+      menu1:8,
+      menu2:2, 
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+//path 
+$path : '../images/';
+
+//font-family
+$font-k : "Pretendard",
+"Roboto",
+Arial,
+Dotum,
+serif;
+
+$font-e : "Faktum",
+"Pretendard",
+Arial,
+Dotum,
+serif;
+
+$font-p : "PPEditorialNew",
+"Pretendard",
+Arial,
+Dotum,
+serif;
+
+// color
+$whiteO : #fff;
+$white : f5f3ec;
+$black : 171010;
+$color-light : #f5f3ec;
+$color-dark : #171010;
+$color-white : $whiteO;
+$color-primary : #5384ed;
+
+// space
+$sp-both : 48px;
+$sp-both-tablet : 32px;
+$sp-both-tablet-mid : 24px;
+$sp-both-mobile : 16px;
+
+// arte
+$lightW : var(--color-white);
+$light : var(--color-light);
+$dark : var(--color-dark);
+$spBoth : var(--both-space);
+$headerH : var(--headerH);
+
+// device
+$devicePC : 1920px;
+$devicePC-extra : 1800px;
+$devicePC-mid : 1600px;
+$deviceTablet : 1280px;
+$deviceTablet-no : 1024px;
+$deviceMobile : 768px;
+$mobile : 360px;

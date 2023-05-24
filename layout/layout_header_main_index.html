@@ -40,7 +40,8 @@
             <label class="o-rdo">
               <input type="checkbox" class="o-input" name="chk-status"><span class="o-rdo__label">오늘 하루 보지 않기</span>
             </label>
-            <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn" aria-label="레이어 닫기"></button>
+            <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn"
+              aria-label="레이어 닫기"></button>
           </div>
           <div class="cotton-banner__control">
             <div class="swiper-pagination"></div>
@@ -273,15 +274,15 @@
         <div class="header-global-search type-right" data-header-box="search">
           <div class="header__nav">
             <div class="header-search">
-              <input type="text" class="o-input" placeholder="arte.co.kr검색하기">
+              <input type="text" class="o-input" placeholder="검색어를 입력하세요">
             </div>
             <div class="nav-links">
               <h3 class="header-tit">Quick Links</h3>
               <div class="nav-links__list">
                 <a href="#" class="nav-links__btn">arte Map</a>
-                <a href="#" class="nav-links__btn">arte Calendar</a>
+                <!-- <a href="#" class="nav-links__btn">arte Calendar</a> -->
                 <a href="#" class="nav-links__btn">artist DB</a>
-                <a href="#" class="nav-links__btn">arte Poll </a>
+                <!-- <a href="#" class="nav-links__btn">arte Poll </a> -->
               </div>
             </div>
           </div>
@@ -375,7 +376,7 @@
             <!-- search bar : 활성화 'is-active' -->
             <div class="header-search-bar__wrap">
               <div class="header-search-bar">
-                <input type="text" class="s-input" placeholder="검색하기" title="검색하기">
+                <input type="text" class="s-input" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
               </div>
             </div>
             <!-- //search bar -->
@@ -642,7 +643,7 @@
     // 커튼배너 영역 스와이퍼 & 오토플레이 s
     function cottonBannerSwiper() {
       if (typeof (cotton_banner_swiper) == 'object') swiper.destroy();
-      return cotton_banner_swiper = new Swiper(".cotton-banner__wrap",{
+      return cotton_banner_swiper = new Swiper(".cotton-banner__wrap", {
         observer: true,
         observeParents: true,
         slidesPerView: 'auto',
@@ -651,7 +652,7 @@
           type: 'bullets',
           clickable: true
         },
-        autoplay: {  
+        autoplay: {
           delay: 2500,
           disableOnInteraction: false,
         },
@@ -659,7 +660,7 @@
       });
     }
 
-    $(window).on("load",function(){
+    $(window).on("load", function () {
       cottonBannerSwiper();
     });
 
@@ -673,17 +674,19 @@
       $('.cotton-banner__control .btn-autoplay.swiper--pause').removeClass('disabled');
     }
 
-    $(document).off('click','.cotton-banner__control .btn-autoplay').on('click','.cotton-banner__control .btn-autoplay', function (e) {
-      const btn = $(e.currentTarget);
+    $(document).off('click', '.cotton-banner__control .btn-autoplay').on('click',
+      '.cotton-banner__control .btn-autoplay',
+      function (e) {
+        const btn = $(e.currentTarget);
 
-      if (btn.hasClass('swiper--play')) {
-        cotton_banner_swiper.autoplay.start();
-        pauseShow();
-      } else{
-        cotton_banner_swiper.autoplay.stop();
-        playShow();
-      }
-    });
+        if (btn.hasClass('swiper--play')) {
+          cotton_banner_swiper.autoplay.start();
+          pauseShow();
+        } else {
+          cotton_banner_swiper.autoplay.stop();
+          playShow();
+        }
+      });
     // 커튼배너 영역 스와이퍼 & 오토플레이 e
   </script>
   <!-- 커튼배너 닫기버튼 -->

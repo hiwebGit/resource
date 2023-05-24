@@ -41,6 +41,7 @@
 
   &__item {
     margin-bottom: 60px;
+
   }
 
   &__depbox {
@@ -58,6 +59,12 @@
   .is-active {
     color: #957A4F;
     font-weight: 600;
+
+  }
+
+  // 20230524
+  .active-type-2 {
+    text-decoration: underline;
   }
 }
 
@@ -883,9 +890,18 @@
 
   .my-content {
     padding: 0 16px 60px;
+    // 20230524
+    position: relative;
 
     &__inner {
       padding-top: 60px;
+    }
+
+    // 20230524
+    .btn-area-top {
+      position: absolute;
+      top: 140px;
+      right: 10px;
     }
   }
 

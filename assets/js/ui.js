@@ -382,6 +382,8 @@
       var _this = this;
 
       $('#header').on('click', _this.lnbCur, function (ev) {
+        console.log(2);
+        $('.lnb-menu__list .sel').removeClass('sel')
         var $lnbBox = $(ev.target).closest(_this.lnbEl);
 
         if (_this.openChk($lnbBox)) {
@@ -399,13 +401,34 @@
     selectEv: function () {
       var _this = this;
 
+      // 20230518 test
+      setTimeout(function () {
+        $('.is-lnb-active').removeClass('is-lnb-active');
+      }, 1000);
+      // //20230518 test
+
       $('#header').on('click', _this.lnbListItem + ' a', function (ev) {
         var target = $(ev.currentTarget);
         var $lnbBox = target.closest(_this.lnbEl);
         var curText = target.html();
         var $selItem = target.closest('li');
 
-        $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+        // 20230518 $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+        // 20230518
+        $('.lnb-menu__list').find('.my-2dp').slideUp();
+        if ($(this).attr('class') == 'no-dp') {
+          $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+        } else { // 2뎁스 없다면
+          if ($(this).closest('li').hasClass('sel')) {
+            $(this).closest('li').removeClass('sel');
+          } else {
+            console.log(1);
+            $('.lnb-menu__list').find('.sel').removeClass('sel');
+            $(this).next().slideDown();
+            $(this).closest('li').addClass('sel');
+          }
+        }
+        // //20230518 
         $lnbBox.find(_this.lnbListItem).removeClass(_this.selectName);
         $selItem.addClass(_this.selectName);
         _this.headerCheck.close();

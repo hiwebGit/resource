@@ -660,7 +660,8 @@
   }
 
   &.ico-search {
-    display: none;
+    // 20230524
+    // display: none;
 
     &::before {
       background-image: url(svgIcon(search, $black));
@@ -1089,6 +1090,7 @@
       background-color: transparent;
       font-size: 18px;
       font-weight: 600;
+
 
       &::placeholder {
         color: #666;
@@ -2322,6 +2324,80 @@
         background: $light;
         z-index: 10;
 
+        // 20230524
+        &.type-2 {
+          display: block;
+          padding: 0;
+
+          >li {
+            display: block;
+            width: auto;
+            padding: 0;
+            border-bottom: 1px solid #dfdbd3;
+            border-top: 0;
+
+            >a {
+              color: #171010;
+              font-size: 16px;
+              font-weight: bold;
+              position: relative;
+              padding: 28px 16px 19px 16px;
+              height: auto;
+
+              &::after {
+                content: '';
+                display: block;
+                clear: both;
+                background-image: url(../../assets/images/common/ico_menu_on.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 7px;
+                position: absolute;
+                top: 50%;
+                right: 24px;
+                margin-top: -1px;
+                transition: all .4s;
+                transform: rotate(-180deg);
+              }
+            }
+
+            .my-2dp {
+              background: #EDE9E0;
+              padding: 5px 0 12px 0;
+
+              &.show {
+                display: block;
+              }
+
+              p>a {
+                color: #666;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 12px 16px;
+                display: block;
+                letter-spacing: -0.04em;
+              }
+            }
+
+            &.sel {
+              >a::after {
+                transform: rotate(0deg);
+              }
+            }
+
+            .no-dp {
+              color: #666;
+              font-weight: 400;
+              padding-top: 23px;
+              padding-bottom: 23px;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+
       }
 
       .lnb {
@@ -2790,6 +2866,8 @@
       width: 26px;
       height: 25px;
       margin-left: 10px;
+      // 20230524
+      margin-left: initial;
     }
 
     &-section__inner,

@@ -1154,6 +1154,13 @@ $exSpace: var(--exGridSpace);
   .paging {
     margin-bottom: 0;
   }
+
+  // 20230524
+  &.type-2 {
+    .artbox {
+      display: block;
+    }
+  }
 }
 
 .artbox-nodata {
@@ -1405,6 +1412,9 @@ $exSpace: var(--exGridSpace);
     font-size: 12px;
     letter-spacing: -0.04em;
     color: #666;
+
+    // 20230524
+    margin-top: 4px;
 
     .text-date {
       font-size: 12px;
@@ -4430,6 +4440,9 @@ $exSpace: var(--exGridSpace);
       // align-items: flex-start;
       margin-bottom: 0;
       line-height: 1.1;
+
+      // 20230524
+      margin-bottom: 4px;
     }
 
     .ex-name {

@@ -162,12 +162,42 @@
           <!-- lnb 8 -->
           <div class="lnb-menu">
             <button type="button" class="lnb-menu__current">마이페이지</button>
-            <ul class="lnb-menu__list">
+            <!-- 20230518 backup <ul class="lnb-menu__list">
               <li class="is-active"><a href="#">나의 정보</a></li>
-              <!-- <li><a href="#">나의 활동</a></li> -->
-              <!-- <li><a href="#">좋아한 콘텐츠</a></li> -->
+              <li><a href="#">나의 활동</a></li>
+              <li><a href="#">좋아한 콘텐츠</a></li>
               <li><a href="#">1:1문의</a></li>
+            </ul> -->
+            <!-- 20230518 -->
+            <ul class="lnb-menu__list type-2">
+              <li><a href="#" class="no-dp">나의 정보</a></li>
+              <li>
+                <a href="#none">나의 활동</a>
+                <div class="my-2dp">
+                  <p><a href="#">작성글</a></p>
+                  <p><a href="#">작성 댓글·답글</a></p>
+                  <p><a href="#">임시저장 글</a></p>
+                </div>
+              </li>
+              <li class="is-active">
+                <!-- 활성화 class="sel" -->
+                <a href="#none">좋아한 콘텐츠</a>
+                <div class="my-2dp">
+                  <p><a href="#">음악·공연·전시·도서</a></p>
+                  <p><a href="#">리뷰</a></p>
+                  <p><a href="#">칼럼·연재</a></p>
+                  <p><a href="#">글로벌 아트</a></p>
+                  <p><a href="#">뉴스·인터뷰</a></p>
+                  <p><a href="#">아티스트</a></p>
+                  <p><a href="#">영상</a></p>
+                  <p><a href="#">arte TALK</a></p>
+                  <p><a href="#">한줄평</a></p>
+                  <p><a href="#">댓글·답글</a></p>
+                </div>
+              </li>
+              <li><a href="#" class="no-dp">1:1 문의</a></li>
             </ul>
+            <!-- //20230518 -->
           </div>
 
 
@@ -380,13 +410,13 @@
           <div class="header-global-search type-right" data-header-box="search">
             <div class="header__nav">
               <div class="header-search">
-                <input type="text" class="o-input" placeholder="arte.co.kr검색하기">
+                <input type="text" class="o-input" placeholder="검색어를 입력하세요">
               </div>
               <div class="nav-links">
                 <h3 class="header-tit">Quick Links</h3>
                 <div class="nav-links__list">
                   <a href="#" class="nav-links__btn">arte Map</a>
-                  <a href="#" class="nav-links__btn">arte Calendar</a>
+                  <!-- <a href="#" class="nav-links__btn">arte Calendar</a> -->
                   <a href="#" class="nav-links__btn">artist DB</a>
                   <!-- <a href="#" class="nav-links__btn">arte Poll</a> -->
                 </div>
@@ -482,7 +512,7 @@
               <!-- search bar : 활성화 'is-active' -->
               <div class="header-search-bar__wrap">
                 <div class="header-search-bar">
-                  <input type="text" class="s-input" placeholder="검색하기" title="검색하기">
+                  <input type="text" class="s-input" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
                 </div>
               </div>
               <!-- //search bar -->

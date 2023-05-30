@@ -92,6 +92,9 @@
       justify-content: center;
       align-items: center;
 
+      // 20230530
+      flex-direction: column;
+
       img {
         display: block;
         margin: 0 auto;
@@ -3750,6 +3753,9 @@
       margin-left: -56px;
       padding: 0 56px;
       margin-top: 0;
+
+      // 20230530
+      margin-bottom: 80px;
 
       .swiper-controls {
         position: absolute;

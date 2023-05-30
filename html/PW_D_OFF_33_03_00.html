@@ -412,17 +412,18 @@
 
   <script>
     layoutHeader({
-      type:2,
-      menu1:7,
-      menu2:1, 
+      type: 2,
+      menu1: 7,
+      menu2: 1,
     });
   </script>
 
   <script>
     // PC,MO 사이드 열림닫힘 설정      
-    $(document).ready(function(){
+    $(document).ready(function () {
       var windowWidth = $(window).width();
-      function isOpenToggleClass(){
+
+      function isOpenToggleClass() {
         if (windowWidth < 768) {
           //창 가로 크기가 768 미만일 경우
           $('.artemap-side').removeClass('is-open')
@@ -464,7 +465,9 @@
     })
 
     function sideDrag() {
-      var handle = $('.side-handle')
+      // var handle = $('.side-handle')
+      // 20230530
+      var handle = $('.search-group')
       var winH = $(window).height();
 
       handle.bind('touchmove', function (e) {
@@ -482,8 +485,17 @@
           sideSection.css('top', 'calc(var(--vh, 1vh) * 100 - 218px)');
         }
 
-        if (moveY <= 116) {
+        // 20230530
+        // if (moveY <= 116) {
+        if (moveY <= 170) {
           sideSection.addClass('is-drag');
+
+          // 20230530
+          sideSection.css({
+            'top': '0',
+            'transition': 'ease 0.3s'
+          });
+          // 20230530
         } else {
           sideSection.removeClass('is-drag');
           sideSection.removeClass('is-open');

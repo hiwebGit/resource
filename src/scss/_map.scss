@@ -678,6 +678,9 @@
       border-top: 1px solid #DFDACE;
       border-radius: 12px 12px 0 0;
 
+      // 20230530
+      top: calc(var(--vh, 1vh) * 100 - 350px);
+
       &:before {
         content: "";
         z-index: -1;

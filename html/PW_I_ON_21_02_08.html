@@ -37,21 +37,12 @@
           </div>
 
           <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <!-- 20230523 -->
           <div class="my-lnb">
             <ul class="my-lnb__list">
               <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
-              <!-- <li class="my-lnb__item" data-accordion="group">
-                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
-                <ul class="my-lnb__depbox">
-                  <li><a href="#">음악·공연·전시·책</a></li>
-                  <li><a href="#">리뷰</a></li>
-                  <li><a href="#">뉴스</a></li>
-                  <li><a href="#">아티스트</a></li>
-                  <li><a href="#">영상</a></li>
-                  <li><a href="#">arte TALK</a></li>
-                  <li><a href="#" class="is-active">한줄평</a></li>
-                  <li><a href="#">댓글·답글</a></li>
-                </ul>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep" data-accordion="btn">나의 정보</a>
               </li>
               <li class="my-lnb__item" data-accordion="group">
                 <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
@@ -60,9 +51,21 @@
                   <li><a href="#">작성 댓글·답글</a></li>
                   <li><a href="#">임시저장 글</a></li>
                 </ul>
-              </li> -->
+              </li>
               <li class="my-lnb__item" data-accordion="group">
-                <a href="#" class="my-lnb__1dep" data-accordion="btn">나의 정보</a>
+                <a href="#" class="my-lnb__1dep ex__item is-active" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">음악·공연·전시·도서</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">칼럼·연재</a></li>
+                  <li><a href="#">글로벌 아트</a></li>
+                  <li><a href="#">뉴스·인터뷰</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li class="active-type-2"><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
               </li>
               <li class="my-lnb__item">
                 <a href="#" class="my-lnb__1dep">1:1 문의</a>
@@ -95,7 +98,7 @@
           </div>
           <!--// summary box -->
 
-          <!-- no data
+          <!-- no data 
           <div class="artbox-nodata">
             <p class="artbox-nodata__text">회원님, 아직 좋아한 콘텐츠가 없네요.<br />한 번 찾으러 가 볼까요?</p>
             <div class="artbox-nodata__links">
@@ -107,251 +110,133 @@
           </div>
           // no data -->
 
-          <!-- List -->
           <h2 class="sec-tit show-mo">좋아한 콘텐츠 > 한줄평</h2>
 
           <!-- 작성된 글이 없을 경우 추가-->
           <div class="no-like">좋아요한 콘텐츠가 없습니다.</div>
           <!-- //작성된 글이 없을 경우 추가-->
-          <!-- List -->
 
-          <!-- List -->
-          <!-- <h2 class="sec-tit show-mo">한줄평</h2> -->
-          <div class="art-list-wrap">
-            <ul class="art-list">
-              <li class="art-list__item">
-                <div class="artbox">
-                  <div class="artbox__summary h-auto">
-                    <div class="artbox__stit">
-                      <span class="tag-gen-s">연극</span>
-                      <a href="#" class="ex-name">아이, 여자 그리고 SEVEN</a>
+          <!-- 한줄평 쓰기 -->
+          <div class="concert-review" id="section_comment">
+            <div class="art-list-wrap type-2">
+              <!-- 20230518 -->
+              <ul class="art-list">
+                <li class="art-list__item">
+                  <div class="artbox">
+                    <div class="artbox__summary h-auto">
+                      <div class="artbox__stit">
+                        <span class="tag-gen-s">연극</span>
+                        <a href="#" class="ex-name">아이, 여자 그리고 SEVEN</a>
+                      </div>
+                    </div>
+                    <div class="artbox__detail all-visible type-2">
+                      <!-- 20230518 -->
+                      <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </a>
+                    </div>
+                    <div class="artbox__info v-type type-2">
+                      <div class="art-info-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p9"></i></span>
+                          <em class="grade__num">9.0</em>
+                        </span>
+                        <span class="text-date">2022.10.20</span>
+                        <!-- <button type="button" class="btn-fav is-fav" aria-label="Like"></button> -->
+                      </div>
                     </div>
                   </div>
-                  <div class="artbox__detail">
-                    <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
-                      드라큘라 역할의 테이님도 정말 멋지셨습니다.
-                      역시 믿고 듣는 보이스 입니다 !!
-                      그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
-                      모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
-                    </a>
-                  </div>
-                  <div class="artbox__info v-type">
-                    <div class="art-info-by">
-                      <span class="byname">내 귀에 캔디</span>
-                      <span class="tag tag--line">회원</span>
-                      <span class="grade">
-                        <span class="star"><i class="star__point p9"></i></span>
-                        <em class="grade__num">9.0</em>
-                      </span>
-                      <span class="text-date">2022.10.20</span>
-                      <button type="button" class="btn-fav is-fav" aria-label="Like"></button>
+                </li>
+                <!-- 삭제 Case : 'is-deleted'  추가 -->
+                <li class="art-list__item is-deleted">
+                  <div class="artbox">
+                    <div class="artbox__summary h-auto">
+                      <div class="artbox__stit">
+                        <span class="tag-gen-s">책</span>
+                        <span class="ex-name">SEVEN</span>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <!-- 삭제 Case : 'is-deleted'  추가 -->
-              <li class="art-list__item is-deleted">
-                <div class="artbox">
-                  <div class="artbox__summary h-auto">
-                    <div class="artbox__stit">
-                      <span class="tag-gen-s">책</span>
-                      <span class="ex-name">SEVEN</span>
+                    <div class="artbox__detail all-visible type-2">
+                      <!-- 20230518 -->
+                      <span>역시 믿고 듣는 보이스 입니다 !!</span>
                     </div>
-                  </div>
-                  <div class="artbox__detail">
-                    <span>역시 믿고 듣는 보이스 입니다 !!</span>
-                  </div>
-                  <div class="artbox__info">
-                    <div class="art-info-by">
-                      <span class="byname">내 귀에 캔디</span>
-                      <span class="tag tag--line">회원</span>
-                      <span class="grade">
-                        <span class="star"><i class="star__point p9"></i></span>
-                        <em class="grade__num">9.0</em>
-                      </span>
-                      <span class="text-date">2022.10.20</span>
-                      <button type="button" class="btn-fav is-fav" aria-label="Like"></button>
+                    <div class="artbox__info v-type type-2">
+                      <div class="art-info-by">
+                        <span class="byname">a***@naver.com</span>
+                        <span class="tag tag--line">회원</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p9"></i></span>
+                          <em class="grade__num">9.0</em>
+                        </span>
+                        <span class="text-date">2022.10.20</span>
+                        <!-- <button type="button" class="btn-fav is-fav" aria-label="Like"></button> -->
+                      </div>
                     </div>
+                    <div class="artbox__deleted">삭제된 게시물입니다.</div>
                   </div>
-                  <div class="artbox__deleted">삭제된 게시물입니다.</div>
-                </div>
-              </li>
-              <!--// 삭제 Case -->
-              <li class="art-list__item">
-                <div class="artbox">
-                  <div class="artbox__summary h-auto">
-                    <div class="artbox__stit">
-                      <span class="tag-gen-s">연극</span>
-                      <a href="#" class="ex-name">아이, 여자 그리고 SEVEN</a>
-                    </div>
-                  </div>
-                  <div class="artbox__detail">
-                    <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
-                      드라큘라 역할의 테이님도 정말 멋지셨습니다.
-                      역시 믿고 듣는 보이스 입니다 !!
-                      그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
-                      모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
-                    </a>
-                  </div>
-                  <div class="artbox__info v-type">
-                    <div class="art-info-by">
-                      <span class="byname">내 귀에 캔디</span>
-                      <span class="tag tag--line">회원</span>
-                      <span class="grade">
-                        <span class="star"><i class="star__point p9"></i></span>
-                        <em class="grade__num">9.0</em>
-                      </span>
-                      <span class="text-date">2022.10.20</span>
-                      <button type="button" class="btn-fav is-fav" aria-label="Like"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="art-list__item">
-                <div class="artbox">
-                  <div class="artbox__summary h-auto">
-                    <div class="artbox__stit">
-                      <span class="tag-gen-s">연극</span>
-                      <a href="#" class="ex-name">아이, 여자 그리고 SEVEN</a>
-                    </div>
-                  </div>
-                  <div class="artbox__detail">
-                    <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
-                      드라큘라 역할의 테이님도 정말 멋지셨습니다.
-                      역시 믿고 듣는 보이스 입니다 !!
-                      그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
-                      모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
-                    </a>
-                  </div>
-                  <div class="artbox__info v-type">
-                    <div class="art-info-by">
-                      <span class="byname">내 귀에 캔디</span>
-                      <span class="tag">arte</span>
-                      <span class="grade">
-                        <span class="badge-star p3"></span>
-                      </span>
-                      <span class="text-date">2022.10.20</span>
-                      <button type="button" class="btn-fav is-fav" aria-label="Like"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="art-list__item">
-                <div class="artbox">
-                  <div class="artbox__summary h-auto">
-                    <div class="artbox__stit">
-                      <span class="tag-gen-s">연극</span>
-                      <a href="#" class="ex-name">아이, 여자 그리고 SEVEN</a>
-                    </div>
-                  </div>
-                  <div class="artbox__detail">
-                    <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
-                      드라큘라 역할의 테이님도 정말 멋지셨습니다.
-                      역시 믿고 듣는 보이스 입니다 !!
-                      그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
-                      모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
-                    </a>
-                  </div>
-                  <div class="artbox__info v-type">
-                    <div class="art-info-by">
-                      <span class="byname">내 귀에 캔디</span>
-                      <span class="tag tag--line">회원</span>
-                      <span class="grade">
-                        <span class="star"><i class="star__point p9"></i></span>
-                        <em class="grade__num">9.0</em>
-                      </span>
-                      <span class="text-date">2022.10.20</span>
-                      <button type="button" class="btn-fav is-fav" aria-label="Like"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="art-list__item">
-                <div class="artbox">
-                  <div class="artbox__summary h-auto">
-                    <div class="artbox__stit">
-                      <span class="tag-gen-s">연극</span>
-                      <a href="#" class="ex-name">아이, 여자 그리고 SEVEN</a>
-                    </div>
-                  </div>
-                  <div class="artbox__detail">
-                    <a href="#">대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
-                      드라큘라 역할의 테이님도 정말 멋지셨습니다.
-                      역시 믿고 듣는 보이스 입니다 !!
-                      그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
-                      모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
-                    </a>
-                  </div>
-                  <div class="artbox__info v-type">
-                    <div class="art-info-by">
-                      <span class="byname">내 귀에 캔디</span>
-                      <span class="tag tag--line">회원</span>
-                      <span class="grade">
-                        <span class="star"><i class="star__point p9"></i></span>
-                        <em class="grade__num">9.0</em>
-                      </span>
-                      <span class="text-date">2022.10.20</span>
-                      <button type="button" class="btn-fav is-fav" aria-label="Like"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <!--// 삭제 Case -->
+              </ul>
 
-            <!-- Paging -->
-            <div class="paging">
-              <!-- PC -->
-              <a href="#" class="paging__btn paging__btn--first">처음</a>
-              <a href="#" class="paging__btn paging__btn--prev">이전</a>
-              <div class="paging__num-wrap paging-pc">
-                <a href="#" class="paging__num paging__num--active">1</a>
-                <a href="#" class="paging__num">2</a>
-                <a href="#" class="paging__num">3</a>
-                <a href="#" class="paging__num">4</a>
-                <a href="#" class="paging__num">5</a>
-                <a href="#" class="paging__num">6</a>
-                <a href="#" class="paging__num">7</a>
-                <a href="#" class="paging__num">8</a>
-                <a href="#" class="paging__num">9</a>
-                <a href="#" class="paging__num">10</a>
+              <!-- Paging -->
+              <div class="paging">
+                <!-- PC -->
+                <a href="#" class="paging__btn paging__btn--first">처음</a>
+                <a href="#" class="paging__btn paging__btn--prev">이전</a>
+                <div class="paging__num-wrap paging-pc">
+                  <a href="#" class="paging__num paging__num--active">1</a>
+                  <a href="#" class="paging__num">2</a>
+                  <a href="#" class="paging__num">3</a>
+                  <a href="#" class="paging__num">4</a>
+                  <a href="#" class="paging__num">5</a>
+                  <a href="#" class="paging__num">6</a>
+                  <a href="#" class="paging__num">7</a>
+                  <a href="#" class="paging__num">8</a>
+                  <a href="#" class="paging__num">9</a>
+                  <a href="#" class="paging__num">10</a>
+                </div>
+                <a href="#" class="paging__btn paging__btn--next">다음</a>
+                <a href="#" class="paging__btn paging__btn--last">마지막</a>
+
+                <!-- Mobile -->
+                <div class="paging__num-wrap paging-mo">
+                  <a href="#" class="paging__more">더보기</a>
+                </div>
               </div>
-              <a href="#" class="paging__btn paging__btn--next">다음</a>
-              <a href="#" class="paging__btn paging__btn--last">마지막</a>
-
-              <!-- Mobile -->
-              <div class="paging__num-wrap paging-mo">
-                <a href="#" class="paging__more">더보기</a>
-              </div>
+              <!-- Paging -->
             </div>
-            <!-- Paging -->
+            <!--// List -->
           </div>
-          <!--// List -->
         </div>
+        <!--// END -->
       </div>
-      <!--// END -->
+      <!--// Container -->
+
+      <!-- Footer -->
+      <footer class="footer" id="footer"></footer>
+      <!--// Footer -->
+
     </div>
-    <!--// Container -->
 
-    <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
-    <!--// Footer -->
+    <!-- Script -->
+    <script src="../assets/js/libs/jquery.min.js"></script>
+    <script src="../assets/js/libs/swiper.min.js"></script>
+    <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
+    <script src="../assets/js/ui.js"></script>
+    <!--// Script -->
 
-  </div>
-
-  <!-- Script -->
-  <script src="../assets/js/libs/jquery.min.js"></script>
-  <script src="../assets/js/libs/swiper.min.js"></script>
-  <script src="../layout/js/layout.js"></script> <!-- layout 용도로 퍼블 HTML 에만 사용 -->
-  <script src="../assets/js/ui.js"></script>
-  <!--// Script -->
-
-  <script>
-    layoutHeader({
-      type: 2,
-      menu1: 8,
-      menu2: 1,
-    });
-  </script>
+    <script>
+      layoutHeader({
+        type: 2,
+        menu1: 8,
+        menu2: 1,
+      });
+    </script>
 </body>
 
 </html>

@@ -8,24 +8,31 @@
             <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            <img src="../assets/images/@temp/@cotton-banner01.png" alt="" style="height: 300px">
           </div>
           <div class="swiper-slide">
             <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
           </div>
         </div>
-        <div class="cotton-banner__close">
-          <label class="o-rdo">
-            <input type="checkbox" class="o-input" name="chk-status"><span class="o-rdo__label">오늘 하루 보지 않기</span>
-          </label>
-          <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn"
-            aria-label="레이어 닫기"></button>
+
+        <!-- 20230525 임시 -->
+        <div class="swiper-bottom">
+          <div class="cotton-banner__close" style="top: 50%">
+            <label class="o-rdo">
+              <input type="checkbox" class="o-input" name="chk-status"><span class="o-rdo__label">오늘 하루 보지 않기</span>
+            </label>
+            <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn"
+              aria-label="레이어 닫기"></button>
+          </div>
+
+          <div class="cotton-banner__control" style="top: 50%">
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper--play btn-autoplay disabled"><span>시작</span></button>
+            <button type="button" class="swiper--pause btn-autoplay"><span>멈춤</span></button>
+          </div>
         </div>
-        <div class="cotton-banner__control">
-          <div class="swiper-pagination"></div>
-          <button type="button" class="swiper--play btn-autoplay disabled"><span>시작</span></button>
-          <button type="button" class="swiper--pause btn-autoplay"><span>멈춤</span></button>
-        </div>
+        <!-- 20230525 임시 -->
+
       </div>
     </div>
     <!-- 커튼배너영역 -->
@@ -288,8 +295,8 @@
           <div class="nav-links">
             <h3 class="header-tit">마이페이지</h3>
             <div class="nav-links__list">
-              <!-- <a href="#" class="nav-links__btn">좋아한 콘텐츠</a> -->
-              <!-- <a href="#" class="nav-links__btn">나의 활동</a> -->
+              <a href="#" class="nav-links__btn">좋아한 콘텐츠</a>
+              <a href="#" class="nav-links__btn">나의 활동</a>
               <a href="#" class="nav-links__btn">나의 정보</a>
               <a href="#" class="nav-links__btn">1:1문의</a>
             </div>

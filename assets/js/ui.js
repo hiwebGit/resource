@@ -407,6 +407,9 @@
       }, 1000);
       // //20230518 test
 
+
+
+
       $('#header').on('click', _this.lnbListItem + ' a', function (ev) {
         var target = $(ev.currentTarget);
         var $lnbBox = target.closest(_this.lnbEl);
@@ -415,19 +418,24 @@
 
         // 20230518 $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
         // 20230518
+        // 20230525
         $('.lnb-menu__list').find('.my-2dp').slideUp();
-        if ($(this).attr('class') == 'no-dp') {
-          $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
-        } else { // 2뎁스 없다면
-          if ($(this).closest('li').hasClass('sel')) {
-            $(this).closest('li').removeClass('sel');
-          } else {
-            console.log(1);
-            $('.lnb-menu__list').find('.sel').removeClass('sel');
-            $(this).next().slideDown();
-            $(this).closest('li').addClass('sel');
+        if ($(window).width() <= 768) {
+          if ($(this).attr('class') == 'no-dp') {
+            $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+          } else { // 2뎁스 없다면
+            if ($(this).closest('li').hasClass('sel')) {
+              $(this).closest('li').removeClass('sel');
+            } else {
+              console.log(1);
+              $('.lnb-menu__list').find('.sel').removeClass('sel');
+              $(this).next().slideDown();
+              $(this).closest('li').addClass('sel');
+            }
           }
         }
+
+
         // //20230518 
         $lnbBox.find(_this.lnbListItem).removeClass(_this.selectName);
         $selItem.addClass(_this.selectName);
@@ -437,6 +445,8 @@
           ev.preventDefault();
         }
       });
+
+
     },
     resize: function () {
       $(this.lnbEl).removeClass(this.openName);
@@ -1776,55 +1786,57 @@
     UI.dropdownList.init();
   }
 
-  UI.resize = function () {
-    if (window.st !== null) {
-      clearTimeout(window.st);
-    }
-    const winW = window.innerWidth;
-    window.st = setInterval(function () {
+  /*
+    UI.resize = function () {
+      if (window.st !== null) {
+        clearTimeout(window.st);
+      }
       const winW = window.innerWidth;
-      if (window.winWChk != 'mo' && winW <= 768) { //모바일 버전으로 전환할 때 1번만 실행할 코드 추가
-        window.winWChk = 'mo';
-        UI.lyPopup.resize();
-        UI.kvScroll.resize();
-        UI.popupImageSw.resize();
-        UI.replyView.resize();
-        UI.myFavVod.resize();
-        UI.newsSw.resize();
-        UI.themeSw.resize();
-        UI.thisMonth.resize();
-        UI.allMenu.resize();
-        UI.gnb.resize();
-        UI.menuTabSlide.resize();
+      window.st = setInterval(function () {
+        const winW = window.innerWidth;
+        if (window.winWChk != 'mo' && winW <= 768) { //모바일 버전으로 전환할 때 1번만 실행할 코드 추가
+          window.winWChk = 'mo';
+          UI.lyPopup.resize();
+          UI.kvScroll.resize();
+          UI.popupImageSw.resize();
+          UI.replyView.resize();
+          UI.myFavVod.resize();
+          UI.newsSw.resize();
+          UI.themeSw.resize();
+          UI.thisMonth.resize();
+          UI.allMenu.resize();
+          UI.gnb.resize();
+          UI.menuTabSlide.resize();
 
-        if (typeof UI.curationSw !== 'undefined') {
-          UI.curationSw.resize();
+          if (typeof UI.curationSw !== 'undefined') {
+            UI.curationSw.resize();
+          }
         }
-      }
 
-      if (window.winWChk != 'pc' && winW >= 769) { //PC 踰꾩쟾�쇰줈 �꾪솚�� �� 1踰덈쭔 �ㅽ뻾�� 肄붾뱶 異붽�
-        window.winWChk = 'pc';
-        UI.lyPopup.resize();
-        UI.sortList.resize();
-        UI.popupImageSw.resize();
-        UI.replyView.resize();
-        UI.myFavVod.resize();
-        UI.newsSw.resize();
-        UI.themeSw.resize();
-        UI.thisMonth.resize();
-        UI.allMenu.resize();
-        UI.gnb.resize();
-        UI.menuTabSlide.resize();
+        if (window.winWChk != 'pc' && winW >= 769) { //PC 踰꾩쟾�쇰줈 �꾪솚�� �� 1踰덈쭔 �ㅽ뻾�� 肄붾뱶 異붽�
+          window.winWChk = 'pc';
+          UI.lyPopup.resize();
+          UI.sortList.resize();
+          UI.popupImageSw.resize();
+          UI.replyView.resize();
+          UI.myFavVod.resize();
+          UI.newsSw.resize();
+          UI.themeSw.resize();
+          UI.thisMonth.resize();
+          UI.allMenu.resize();
+          UI.gnb.resize();
+          UI.menuTabSlide.resize();
 
-        if (typeof UI.curationSw !== 'undefined') {
-          UI.curationSw.resize();
+          if (typeof UI.curationSw !== 'undefined') {
+            UI.curationSw.resize();
+          }
         }
-      }
 
-      clearTimeout(window.st);
-      window.st = null;
-    }, 150);
-  }
+        clearTimeout(window.st);
+        window.st = null;
+      }, 150);
+    }
+  */
 
   UI.scroll = function () {}
 

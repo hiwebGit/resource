@@ -125,6 +125,9 @@
     transform: translateY(-50%);
     z-index: 1;
 
+    // 20230525
+    top: 80%;
+
     .o-rdo {
       .o-rdo__label {
         padding-right: 20px;
@@ -163,6 +166,9 @@
     min-width: 100px;
     height: 21px;
     z-index: 1;
+
+    // 20230525
+    top: 80%;
 
     .swiper-pagination {
       .swiper-pagination-bullet {
@@ -1035,6 +1041,10 @@
   a {
     display: block;
     padding: 4px 6px;
+  }
+
+  .my-2dp {
+    display: none;
   }
 }
 
@@ -3521,4 +3531,10 @@
     }
 
   }
+}
+
+.swiper-bottom {
+  height: 50px;
+  position: relative;
+  background: #000;
 }

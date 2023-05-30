@@ -36,21 +36,12 @@
             <span class="my-namebox__name">간만에카페인간만에카</span>
           </div>
           <!-- 모바일 활성화 시 is-active 클래스 추가 -->
+          <!-- 20230523 -->
           <div class="my-lnb">
             <ul class="my-lnb__list">
               <!-- my-lnb__depbox 있을경우 ex__item 클래스 추가 -->
-              <!-- <li class="my-lnb__item" data-accordion="group">
-                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
-                <ul class="my-lnb__depbox">
-                  <li><a href="#">음악·공연·전시·책</a></li>
-                  <li><a href="#">리뷰</a></li>
-                  <li><a href="#">뉴스</a></li>
-                  <li><a href="#">아티스트</a></li>
-                  <li><a href="#">영상</a></li>
-                  <li><a href="#">arte TALK</a></li>
-                  <li><a href="#">한줄평</a></li>
-                  <li><a href="#">댓글·답글</a></li>
-                </ul>
+              <li class="my-lnb__item" data-accordion="group">
+                <a href="#" class="my-lnb__1dep is-active" data-accordion="btn">나의 정보</a>
               </li>
               <li class="my-lnb__item" data-accordion="group">
                 <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">나의 활동</a>
@@ -59,9 +50,21 @@
                   <li><a href="#">작성 댓글·답글</a></li>
                   <li><a href="#">임시저장 글</a></li>
                 </ul>
-              </li> -->
+              </li>
               <li class="my-lnb__item" data-accordion="group">
-                <a href="#" class="my-lnb__1dep is-active" data-accordion="btn">나의 정보</a>
+                <a href="#" class="my-lnb__1dep ex__item" data-accordion="btn">좋아한 콘텐츠</a>
+                <ul class="my-lnb__depbox">
+                  <li><a href="#">음악·공연·전시·도서</a></li>
+                  <li><a href="#">리뷰</a></li>
+                  <li><a href="#">칼럼·연재</a></li>
+                  <li><a href="#">글로벌 아트</a></li>
+                  <li><a href="#">뉴스·인터뷰</a></li>
+                  <li><a href="#">아티스트</a></li>
+                  <li><a href="#">영상</a></li>
+                  <li><a href="#">arte TALK</a></li>
+                  <li><a href="#">한줄평</a></li>
+                  <li><a href="#">댓글·답글</a></li>
+                </ul>
               </li>
               <li class="my-lnb__item">
                 <a href="#" class="my-lnb__1dep">1:1 문의</a>
@@ -98,9 +101,11 @@
           <h2 class="my-sect__title show-mo">나의 정보</h2>
           <!-- 수정버튼 추가 -->
           <div class="btn-area-top">
-            <button type="button" class="btn" onclick="location.href='https://member.hankyung.com/apps.frame/common.mypage?site=www.arte.co.kr&user_agent=web&token='">통합회원 계정관리</button>
+            <button type="button" class="btn"
+              onclick="location.href='https://member.hankyung.com/apps.frame/common.mypage?site=www.arte.co.kr&user_agent=web&token='">통합회원
+              계정관리</button>
           </div>
-            
+
           <form action="" name="" metod="">
             <fieldset class="inform">
               <legend>나의 정보</legend>
@@ -118,24 +123,26 @@
                 <label for="" class="inform__tit">휴대폰 번호</label>
                 <div class="inform__cont">
                   <div class="form-holder">
-                   <ul class="inform__phone">
-                    <li>
-                      <div class="dropdown h-md">
-                        <button type="button" class="dropdown__cur" id="phone_first"><em>010</em></button>
-                        <ul class="dropdown__list">
-                          <li class="is-on"><button type="button" class="dropdown__btn">010</button></li>
-                          <li><button type="button" class="dropdown__btn">011</button></li>
-                          <li><button type="button" class="dropdown__btn">016</button></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li >
-                      <input id="phone_mid" type="text" class="in-number" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                    </li>
-                    <li >
-                      <input id="phone_last" type="text" class="in-number" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                    </li>                  
-                  </ul>
+                    <ul class="inform__phone">
+                      <li>
+                        <div class="dropdown h-md">
+                          <button type="button" class="dropdown__cur" id="phone_first"><em>010</em></button>
+                          <ul class="dropdown__list">
+                            <li class="is-on"><button type="button" class="dropdown__btn">010</button></li>
+                            <li><button type="button" class="dropdown__btn">011</button></li>
+                            <li><button type="button" class="dropdown__btn">016</button></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <input id="phone_mid" type="text" class="in-number" maxlength="4"
+                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      </li>
+                      <li>
+                        <input id="phone_last" type="text" class="in-number" maxlength="4"
+                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      </li>
+                    </ul>
                   </div>
                   <p class="form-sub-text">&#8251; arte에서 진행하는 이벤트 당첨 시 휴대폰으로 관련 정보가 전달됩니다.</span></p>
                 </div>
@@ -416,7 +423,7 @@
           <!--// 관심 분야 -->
           <!-- 페이지 하단 버튼  -->
           <div class="btn-area">
-            
+
             <button type="button" class="btn">저장</button>
           </div>
           <!--// 페이지 하단 버튼  -->
@@ -439,12 +446,12 @@
   <script src="../assets/js/ui.js"></script>
   <!--// Script -->
 
-  
-<script>
+
+  <script>
     layoutHeader({
-      type:2,
-      menu1:8,
-      menu2:1, 
+      type: 2,
+      menu1: 8,
+      menu2: 3, // 20230518
     });
 
     const phoneMid = document.querySelector("#phone_mid");
@@ -453,15 +460,15 @@
     let middleNum = '';
     let lastNum = '';
 
-    phoneMid.addEventListener('keyup',function(){
+    phoneMid.addEventListener('keyup', function () {
 
       let midResult = phoneMid.value.length;
 
-      if(midResult === 4){
-          phoneLast.focus();
-      }   
+      if (midResult === 4) {
+        phoneLast.focus();
+      }
     });
-</script>
+  </script>
 
 </body>
 
